@@ -1,5 +1,3 @@
-//------------ Aula 01 ----------------//
-
 console.log("Vamos Lá"); //String
 console.log("Vamos Lá"); //String
 console.log(`"Vamos"'lá'`); //String
