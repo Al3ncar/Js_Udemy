@@ -1,4 +1,3 @@
-//------------ Aula 02 ----------------//
 
 //Temos 2 tipos de comentario
 
