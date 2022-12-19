@@ -49,3 +49,7 @@ alert(`O resultado da sua conta é ${Result}`)
 //2° Maneira
 const Result2 = `O resultado da sua conta é ` + (Num1 + Num2)
 alert(Result2)
+
+//Meneira feita em aula
+alert(`O resultado da sua conta é ${Num1 + Num2}`)
+//Eu posso colocar expressoẽs dentro de uma Tamplete String
