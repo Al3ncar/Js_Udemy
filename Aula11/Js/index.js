@@ -36,3 +36,7 @@ console.log(umString.indexOf(`texto`)) // 3
 console.log(umString.indexOf(`to`, 3)) // 6 -> 6, 7
 
 //Posso pedir pra ele começar no indece 3, colocando um numero logo após o texto
+
+//indexOf(`palavra a ser buscada`, indice que deve começar)
+
+//Já o lastIndexOf() retorna o índice da última ocorrência do valor especificado encontrado na String.
