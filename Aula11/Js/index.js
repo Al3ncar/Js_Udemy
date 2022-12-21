@@ -120,20 +120,22 @@ console.log(window.document.body.innerHTML)
 
 const yourName = prompt("Qual é seu nome??")
 
-let length = yourName.length;
-let second = yourName.charAt(2);
+let lgth = yourName.length;
+let second = yourName.charAt(1);
 let firstIndex = yourName.indexOf("A");
 let last = yourName.lastIndexOf("r");
+let lastName = yourName.slice(-3);
+let splt = yourName.split(" ")
 let upCase = yourName.toUpperCase()
 let lowCase = yourName.toLowerCase()
 
 
-window.document.body.innerHTML = `Seu nome é: ${yourName}`
-window.document.body.innerHTML = `Seu nome tem ${length} letras`
-window.document.body.innerHTML = `A segunda letra do seu nome é: ${second}`
-window.document.body.innerHTML = `Qual o primeiro índice da letra A no seu nome ${firstIndex}`
-window.document.body.innerHTML = `Qual o último índice da letra r no seu nome ${last}`
-window.document.body.innerHTML = `As últimas 3 letras do seu nome são: ${}`
-window.document.body.innerHTML = `As palavras do seu nome são:  ${}`
-window.document.body.innerHTML = `Seu nome com letras maiúsculas: ${upCase}`
-window.document.body.innerHTML = `Seu nome com letras minúsculas: ${lowCase}`
+window.document.body.innerHTML = `Seu nome é: ${yourName} <br/>`;
+window.document.body.innerHTML += `Seu nome tem ${lgth} letras <br/>`;
+window.document.body.innerHTML += `A segunda letra do seu nome é: ${second} <br/>`;
+window.document.body.innerHTML += `Qual o primeiro índice da letra A no seu nome ${firstIndex} <br/>`;
+window.document.body.innerHTML += `Qual o último índice da letra r no seu nome ${last} <br/>`;
+window.document.body.innerHTML += `As últimas 3 letras do seu nome são: ${lastName}  <br/>`;
+window.document.body.innerHTML += `As palavras do seu nome são:  ${splt} <br/>`;
+window.document.body.innerHTML += `Seu nome com letras maiúsculas: ${upCase} <br/>`;
+window.document.body.innerHTML += `Seu nome com letras minúsculas: ${lowCase} <br/>`;
