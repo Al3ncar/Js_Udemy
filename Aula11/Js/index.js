@@ -1,12 +1,11 @@
-// As strings são indexadas e cada caracter tem um indice
-//começando de 0 
+// As strings são indexadas e cada caracter tem um indice começando de 0
 
 const umString = `Um texto` // 01234567 = "Um Texto"
 console.log(umString)
 /*
 
 //Posso escolher qual caracter quero que apareça
- const umString = 
+ const umString =
 `
  U = 0
  m = 1
@@ -16,27 +15,104 @@ console.log(umString)
  x = 5
  t = 6
  o = 7
-` 
+`
 */
 
 console.log(umString[4]) // e
 
+// ---- CharAt() ---- //
+
 //Podemos usar tambem um método chamado de charAt()
+// Esse método charAt() retorna o caractere especificado a partir de uma string.
 console.log(umString.charAt(4)) // e
 
-//Esse método charAt() retorna o caractere especificado a partir de uma string.
+// ---- Concat() ---- //
 
-//Temos tambem maneiras de Concatenar strings usando o método chamado de concat
+// Temos tambem maneiras de Concatenar strings usando o método chamado de
+// concat
+console.log(umString.concat(`, estou concatenando mais um texto`)) //
 
-console.log(umString.concat(`, estou concatenando mais um texto`)) // 
+// ---- IndexOf() ---- //
 
 //podemos saber em qual indice começa a palavra "texto"
+// Posso pedir pra ele começar no indece 3, colocando um numero logo após o
+// texto indexOf(`palavra a ser buscada`, indice que deve começar)
 
 console.log(umString.indexOf(`texto`)) // 3
-console.log(umString.indexOf(`to`, 3)) // 6 -> 6, 7
+console.log(umString.indexOf(`to`, 3)) // 6 -> 6, 
+// lastIndexOf() retorna o índice da última ocorrência do valor especificado
+// encontrado na String. 
 
-//Posso pedir pra ele começar no indece 3, colocando um numero logo após o texto
+// ---- Match() ---- //
 
-//indexOf(`palavra a ser buscada`, indice que deve começar)
+//O método match() retorna uma correspondência entre uma string com uma expressão regular.
+//Esse método é uma verificação de uma string 
 
-//Já o lastIndexOf() retorna o índice da última ocorrência do valor especificado encontrado na String.
+let palavra = "Qu4lqu3r t/p0 d& c@r@cte[ 1682 "
+console.log(palavra.match(/[43@#/[]/g))
+
+//.match(/[o que vai ser verificado na string]/ g = global)
+//Podemos ver se tem letras do A ao Z 
+
+let texto2 = "Qu4lqu3r t/p0 d& c@r@cte[ "
+console.log(palavra.match(/[a-z]/g)) // minúsculas
+console.log(palavra.match(/[A-Z]/g)) // MAIÚSCULAS
+console.log(palavra.match(/[0-9]/g)) // Apenas numeros 
+
+// ---- Search() ---- //
+
+//Retorna o indice onde começa a verificação
+
+let texto3 = "Um texto apenas"
+console.log(texto3.search(/[a-z]/g))
+
+// ---- Reaplace() ---- //
+
+//Altera uma determinada string por outro elemento
+
+let texto4 = "Um texto apenas, Um coisa muito importante ter mais de Um text"
+
+console.log(texto4.replace("Um" , "Outro"))
+console.log(texto4.replace(/Um/g , "Outro")) // Dessa maneira eu consigo alterar todos os "Um"
+
+// ---- Length() ---- //
+
+//Ele conta quantos caracter tem em uma string 
+
+let texto5 = "Coisas devem serem feitas"
+console.log(texto5.length) // 25
+
+// ---- Slice() ---- //
+
+//O método slice() retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é incluído) de um array original.
+
+let texto6 = "Coisas seram feitas"
+console.log(texto6.slice(7, 19)) // seram feitas
+
+// ---- Split ---- //
+
+//Divide a string em algum caracter especifico. Ele irá criar um Array com as palavras dividas.
+
+console.log(texto4.split(" ")) /* exemplo:
+[
+  'Um', 'texto', 'apenas,', 'Um', 'coisa', 'muito','importante', 'ter', 'mais','de', 'Um','text'
+]
+*/
+
+// ---- ToUpperCase() ---- //
+
+//Ele altera todas as string para Maiúscula 
+
+let texto7 = "Esse é mais um exemplo de texto usado"
+console.log(texto7.toUpperCase()) // MAIÚSCULAS
+console.log(texto7.toLowerCase()) // minúsculas
+
+/* 
+const yourName = prompt("Qual é seu nome??")
+const Tela = window.document.write(yourName) 
+*/
+
+//Tem um caminho no js que mostra o que esta no meu  HTML, o caminho é esse
+
+console.log(window.document.body.innerHTML) 
+
