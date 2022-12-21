@@ -116,3 +116,24 @@ const Tela = window.document.write(yourName)
 
 console.log(window.document.body.innerHTML) 
 
+// Desafio da Aula 11
+
+const yourName = prompt("Qual é seu nome??")
+
+let length = yourName.length;
+let second = yourName.charAt(2);
+let firstIndex = yourName.indexOf("A");
+let last = yourName.lastIndexOf("r");
+let upCase = yourName.toUpperCase()
+let lowCase = yourName.toLowerCase()
+
+
+window.document.body.innerHTML = `Seu nome é: ${yourName}`
+window.document.body.innerHTML = `Seu nome tem ${length} letras`
+window.document.body.innerHTML = `A segunda letra do seu nome é: ${second}`
+window.document.body.innerHTML = `Qual o primeiro índice da letra A no seu nome ${firstIndex}`
+window.document.body.innerHTML = `Qual o último índice da letra r no seu nome ${last}`
+window.document.body.innerHTML = `As últimas 3 letras do seu nome são: ${}`
+window.document.body.innerHTML = `As palavras do seu nome são:  ${}`
+window.document.body.innerHTML = `Seu nome com letras maiúsculas: ${upCase}`
+window.document.body.innerHTML = `Seu nome com letras minúsculas: ${lowCase}`
