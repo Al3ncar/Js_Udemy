@@ -89,6 +89,10 @@ console.log(texto5.length) // 25
 let texto6 = "Coisas seram feitas"
 console.log(texto6.slice(7, 19)) // seram feitas
 
+//podemos escolher tambem as ultimas letras usando o sinal de menos, sendo considerado como um subtração 
+
+console.log(texto6.slice(-3)) // As 3 ultimas letras são "tas"
+
 // ---- Split ---- //
 
 //Divide a string em algum caracter especifico. Ele irá criar um Array com as palavras dividas.
@@ -128,7 +132,6 @@ let lastName = yourName.slice(-3);
 let splt = yourName.split(" ")
 let upCase = yourName.toUpperCase()
 let lowCase = yourName.toLowerCase()
-
 
 window.document.body.innerHTML = `Seu nome é: ${yourName} <br/>`;
 window.document.body.innerHTML += `Seu nome tem ${lgth} letras <br/>`;
