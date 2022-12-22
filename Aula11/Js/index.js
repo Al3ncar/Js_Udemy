@@ -20,105 +20,87 @@ console.log(umString)
 
 console.log(umString[4]) // e
 
-// ---- CharAt() ---- //
-
-//Podemos usar tambem um método chamado de charAt()
-// Esse método charAt() retorna o caractere especificado a partir de uma string.
+// ---- CharAt() ---- // Podemos usar tambem um método chamado de charAt() Esse
+// método charAt() retorna o caractere especificado a partir de uma string.
 console.log(umString.charAt(4)) // e
 
-// ---- Concat() ---- //
-
-// Temos tambem maneiras de Concatenar strings usando o método chamado de
-// concat
+// ---- Concat() ---- // Temos tambem maneiras de Concatenar strings usando o
+// método chamado de concat
 console.log(umString.concat(`, estou concatenando mais um texto`)) //
 
-// ---- IndexOf() ---- //
-
-//podemos saber em qual indice começa a palavra "texto"
+// ---- IndexOf() ---- // podemos saber em qual indice começa a palavra "texto"
 // Posso pedir pra ele começar no indece 3, colocando um numero logo após o
 // texto indexOf(`palavra a ser buscada`, indice que deve começar)
 
 console.log(umString.indexOf(`texto`)) // 3
-console.log(umString.indexOf(`to`, 3)) // 6 -> 6, 
+console.log(umString.indexOf(`to`, 3)) // 6 -> 6,
 // lastIndexOf() retorna o índice da última ocorrência do valor especificado
-// encontrado na String. 
-
-// ---- Match() ---- //
-
-//O método match() retorna uma correspondência entre uma string com uma expressão regular.
-//Esse método é uma verificação de uma string 
+// encontrado na String. ---- Match() ---- // O método match() retorna uma
+// correspondência entre uma string com uma expressão regular. Esse método é uma
+// verificação de uma string
 
 let palavra = "Qu4lqu3r t/p0 d& c@r@cte[ 1682 "
 console.log(palavra.match(/[43@#/[]/g))
 
-//.match(/[o que vai ser verificado na string]/ g = global)
-//Podemos ver se tem letras do A ao Z 
+// .match(/[o que vai ser verificado na string]/ g = global) Podemos ver se tem
+// letras do A ao Z
 
 let texto2 = "Qu4lqu3r t/p0 d& c@r@cte[ "
 console.log(palavra.match(/[a-z]/g)) // minúsculas
 console.log(palavra.match(/[A-Z]/g)) // MAIÚSCULAS
-console.log(palavra.match(/[0-9]/g)) // Apenas numeros 
+console.log(palavra.match(/[0-9]/g)) // Apenas numeros
 
-// ---- Search() ---- //
-
-//Retorna o indice onde começa a verificação
+// ---- Search() ---- // Retorna o indice onde começa a verificação
 
 let texto3 = "Um texto apenas"
 console.log(texto3.search(/[a-z]/g))
 
-// ---- Reaplace() ---- //
-
-//Altera uma determinada string por outro elemento
+// ---- Reaplace() ---- // Altera uma determinada string por outro elemento
 
 let texto4 = "Um texto apenas, Um coisa muito importante ter mais de Um text"
 
-console.log(texto4.replace("Um" , "Outro"))
-console.log(texto4.replace(/Um/g , "Outro")) // Dessa maneira eu consigo alterar todos os "Um"
+console.log(texto4.replace("Um", "Outro"))
+console.log(texto4.replace(/Um/g, "Outro")) // Dessa maneira eu consigo alterar todos os "Um"
 
-// ---- Length() ---- //
-
-//Ele conta quantos caracter tem em uma string 
+// ---- Length() ---- // Ele conta quantos caracter tem em uma string
 
 let texto5 = "Coisas devem serem feitas"
 console.log(texto5.length) // 25
 
-// ---- Slice() ---- //
-
-//O método slice() retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é incluído) de um array original.
+// ---- Slice() ---- // O método slice() retorna uma cópia de parte de um array
+// a partir de um subarray criado entre as posições início e fim (fim não é
+// incluído) de um array original.
 
 let texto6 = "Coisas seram feitas"
 console.log(texto6.slice(7, 19)) // seram feitas
 
-//podemos escolher tambem as ultimas letras usando o sinal de menos, sendo considerado como um subtração 
+//podemos escolher tambem as ultimas letras usando o sinal de menos, sendo considerado como um subtração
 
 console.log(texto6.slice(-3)) // As 3 ultimas letras são "tas"
 
-// ---- Split ---- //
+// ---- Split ---- // Divide a string em algum caracter especifico. Ele irá
+// criar um Array com as palavras dividas.
 
-//Divide a string em algum caracter especifico. Ele irá criar um Array com as palavras dividas.
-
-console.log(texto4.split(" ")) /* exemplo:
+console.log(texto4.split(" "))/* exemplo:
 [
   'Um', 'texto', 'apenas,', 'Um', 'coisa', 'muito','importante', 'ter', 'mais','de', 'Um','text'
 ]
 */
 
-// ---- ToUpperCase() ---- //
-
-//Ele altera todas as string para Maiúscula 
+// ---- ToUpperCase() ---- // Ele altera todas as string para Maiúscula
 
 let texto7 = "Esse é mais um exemplo de texto usado"
 console.log(texto7.toUpperCase()) // MAIÚSCULAS
 console.log(texto7.toLowerCase()) // minúsculas
 
-/* 
+/*
 const yourName = prompt("Qual é seu nome??")
-const Tela = window.document.write(yourName) 
+const Tela = window.document.write(yourName)
 */
 
 //Tem um caminho no js que mostra o que esta no meu  HTML, o caminho é esse
 
-console.log(window.document.body.innerHTML) 
+console.log(window.document.body.innerHTML)
 
 // Desafio da Aula 11
 
@@ -133,12 +115,12 @@ let splt = yourName.split(" ")
 let upCase = yourName.toUpperCase()
 let lowCase = yourName.toLowerCase()
 
-window.document.body.innerHTML = `Seu nome é: ${yourName} <br/>`;
-window.document.body.innerHTML += `Seu nome tem ${lgth} letras <br/>`;
-window.document.body.innerHTML += `A segunda letra do seu nome é: ${second} <br/>`;
-window.document.body.innerHTML += `Qual o primeiro índice da letra A no seu nome ${firstIndex} <br/>`;
-window.document.body.innerHTML += `Qual o último índice da letra r no seu nome ${last} <br/>`;
-window.document.body.innerHTML += `As últimas 3 letras do seu nome são: ${lastName}  <br/>`;
-window.document.body.innerHTML += `As palavras do seu nome são:  ${splt} <br/>`;
-window.document.body.innerHTML += `Seu nome com letras maiúsculas: ${upCase} <br/>`;
-window.document.body.innerHTML += `Seu nome com letras minúsculas: ${lowCase} <br/>`;
+document.body.innerHTML = `Seu nome é: ${yourName} <br/>`;
+document.body.innerHTML += `Seu nome tem ${lgth} letras <br/>`;
+document.body.innerHTML += `A segunda letra do seu nome é: ${second} <br/>`;
+document.body.innerHTML += `Qual o primeiro índice da letra A no seu nome ${firstIndex} <br/>`;
+document.body.innerHTML += `Qual o último índice da letra r no seu nome ${last} <br/>`;
+document.body.innerHTML += `As últimas 3 letras do seu nome são: ${lastName}  <br/>`;
+document.body.innerHTML += `As palavras do seu nome são:  ${splt} <br/>`;
+document.body.innerHTML += `Seu nome com letras maiúsculas: ${upCase} <br/>`;
+document.body.innerHTML += `Seu nome com letras minúsculas: ${lowCase} <br/>`;
