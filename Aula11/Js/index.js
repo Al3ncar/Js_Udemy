@@ -50,24 +50,32 @@ console.log(palavra.match(/[a-z]/g)) // minúsculas
 console.log(palavra.match(/[A-Z]/g)) // MAIÚSCULAS
 console.log(palavra.match(/[0-9]/g)) // Apenas numeros
 
-// ---- Search() ---- // Retorna o indice onde começa a verificação
+// ---- Search() ---- // 
+
+// Retorna o indice onde começa a verificação
 
 let texto3 = "Um texto apenas"
 console.log(texto3.search(/[a-z]/g))
 
-// ---- Reaplace() ---- // Altera uma determinada string por outro elemento
+// ---- Reaplace() ---- // 
+
+//Altera uma determinada string por outro elemento
 
 let texto4 = "Um texto apenas, Um coisa muito importante ter mais de Um text"
 
 console.log(texto4.replace("Um", "Outro"))
 console.log(texto4.replace(/Um/g, "Outro")) // Dessa maneira eu consigo alterar todos os "Um"
 
-// ---- Length() ---- // Ele conta quantos caracter tem em uma string
+// ---- Length() ---- // 
+
+//Ele conta quantos caracter tem em uma string
 
 let texto5 = "Coisas devem serem feitas"
 console.log(texto5.length) // 25
 
-// ---- Slice() ---- // O método slice() retorna uma cópia de parte de um array
+// ---- Slice() ---- // 
+
+// O método slice() retorna uma cópia de parte de um array
 // a partir de um subarray criado entre as posições início e fim (fim não é
 // incluído) de um array original.
 
@@ -78,7 +86,9 @@ console.log(texto6.slice(7, 19)) // seram feitas
 
 console.log(texto6.slice(-3)) // As 3 ultimas letras são "tas"
 
-// ---- Split ---- // Divide a string em algum caracter especifico. Ele irá
+// ---- Split ---- // 
+
+// Divide a string em algum caracter especifico. Ele irá
 // criar um Array com as palavras dividas.
 
 console.log(texto4.split(" "))/* exemplo:
@@ -87,7 +97,9 @@ console.log(texto4.split(" "))/* exemplo:
 ]
 */
 
-// ---- ToUpperCase() ---- // Ele altera todas as string para Maiúscula
+// ---- ToUpperCase() ---- // 
+
+//Ele altera todas as string para Maiúscula
 
 let texto7 = "Esse é mais um exemplo de texto usado"
 console.log(texto7.toUpperCase()) // MAIÚSCULAS
