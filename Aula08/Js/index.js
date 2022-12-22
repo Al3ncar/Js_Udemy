@@ -65,7 +65,6 @@ Parâmetro é o nome que se da para a variável
 que nós declaramos na definição de uma função. Pode tambem ser
 considerada como um valor que já está fixa em um objeto 
 
-
 */
 
 //Temos tambem um limitador de casa decimais chamado de 
@@ -74,6 +73,3 @@ considerada como um valor que já está fixa em um objeto
 let numb2 = 65.89999
 console.log(numb2.toFixed(1)) // 65.9
 
-//Podemos utilizar o ISNAN para sabermos se os valores são numeros
-console.log(isNaN("teste"))
-console.log(isNaN(1422))
