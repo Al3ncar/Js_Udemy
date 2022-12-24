@@ -53,3 +53,24 @@ console.log(100 / 0.0000000000001) // 100000000000000000000
 
 //Método é tudo aquela função que está em um objeto
 
+// Desafio da aula 13
+
+let res = prompt(`Digite um numero??`);
+res = Number(res);
+
+let raiz = res ** 0.5;
+let int = Number.isInteger(res);
+let nan = Number.isNaN(res);
+let down = Math.floor(res)
+let up = Math.ceil(res)
+let csDec = res.toFixed(2)
+document.body.innerHTML = `<strong>Seu número é ${res}<strong/> <br />`;
+document.body.innerHTML += `Raiz quadrada ${raiz} <br />`;
+document.body.innerHTML += `${res} é inteiro: ${int} <br />`;
+document.body.innerHTML += `É NaN: ${nan} <br />`;
+document.body.innerHTML += `Arredondado para Baixo: ${down} <br />`;
+document.body.innerHTML += `Arredondado para Cima: ${up} <br />`;
+document.body.innerHTML += `Com duas casas decimais: ${csDec} <br />`;
+
+console.log(res)
+
