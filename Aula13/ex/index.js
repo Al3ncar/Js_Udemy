@@ -13,3 +13,4 @@ text.innerHTML += `É NaN: ${Number.isNaN(number)} <br />`;
 text.innerHTML += `Arredondado para Baixo: ${Math.floor(number)} <br />`;
 text.innerHTML += `Arredondado para Cima: ${Math.ceil(number)} <br />`;
 text.innerHTML += `Com duas casas decimais: ${number.toFixed(2)} <br />`;
+
