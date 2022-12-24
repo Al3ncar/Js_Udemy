@@ -57,7 +57,7 @@ console.log(palavra.match(/[0-9]/g)) // Apenas numeros
 let texto3 = "Um texto apenas"
 console.log(texto3.search(/[a-z]/g))
 
-// ---- Reaplace() ---- // 
+// ---- Replace() ---- // 
 
 //Altera uma determinada string por outro elemento
 
