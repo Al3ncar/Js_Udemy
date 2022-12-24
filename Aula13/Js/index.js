@@ -43,7 +43,7 @@ let n6  = 9
 console.log(Math.pow(2, 10)) // 1024
 console.log(2 ** 10 ) // Outra maneira
 
-// Outras maneiras usando um valor guardado
+// Raiz 
 console.log(n6 ** (1/2)) // Outra menira
 console.log(n6 ** 0.5) // Outra maneira
 
