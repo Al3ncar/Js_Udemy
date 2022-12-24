@@ -13,6 +13,8 @@ document.body.innerHTML = `<strong>Seu número é ${res}<strong/>`;
 document.body.innerHTML += `Raiz quadrada ${raiz}`;
 document.body.innerHTML += `${res} é inteiro: ${int}`;
 document.body.innerHTML += `É NaN: ${nan}`;
-document.body.innerHTML += `Arredondado para Baixo: ${}`;
-document.body.innerHTML += `Arredondado para Cima: ${}`;
+document.body.innerHTML += `Arredondado para Baixo: ${down}`;
+document.body.innerHTML += `Arredondado para Cima: ${up}`;
+
+
 console.log(res)
