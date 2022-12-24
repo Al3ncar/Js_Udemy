@@ -64,6 +64,7 @@ let nan = Number.isNaN(res);
 let down = Math.floor(res)
 let up = Math.ceil(res)
 let csDec = res.toFixed(2)
+
 document.body.innerHTML = `<strong>Seu número é ${res}<strong/> <br />`;
 document.body.innerHTML += `Raiz quadrada ${raiz} <br />`;
 document.body.innerHTML += `${res} é inteiro: ${int} <br />`;
@@ -74,3 +75,5 @@ document.body.innerHTML += `Com duas casas decimais: ${csDec} <br />`;
 
 console.log(res)
 
+//Temos método que podem ser ultilizados para selecionar coisas no html
+//sendo ele o document.getElementById("valor do Id registrado no html")
