@@ -11,6 +11,8 @@ saudacao("Murilo")
 
 const variavel = saudacao("Pedro")
 
+
+
 //para que a função retorne algo devemos usar o return, exemplo:
 
 function test (names){
@@ -24,3 +26,16 @@ test(`Anthony`)
 
 const people = test(`Maria`)
 console.log(people)
+
+
+
+//porem não é ideal fazer isso, não devemos usar uma funçao que retorna algo diferente com o que está sendo alterado
+
+function comunic(number){
+    return `Seu number é ${number}`;
+}
+
+const Numeros = comunic(25)
+console.log(Numeros) 
+
+
