@@ -51,6 +51,8 @@ console.log(soma(2, 2))
 console.log(soma(23, 7))
 console.log(soma(9, 12))
 
+
+
 //Variaveis que estão dentro da função são diferentes da de fora
 
 function exemplo (x, y){
@@ -74,3 +76,15 @@ function exemplo1 (x, y ){
     console.log("NÃAAAAOOO ESTOOU SEEEENDO REEENNDERRIZADO")
 }
 
+
+
+// Podemos criar funções dentro de variaveis, exemplo:
+
+const Raiz = function(n){
+    return n ** 0.5
+}
+
+console.log(Raiz(25))
+console.log(Raiz(9))
+console.log(Raiz(16))
+//Deste modo não precisamos colocar um nome na função 
