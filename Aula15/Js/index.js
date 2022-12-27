@@ -51,16 +51,26 @@ console.log(soma(2, 2))
 console.log(soma(23, 7))
 console.log(soma(9, 12))
 
-//Variaveis que estão dentro da função são diferentes da fora
+//Variaveis que estão dentro da função são diferentes da de fora
 
 function exemplo (x, y){
     const exemSoma = x + y // VARIAVEL LOCAL
-    // Quando você declara uma váriavel fora de qualquer função, ela é chamada de variável global, porque está disponível para qualquer outro código no documento atual. 
+    // Quando você declara uma variável dentro de uma função, é chamada de variável local, pois ela está disponível somente dentro dessa função.
     return exemSoma
 }
 
 const exemSoma = exemplo(5, 8) // VARIAVEL GLOBAL
-// Quando você declara uma variável dentro de uma função, é chamada de variável local, pois ela está disponível somente dentro dessa função.
+// Quando você declara uma váriavel fora de qualquer função, ela é chamada de variável global, porque está disponível para qualquer outro código no documento atual. 
 console.log(exemSoma)
 
-// 
+
+
+// Quando usamos o return as LINGUAGEM DE PROGRAMAÇÃO NÃO INTERPRETAM OUTRAS FUNÇÕES QUE ESTÃO ABAIXO, exemplo:
+
+function exemplo1 (x, y ){
+    const result =  x + y
+    return result
+    console.log(result(2, 2)) // não irá renderizar nada no console.log
+    console.log("NÃAAAAOOO ESTOOU SEEEENDO REEENNDERRIZADO")
+}
+
