@@ -84,7 +84,23 @@ const Raiz = function(n){
     return n ** 0.5
 }
 
-console.log(Raiz(25))
-console.log(Raiz(9))
-console.log(Raiz(16))
+console.log(Raiz(25));
+console.log(Raiz(9));
+console.log(Raiz(16));
 //Deste modo não precisamos colocar um nome na função 
+
+
+
+// ARROW FUNCTION é uma outra meneira de fazer função, que veio  para simplificar a vida do progrmador
+
+const Raizes = (n) => {
+    return n ** 0.5;
+}
+console.log(Raizes(25)) // 5
+
+//quando tivermos apenas um parametro podemos tirar os parentes " () " e as chaves .
+
+const somando = n => n ** 0.5
+console.log(somando(64))
+
+// MELHOR NÃO CRIAR UMA FUNÇÃO COM DIVERSAS ALTERAÇÕES
