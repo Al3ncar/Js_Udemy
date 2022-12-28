@@ -77,4 +77,25 @@ const perfil3 = person(`Alfredo`, `Monteiro`, 23)
 // nome = Alfredo, sobrenome = Monteiro, idade = 23.
 
 
+/* -- -- */
+
+
+// Quando uma função está dentro de um objeto é chamado de método
+
+const people = {
+    nome: `Igor`,
+    sobrenome: ` Alencar`,
+    idade: 18,
+
+    fala(){
+        console.log(`Olá eu sou ${this.nome}${this.sobrenome}, eu tenho ${this.idade} de idade`)
+    },
+    soma(){
+        this.idade++
+    }
+}
+
+people.fala()
+people.soma()
+people.fala()
 
