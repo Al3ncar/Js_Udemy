@@ -12,6 +12,8 @@ saudacao("Murilo")
 const variavel = saudacao("Pedro")
 
 
+/* ----- */
+
 
 //para que a função retorne algo devemos usar o return, exemplo:
 
@@ -28,6 +30,8 @@ const people = test(`Maria`)
 console.log(people)
 
 
+/* ----- */
+
 
 //porem não é ideal fazer isso, não devemos usar uma funçao que retorna algo diferente com o que está sendo alterado
 
@@ -38,6 +42,8 @@ function comunic(number){
 const Numeros = comunic(25)
 console.log(Numeros) 
 
+
+/* ----- */
 
 
 //Agora vamos retornar variaveis dentro da função
@@ -52,6 +58,8 @@ console.log(soma(23, 7))
 console.log(soma(9, 12))
 
 
+/* ----- */
+
 
 //Variaveis que estão dentro da função são diferentes da de fora
 
@@ -65,7 +73,7 @@ const exemSoma = exemplo(5, 8) // VARIAVEL GLOBAL
 // Quando você declara uma váriavel fora de qualquer função, ela é chamada de variável global, porque está disponível para qualquer outro código no documento atual. 
 console.log(exemSoma)
 
-
+/* ----- */
 
 // Quando usamos o return as LINGUAGEM DE PROGRAMAÇÃO NÃO INTERPRETAM OUTRAS FUNÇÕES QUE ESTÃO ABAIXO, exemplo:
 
@@ -76,6 +84,8 @@ function exemplo1 (x, y ){
     console.log("NÃAAAAOOO ESTOOU SEEEENDO REEENNDERRIZADO")
 }
 
+
+/* ----- */
 
 
 // Podemos criar funções dentro de variaveis, exemplo:
@@ -90,6 +100,21 @@ console.log(Raiz(16));
 //Deste modo não precisamos colocar um nome na função 
 
 
+/* ----- */
+
+
+// Podemos colocar valores padrão para os parametros
+function exem (x = 1, y = 1){
+    const resultExem = x + y
+    return(resultExem)
+}
+const resultExem = exem(5 /* desde modo o 5 será adcionado so para o x */)
+//logo, a soma de x + y será de 6, devido x = 5 + 1
+console.log(resultExem) // 6 
+
+
+/* ----- */
+
 
 // ARROW FUNCTION é uma outra meneira de fazer função, que veio  para simplificar a vida do progrmador
 
@@ -103,4 +128,8 @@ console.log(Raizes(25)) // 5
 const somando = n => n ** 0.5
 console.log(somando(64))
 
-// MELHOR NÃO CRIAR UMA FUNÇÃO COM DIVERSAS ALTERAÇÕES
+
+/* ----- */
+
+
+// MELHOR NÃO CRIAR UMA FUNÇÃO COM DIVERSAS ALTERAÇÕES, crie funções com apenas uma especialidade ou funcionalidade
