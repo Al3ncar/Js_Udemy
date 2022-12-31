@@ -67,4 +67,4 @@ C.nome = "Rita" // Alteração do C
 console.log(D)
 console.log(C)
 
-//Desta maneira o valor não irá alterar 
+//Desta maneira o valor não irá ser alterado
