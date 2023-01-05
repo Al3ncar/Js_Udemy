@@ -12,5 +12,8 @@ function meuEscopo(){
     console.log("vai caralho")
     //sempre que tiver um recebe " = " devemos ter um ponto e virgula " ; " no final.
     //Prevent default previne o comportamento padrão da função.
+
+    form.addEventListener()
+    // O método addEventListener() do JavaScript permite configurar funções a serem chamadas quando um evento especificado ocorre, como quando um usuário clica em um botão
 }
 meuEscopo()
