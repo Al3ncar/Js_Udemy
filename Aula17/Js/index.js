@@ -3,7 +3,7 @@
 Primitivos (Imutaveis)- string, number, boolean, null (bigint, symbol)
 Referencia (Mutavel) - array, object, function
 */
-//Dados primitivos são valores i 
+//Dados primitivos são valores imutaveis, não se alteram quando outro é mudado
 //Quando usamos dados primitivos estamos fazendo uma copia do dado, exemplo:
 
 let a = `A`;
@@ -34,7 +34,7 @@ console.log(aTest, bTest)
 // Valores de referencia alteram ambos as condições
 // Valores primitivos são copias dos outros valores, Primitivos são valores COPIADO
 
-// Valores de Referencia são relacionados um ao outro, deste modo ambos APONTAM O MESMO LUGAR NA MEMORIA.
+// Já valores de Referencia são relacionados um ao outro, deste modo, ambos APONTAM O MESMO LUGAR NA MEMORIA.
 
 
 // --- --- //
