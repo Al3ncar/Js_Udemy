@@ -1,6 +1,6 @@
 // ---- Math ---- //
 
-//Mathé um objeto integrado que possui propriedades e métodos para constantes e funções matemáticas. Não é um objeto de função.
+//Math é um objeto integrado que possui propriedades e métodos para constantes e funções matemáticas. Não é um objeto de função.
 
 // floor ==> arredonda para baixo
 
