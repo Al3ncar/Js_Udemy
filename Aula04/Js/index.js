@@ -19,7 +19,7 @@ let names = "Henrique"; //String
 console.log(names, "nasceu em 1984");
 console.log("Em 2000", names, "conheceu Mari.");
 console.log(names, "casou-se com Maria em 2012");
-console.log("Maria teve 1 filho com", names, "em 2015");
+console.log("Maria teve 1 filha com", names, "em 2015");
 console.log("a filha de", names, "se chama Zury");
 
 //Posso iniciar uma varial sem receber um valor
