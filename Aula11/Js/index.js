@@ -35,7 +35,9 @@ console.log(umString.concat(`, estou concatenando mais um texto`)) //
 console.log(umString.indexOf(`texto`)) // 3
 console.log(umString.indexOf(`to`, 3)) // 6 -> 6,
 // lastIndexOf() retorna o índice da última ocorrência do valor especificado
-// encontrado na String. ---- Match() ---- // O método match() retorna uma
+// encontrado na String. 
+
+//---- Match() ---- // O método match() retorna uma
 // correspondência entre uma string com uma expressão regular. Esse método é uma
 // verificação de uma string
 
@@ -54,7 +56,7 @@ console.log(palavra.match(/[0-9]/g)) // Apenas numeros
 
 // Retorna o indice onde começa a verificação
 
-let texto3 = "Um texto apenas"
+let texto3 = "lkklkkllklkkl"
 console.log(texto3.search(/[a-z]/g))
 
 // ---- Replace() ---- // 
@@ -112,7 +114,7 @@ const Tela = window.document.write(yourName)
 
 //Tem um caminho no js que mostra o que esta no meu  HTML, o caminho é esse
 
-console.log(window.document.body.innerHTML)
+/* console.log(window.document.body.innerHTML) */
 
 // Desafio da Aula 11
 
