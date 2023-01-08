@@ -8,6 +8,7 @@ saudacao("Dodio")
 saudacao("Otavio")
 saudacao("Mateus")
 saudacao("Murilo")
+saudacao("Alfredo")
 
 const variavel = saudacao("Pedro")
 
