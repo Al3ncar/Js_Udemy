@@ -7,6 +7,7 @@
 // usado como (" #form / usado com id ")
 
 function meuEscopo(){
+
     const form = document.querySelector("form");
 
     //sempre que tiver um recebe " = " devemos ter um ponto e virgula " ; " no final.
@@ -18,6 +19,16 @@ function meuEscopo(){
     // O método addEventListener() do JavaScript permite configurar funções a serem chamadas quando um evento especificado ocorre, como quando um usuário clica em um botão
 
     function EventFunc (e) {webkitURL.preventDefault()}
-    form.addEventListener(`submit`, EventFunc )
+    function EventFunc2 (e) {
+        e.preventDefault()
+        const nome = form.querySelector('.nome')
+        const sobrenome = form.querySelector('.sobrenome')
+        const altura = form.querySelector('.altura')
+        const peso = form.querySelector('.peso')
+
+    }
+
+    form.addEventListener(`submit`, EventFunc2 )
+
 }
 meuEscopo() 
