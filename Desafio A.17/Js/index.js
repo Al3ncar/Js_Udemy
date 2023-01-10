@@ -18,14 +18,15 @@ function meuEscopo(){
 
     // O método addEventListener() do JavaScript permite configurar funções a serem chamadas quando um evento especificado ocorre, como quando um usuário clica em um botão
 
-    function EventFunc (e) {webkitURL.preventDefault()}
+    function EventFunc (e) {e.preventDefault()}
     function EventFunc2 (e) {
         e.preventDefault()
-        const nome = form.querySelector('.nome')
-        const sobrenome = form.querySelector('.sobrenome')
-        const altura = form.querySelector('.altura')
-        const peso = form.querySelector('.peso')
+        const nome = form.querySelector('.name');
+        const sobrenome = form.querySelector('.sobrenome');
+        const altura = form.querySelector('.altura');
+        const peso = form.querySelector('.peso');
 
+        console.log(nome.value, sobrenome.value, altura.value, peso.value)
     }
 
     form.addEventListener(`submit`, EventFunc2 )
