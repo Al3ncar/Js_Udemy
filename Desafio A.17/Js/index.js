@@ -20,9 +20,6 @@
     // O método addEventListener() do JavaScript permite configurar funções a serem chamadas quando um evento especificado ocorre, como quando um usuário clica em um botão
 
     function EventFunc (e) {e.preventDefault()}
-    const results = [
-        console.log(EventFunc2.nome)
-    ]
 
     function EventFunc2 (e) {
 
@@ -32,7 +29,6 @@
         const altura = form.querySelector('.altura');
         const peso = form.querySelector('.peso');
 
-        console.log(results)
         result.push({
             nome: nome.value,
             sobrenome: sobrenome.value,
@@ -48,7 +44,7 @@ meuEscopo()
 
 
 
-function meuEscop (){
+function meuEscop(){
     const form = document.querySelector("form");
     const result = document.querySelector("result")
 
@@ -61,6 +57,6 @@ function meuEscop (){
         const peso = form.querySelector('.peso');
 
     }
-    form.addEventListener('submit', Escop )
+    form.addEventListener(`submit`, Escop)
 }
 meuEscop()
