@@ -15,8 +15,8 @@ body {
 }
 
 main {
-    width: 50vw;
-    height: 80vh;
+    width: 70vw;
+    height: 70vh;
 
     display: grid;
     place-items: center;
@@ -28,7 +28,7 @@ main {
 h1 {
     font-family: sans-serif;
     color: #8ace95;
-    font-size: 4vw;
+    font-size: 6vw;
 
 }
 
@@ -47,15 +47,18 @@ label {
 }
 
 input{
-    width: 100%;
+    width: 90%;
     padding: 2% 0 2% 5%;
     margin: 3% 0;
     outline: none;
     border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 button{
-    width: 100;
+    width: 90%;
     font-weight: bolder;
     border: none;
     color:white;
