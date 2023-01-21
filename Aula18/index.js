@@ -16,7 +16,7 @@
     !== diferente estrito (valor e tipo)
     
 */
-/*
+
 // construção do JS 
 console.log(10 > 5) 
 // usando Logica 
@@ -25,8 +25,4 @@ console.log(10 > 5)
 
 const Comp = 5 > 5
 console.log(Comp)
- */
 
-
-const result = 10
-console.log( result + 2 )
