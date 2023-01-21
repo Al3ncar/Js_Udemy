@@ -99,3 +99,42 @@ people.fala()
 people.soma()
 people.fala()
 
+
+
+const Perfis = [
+    {
+        nome: "Afred",
+        sobrenome:"Jorge",
+        idade:18,
+    },
+    {
+        nome: "Afred",
+        sobrenome:"Jorge",
+        idade:18,
+    },
+    {
+        nome: "Afred",
+        sobrenome:"Jorge",
+        idade:18,
+    },
+    {
+        nome: "laysa",
+        sobrenome:"Gomes",
+        idade:18,
+    }
+]
+
+console.log(Perfis)
+
+
+const Perfis2 = (nomes, sobrenomes, idades) => {
+    return{
+        
+        nome: nomes,
+        sobrenome: sobrenomes,
+        idade: idades,
+        
+    }
+}
+
+console.log(Perfis2(`Amelia`, `Rocha`, 96))
