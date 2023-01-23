@@ -44,7 +44,7 @@ meuEscopo()
 
 
 
-function meuEscop(){
+/* function meuEscop(){
     const form = document.querySelector("form");
     const result = document.querySelector("result")
 
@@ -58,4 +58,25 @@ function meuEscop(){
     }
     form.addEventListener(`submit`, Escop)
 }
-meuEscop()
+meuEscop() */
+
+function meuEscopop(){
+
+    const form = document.querySelector(`.form`)
+    const result = document.querySelector(`.result`)
+
+    const Escop = (e) => {
+        e.preventDefault()
+
+        const nome = form.querySelector('.name');
+        const sobrenome = form.querySelector('.sobrenome');
+        const altura = form.querySelector('.altura');
+        const peso = form.querySelector('.peso');
+    }
+    form.addEventListener(`submit`, Escop)
+
+}
+
+
+
+
