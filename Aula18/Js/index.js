@@ -49,6 +49,3 @@
     console.log(8 !== 8) //false
 // construção do JS usando lógica
 //8 é diferente de 8?? retorna verdadeiro(TRUE) ou falso(FALSE)
-
-
-
