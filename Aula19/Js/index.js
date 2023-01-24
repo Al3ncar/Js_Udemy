@@ -33,5 +33,13 @@ console.log(expresOr) // true
 const vaiLogar3 = nameUser === "Zilla" || passwordUser === 13568534265
 console.log(vaiLogar3) // (true) VAI CONSEGUIR LOGAR 
  
+// ! -> NOT -> NÃO
+// A EXCLAMAÇÃO serve para inverter os valores de uma expressão
 
+console.log(!true) //false
+console.log(!false) // true
 
+// Podemos até retornar o valor inicial, porem não é ideal fazer isso.
+
+console.log(!!true) // true
+console.log(!!false) // false
