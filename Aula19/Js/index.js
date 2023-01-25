@@ -59,10 +59,8 @@ const vaiRodar = true;
 
 vaiRodar && console.log(FalaOi());
 
-
-
+ 
 // ----  ---- //
-
 
 
 // || -> OR -> OU -> Se umas das condições retornar verdadeira o resultado será verdadeiro
@@ -75,6 +73,22 @@ console.log(expresOr) // true
 const vaiLogar3 = nameUser === "Zilla" || passwordUser === 13568534265
 console.log(vaiLogar3) // (true) VAI CONSEGUIR LOGAR 
  
+// || -> true || false -> true "vai retornar o valore que for VERDADEIRO
+// Ele irá retornar o true de qualquer maneira 
+
+const false1 = 0
+const false2 = null
+const false3 = NaN
+const false4 = undefined
+const false5 = ``
+const true1 = "Aprendendo com o js"
+
+console.log( false1 || false2 || false3 || false4 || false5 || true1 || true ) // Aprendendo com o js 
+
+
+// ----  ---- //
+
+
 // ! -> NOT -> NÃO
 // A EXCLAMAÇÃO serve para inverter os valores de uma expressão
 
