@@ -86,6 +86,13 @@ const true1 = "Aprendendo com o js"
 console.log( false1 || false2 || false3 || false4 || false5 || true1 || true ) // Aprendendo com o js 
 
 
+// Podemos evitar de usar o IF/ELSE para fazer uma expressão
+    const corUser = null;
+    const corPadrão = corUser || `red` 
+
+    console.log(corUser || corPadrão) // red
+
+//    
 // ----  ---- //
 
 
@@ -99,5 +106,4 @@ console.log(!false) // true
 
 console.log(!!true) // true
 console.log(!!false) // false
-
 
