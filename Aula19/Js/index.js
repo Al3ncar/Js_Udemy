@@ -1,12 +1,13 @@
 //Operadores Lógicos 
 
 
-// && -> AND -> E -> Todas as expressões precisam ser verdadeoiras para retornar true
+// && -> AND -> E -> Todas as expressões precisam ser verdadeiras para retornar true
+
 
 console.log(true && true && true && false  && true) // false
 
 const expresAnd = true && true && true;  
-console.log(expres) // TRUE
+console.log(expresAnd) // TRUE
 
 // Exemplo do &&
 
@@ -18,8 +19,49 @@ const vaiLogar = nameUser === "Cake" && passwordUser === 13568534265
 console.log(vaiLogar) //(true) VAI CONSEGUIR LOGAR 
 //                      true            +        false
 const vaiLogar2 = nameUser === "Cake" && passwordUser === 1356
-console.log(vaiLogar2) //(false) NÂO VAI CONSEGUIR LOGAR
+console.log(vaiLogar2) //(false) NÂO VAI CONSEGUIR LOGAR// 
 
+
+// && -> false && true -> false "O valor mesmo"
+// Quando temos todos os valores verdadeiros ele ira retornar o ultimo valor, exemplo:
+
+console.log(`Kaio Sousa` && true && `Julia`) // Julia
+
+//em JS tudo poder ser avaliado ou em VERDADEIRO(TRUE) ou em FALSO(FALSE)
+
+// Exemplo de valorez FALSY VALUES:
+
+    // 1° false -> falso literal
+        console.log("Olá" && false && "Tudo bem ??")// false
+
+    // 2° 0 -> sem valorconsole.log
+        console.log("Olá" && 0 && "Tudo bem ??")// 0
+
+    // 3° '', "", `` -> strings vazias
+        console.log("Olá" && '' && "Tudo bem ??")// ''
+        console.log("Olá" && "" && "Tudo bem ??")// ""
+        console.log("Olá" && `` && "Tudo bem ??")// ``
+
+    // 4° null / undefined -> Vazio / Não definido 
+        console.log("Olá" && null && "Tudo bem ??")// null
+        console.log("Olá" && undefined && "Tudo bem ??")// undefined
+
+    // 5° NAN -> Not A Number
+        console.log("Olá" && NaN && "Tudo bem ??") // NAN
+
+// Todos os valores que não estão aqui são considerados VERDADEIRO(TRUE)
+
+
+const  FalaOi = () => {
+    return `Olá, Como você está??`;
+}
+const vaiRodar = true;
+
+vaiRodar && console.log(FalaOi());
+
+
+
+// ----  ---- //
 
 
 
@@ -43,3 +85,5 @@ console.log(!false) // true
 
 console.log(!!true) // true
 console.log(!!false) // false
+
+
