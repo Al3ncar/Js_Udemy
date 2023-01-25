@@ -92,7 +92,23 @@ console.log( false1 || false2 || false3 || false4 || false5 || true1 || true ) /
 
     console.log(corUser || corPadrão) // red
 
-//    
+// pegadinha com o or ||
+
+const a = 0
+const b = null
+const c = false
+const d = `false` //  Este false está em string 
+const e = NaN
+const f = undefined
+
+// qual valor será retornado?? 
+
+console.log(a || b || c || d || e || f)
+
+
+
+
+
 // ----  ---- //
 
 
