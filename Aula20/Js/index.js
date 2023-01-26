@@ -45,3 +45,19 @@ if(horas2 <= 6){
 }
 
 
+// PODEMOS COLOCAR MAIS DE UMA CONDIÇÃO NO PARAMETRO
+
+const horas3 = 5
+
+
+if(horas3 >= 0 && horas3 <= 11){
+    //    Entre 0 até as 11 vai retornando Bom Dia;
+    console.log(`Bom dia!!!`)
+}else if(horas3 >= 12 && horas3 <= 17){
+    //    Entre 12 até as 17 vai retornando Boa Tarde;
+    console.log(`Boa Tarde!!!`)
+}else if(horas3 >= 18 && horas3 <= 23){
+    //    Entre 18 até as 23 vai retornando Boa Noite;
+    console.log(`Boa Noite!!!`)
+}
+
