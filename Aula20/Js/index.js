@@ -17,6 +17,8 @@ if(hora <= 12){
 
 //podemos construir diversas condiçoes juntas, deste modo:
 
+// o ultimo else dessa função será retornado caso nenhum desses retorne verdadeiro (TRUE )
+
 const horas2 = 24
 
 if(horas2 <= 6){
