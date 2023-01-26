@@ -82,3 +82,20 @@ if(tenhoGrana){
 }else{
     console.log(`Não vou sair de casa`)
 }
+
+
+// ----   ---- //
+const numb = 2
+
+if(numb >= 0 && numb <=5){
+    console.log(`o numero está entre 0 a 5`)
+}else{
+    console.log(`o numero NÃO está entre 0 a 5`)
+}
+
+
+//SE (numb >= 0 && numb <=5) acontece isso{
+//      console.log(`o numero está entre 0 a 5`)
+//}'SE NÃO acontece isso{
+//      console.log(`o numero NÃO está entre 0 a 5`)
+//}
