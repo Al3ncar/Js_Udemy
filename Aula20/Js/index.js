@@ -61,3 +61,22 @@ if(horas3 >= 0 && horas3 <= 11){
     console.log(`Boa Noite!!!`)
 }
 
+
+// ----   ---- //
+
+
+//Construção basica
+
+// IF - pode ser usado sozinho
+// Else - preciso de um if antes do else 
+
+//Posso ter varios elses e ifs uma unica função 
+
+
+const tenhoGrana = true;
+
+if(tenhoGrana){
+    console.log(`Vou sair de casa`)
+}else{
+    console.log(`Não vou sair de casa`)
+}
