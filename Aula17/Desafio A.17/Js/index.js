@@ -1,3 +1,22 @@
+/* function myEscop() {
+    const form = document.querySelector('form')
+
+    function Escop(evento){
+        evento.preventDefault()
+        console.log("for não enviado")
+    }
+    form.addEventListener('submit', Escop)
+
+}
+myEscop()
+
+
+
+ */
+
+
+
+
 // IIFE ==> (Immediately Invoked Function Expression)
 // Basicamente são funções que são criadas e alto invocadas
 
@@ -6,7 +25,7 @@
 // usado como (" .form / usado como css ")
 // usado como (" #form / usado com id ")
 
- function meuEscopo(){
+/*  function meuEscopo(){
 
     const form = document.querySelector("form");
     const result = document.querySelector("result")
@@ -20,7 +39,7 @@
     // O método addEventListener() do JavaScript permite configurar funções a serem chamadas quando um evento especificado ocorre, como quando um usuário clica em um botão
 
     function EventFunc (e) {e.preventDefault()}
-
+    const pessoas = []
     function EventFunc2 (e) {
 
         e.preventDefault()
@@ -29,7 +48,7 @@
         const altura = form.querySelector('.altura');
         const peso = form.querySelector('.peso');
 
-        result.push({
+        pessoas.push({
             nome: nome.value,
             sobrenome: sobrenome.value,
             altura: altura.value,
@@ -41,10 +60,10 @@
 
 }
 meuEscopo()  
+ */
 
-
-
-/* function meuEscop(){
+/* 
+function meuEscop(){
     const form = document.querySelector("form");
     const result = document.querySelector("result")
 
@@ -58,25 +77,7 @@ meuEscopo()
     }
     form.addEventListener(`submit`, Escop)
 }
-meuEscop() */
-
-function meuEscopop(){
-
-    const form = document.querySelector(`.form`)
-    const result = document.querySelector(`.result`)
-
-    const Escop = (e) => {
-        e.preventDefault()
-
-        const nome = form.querySelector('.name');
-        const sobrenome = form.querySelector('.sobrenome');
-        const altura = form.querySelector('.altura');
-        const peso = form.querySelector('.peso');
-    }
-    form.addEventListener(`submit`, Escop)
-
-}
+meuEscop()
 
 
-
-
+ */
