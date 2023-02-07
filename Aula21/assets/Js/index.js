@@ -7,10 +7,10 @@ function myEscop (){
 
     const peso = form.querySelector('.peso');
     const altura = form.querySelector('.altura');
-    const imc = peso.value / (altura.value * altura.value).toFixed(2) 
+    const imc = Number(peso.value / (altura.value * altura.value))
     
     function pesoCalc(){
-      if(peso === undefined || null || "" && peso >= 596){
+      if(peso.value === undefined || null || "" && peso.value >= 596){
         result.innerHTML += `<p>Peso invalido</p>`
       }
     }
