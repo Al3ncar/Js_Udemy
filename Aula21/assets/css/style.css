@@ -42,13 +42,42 @@ h2, h3{ font-size: 1.3vw;padding: 5% 0;}
 ul{
     list-style: none;
 }
-.msgErro{
-    background-color: red;
+.result{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
 }
+span{
+    width: 80%;
+    list-style: none;
+    font-size: 1.1vw;
+    background-color: red;
+    margin: 1% 8%;
+    padding: 2%;
 
-li{font-size: 1.1vw;}
-
+}
+p{  
+    width: 80%;
+    font-size: 1.1vw;
+    background-color: greenyellow;
+    margin: 1% 8%;
+    padding: 2%;
+}
 
 .subTitle_calc{padding-left:5% ;}
 
-label, input{width: 80%;}
+label, input{
+    width: 80%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.btn_submit{
+    padding: 2%;
+    margin: 2%;
+    background-color: #005663;
+    font-size: 1.1vw;
+    color: white;
+}
