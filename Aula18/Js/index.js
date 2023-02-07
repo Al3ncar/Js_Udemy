@@ -2,10 +2,7 @@
 
 // A lógica de programação é uma coisa complicada de se compreender de primeira. Muitas pessoas já tem facilidade com lógica, outras não. Assim como matemática ou português, humanas ou exatas, alguns terão muita facilidade, outros muita dificuldade.
 
-
-
 // Operadores de comparação
-
 
 //  > maior que
 
