@@ -8,9 +8,17 @@ function myEscop (){
     const peso = form.querySelector('.peso');
     const altura = form.querySelector('.altura');
     const imc = peso.value / (altura.value * altura.value).toFixed(2) 
-  
-    result.innerHTML += `<p>Seu IMC é ${imc.toFixed(2)} ${imc2()}</p>` 
-
+    
+    function pesoCalc(){
+      if(peso === undefined || null || "" && peso >= 596){
+        result.innerHTML += `<p>Peso invalido</p>`
+      }
+    }
+    function alturaCalc(){
+      if(altura === undefined || null || "" && altura >= 2.51){
+        result.innerHTML += `<p>Altura invalida<p>`
+      }
+    }alturaCalc()
     function imc2(){
     if(imc <= 18.5 ){
       result.innerHTML += `<p>Seu IMC é ${imc.toFixed(2)} (abaixo do peso)</p>`
@@ -25,7 +33,7 @@ function myEscop (){
     } else if(imc >= 40){
       result.innerHTML += `<p>Seu IMC é ${imc.toFixed(2)} (Obesidade grau 3)</p>`
     }}
-    imc2()
+    pesoCalc(), alturaCalc(), imc2()
   }
   form.addEventListener('submit', Escop)
 }
