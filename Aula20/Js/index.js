@@ -1,4 +1,4 @@
-// Vamos usar o IF e o else, ambos são baseado em uma eztrutura de condição 
+// Vamos usar o IF e o else, ambos são baseado em uma estrutura de condição 
 
 
 const hora = 10;
