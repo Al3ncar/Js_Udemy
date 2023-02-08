@@ -1,4 +1,4 @@
-// textContent
+// textContent !== innerHTML
 
 //Eẽ é uma propriedade do node, cujo renderiza a interface do conteudo, ou seja, mostra texto na tela, sendo bem semelhante ao InnerHtml, um exemplo de sintaxw:
 
