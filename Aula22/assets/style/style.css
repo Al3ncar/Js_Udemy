@@ -7,16 +7,63 @@
 body{
     width: 100%;
     height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right top, #7e7f51, #8e8e4d, #9e9d49, #b0ab42, #c3ba3a, #c5c32e, #c6cc1f, #c6d600, #afdc00, #91e200, #6ae700, #15ec00);
 
 }
 
+main{
+    width: 30%;
+
+    padding: 2%;
+    background-color: whitesmoke;
+    border-radius:1vw;
+}
+
 h1{
+    width: 100%;
     font-family: sans-serif;
-    color:white;
-    font-size: 4vw;
-    text-shadow: 5px 5px 5px #2b2b2b;
+    color: #000000;
+    font-size: 2vw;
+    text-align: center;
+}
+#card{
+    width: 100%; height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+}
+
+button{
+    padding: 2% 7%;
+    background-color: #000000;
+    border-radius: 2vw;
+    color: white;
+    font-size: 1.1vw
+
+}
+
+h2{
+    padding: 4% 2%;
+    margin: 2%;
+    font-size: 3vw;
+}
+
+.Text{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#time, #time2{
+    width: 40%;
+    text-align: center;
 }

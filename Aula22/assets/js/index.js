@@ -10,8 +10,10 @@ function Escop(){
 
     function Exec(){
         let temp = new Date()
-        document.querySelector('#time').textContent = temp.getSeconds()
-    }
+        // document.querySelector('#time').textContent = temp.getSeconds()
+        document.querySelector('#time').innerHTML = temp.getSeconds()
+    
+    }   
     function Exec2(){
         let temp = new Date()
         document.querySelector('#time2').textContent = temp.getSeconds()
@@ -21,14 +23,6 @@ function Escop(){
     }
 
 }Escop()
-
-
-
-
-
-
-
-
 
 /* function Escop(){
     const btnAdd = document.querySelector('#ativar').addEventListener('click', addButon)
