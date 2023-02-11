@@ -11,9 +11,26 @@ text.textContent = `Olá, como você está??`
 let text2 = document.querySelector('.text')
 text2.innerHTML = `Olá, estou bem, e você?? como você está??`
 
-let p = document.createElement('p')
-p.textContent = 'Oláaaaaaaaaaaaaaa'
+// createElement() adiciona é um metodo que cria elementos HTML, está relacionado com outro método, chamado de appendChild()
+// No exemplo a seguir pode ver como funciona a criação de um elemento e como ele é coloca no HTML.
+
+//Criando elemento:
+let p = document.createElement('p');
+
+//Adicionando Texto no elemento:
+p.textContent = 'Oláaaaaaaaaaaaaaa';
+
+//Enviando ao HTML:
 text.appendChild(p)
 
+//podemos adicionar classes nos elementos que adicionamos, desta forma:
+//sintaxe: 
 
- 
+const p2 = document.createElement('div');
+
+//Agora iremos colocar uma classe na div
+p2.classList = "div_list"
+
+//Colocamos eles no HTML
+const conteiner = document.querySelector('.cont')
+conteiner.appendChild(p2) 
