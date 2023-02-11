@@ -31,6 +31,19 @@ const p2 = document.createElement('div');
 //Agora iremos colocar uma classe na div
 p2.classList = "div_list"
 
-//Colocamos eles no HTML
+//Colocamos eles no HTML,  inserindo elementos filhos 
 const conteiner = document.querySelector('.cont')
 conteiner.appendChild(p2) 
+
+
+//Outra maneira de fazer isso, inserindo antes 
+
+const el = document.createElement('div');
+
+el.classList = "div_el";
+
+const el3 = document.querySelector('.cont .div_list')
+
+console.log(el3)
+
+conteiner.insertBefore(el, el3)
