@@ -1,4 +1,42 @@
 function Escop(){
+    const ativarBtn = document.querySelector('#ativar').addEventListener('click', action);
+
+    function action(){
+        const execBtn = document.querySelector('#executar');
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* function Escop(){
     document.querySelector('#ativar').addEventListener('click', action)
     document.querySelector('#remover').addEventListener('click',eRemove)
     
@@ -22,9 +60,11 @@ function Escop(){
         document.querySelector('#executar').removeEventListener('click', Exec)
     }
 
-}Escop()
+}Escop() */
 
 /* function Escop(){
+
+
     const btnAdd = document.querySelector('#ativar').addEventListener('click', addButon)
     const btnRemove = document.querySelector('#remover').addEventListener('click', remov)
 
