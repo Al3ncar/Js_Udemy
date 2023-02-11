@@ -10,3 +10,10 @@ text.textContent = `Olá, como você está??`
 
 let text2 = document.querySelector('.text')
 text2.innerHTML = `Olá, estou bem, e você?? como você está??`
+
+let p = document.createElement('p')
+p.textContent = 'Oláaaaaaaaaaaaaaa'
+text.appendChild(p)
+
+
+ 
