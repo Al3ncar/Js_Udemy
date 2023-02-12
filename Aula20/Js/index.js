@@ -99,3 +99,27 @@ if(numb >= 0 && numb <=5){
 //}'SE NÃO acontece isso{
 //      console.log(`o numero NÃO está entre 0 a 5`)
 //}
+
+
+// Quando tivermos funções que são pequenas não é necessario colocar as chaves 
+
+function Exemp(){
+    let resultProm = prompt('Digite um numero!!!')
+
+    let result = Number(resultProm)
+    const niveis =  [`Seu numero é maior que 0  ou igual a 0`,`Seu numero é maior que 25 ou igual a 25 `, `Seu numero é maior que 50 ou igual a 50`, `Seu numero é maior que 75 ou igual a 75`,'Seu numero é maior que 100 ou igual a 100'  ]
+    const actionIF = () => {
+        if(result <= 0)  return niveis[0];
+        if(result <= 25)  return niveis[1];
+        if(result <= 50)  return niveis[2];
+        if(result <= 75)  return niveis[4];
+        if(result <= 100)  return niveis[5];
+    }
+
+    function Rend (){
+        
+        const div = document.querySelector('div')
+        div.textContent = `O nivel do seu teste é ${actionIF()}`
+
+    }Rend()
+}Exemp()
