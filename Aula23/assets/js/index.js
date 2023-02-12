@@ -21,14 +21,10 @@ text2.innerHTML = `Olá, estou bem, e você?? como você está??`;
 
 //createElement()
 
-//Criando elemento:
-let p = document.createElement('p');
 
-//Adicionando Texto no elemento:
-p.textContent = 'Oláaaaaaaaaaaaaaa';
-
-//Enviando ao HTML:
-text.appendChild(p)
+let p = document.createElement('p'); //Criando elemento:
+p.textContent = 'Oláaaaaaaaaaaaaaa'; //Adicionando Texto no elemento:
+text.appendChild(p)//Enviando ao HTML:
 
 //podemos adicionar classes nos elementos que adicionamos, desta forma:
 //sintaxe: 
@@ -37,11 +33,9 @@ const p2 = document.createElement('div');
 
 //Agora iremos colocar uma classe na div
 
-// 1° jeito: 
-p2.classList = "div_list";
+p2.classList = "div_list"; // 1° jeito: 
+p2.classList.add(`div_list2`) //2° jeito:
 
-//2° jeito:
-p2.classList.add(`div_list2`)
 
 //Colocamos eles no HTML,  inserindo elementos filhos 
 const conteiner = document.querySelector('.cont');
@@ -51,11 +45,8 @@ conteiner.appendChild(p2)
 //Outra maneira de fazer isso, inserindo antes 
 
 const el = document.createElement('div');
-
 el.classList = "div_el";
 
 const el3 = document.querySelector('.cont .div_list');
-
 console.log(el3)
-
 conteiner.insertBefore(el, el3)
