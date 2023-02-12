@@ -1,11 +1,37 @@
 function Escop(){
-    const ativarBtn = document.querySelector('#ativar').addEventListener('click', action);
 
-    function action(){
-        const execBtn = document.querySelector('#executar');
+    document.querySelector('#ativar').addEventListener('click', myEscop)
+    document.querySelector('#remover').addEventListener('click', actionRemove)
 
+    function myEscop(){
+        let e = document.querySelector('#executar');
+
+        e.addEventListener('click', action1);
+        e.addEventListener('click', action2);
     }
-}
+
+    function action1(){
+        let t = new Date();
+        document.querySelector('#time').textContent = t.getSeconds();
+    }
+    function action2(){
+        let t = new Date();
+        document.querySelector('#time2').textContent = t.getSeconds();
+    }
+    const actionRemove = () => {document.querySelector('#executar').removeEventListener('click', action2)}
+
+}Escop()
+
+
+
+
+
+
+
+
+
+
+
 
 
 
