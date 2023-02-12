@@ -108,6 +108,8 @@ function Exemp(){
 
     let result = Number(resultProm)
     const niveis =  [`Seu numero é maior que 0  ou igual a 0`,`Seu numero é maior que 25 ou igual a 25 `, `Seu numero é maior que 50 ou igual a 50`, `Seu numero é maior que 75 ou igual a 75`,'Seu numero é maior que 100 ou igual a 100'  ]
+
+    // sistema de condiços sem a necessidade de colocar chaves
     const actionIF = () => {
         if(result <= 0)  return niveis[0];
         if(result <= 25)  return niveis[1];
