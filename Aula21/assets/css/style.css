@@ -50,26 +50,26 @@ ul{
     margin-bottom: 5%;
 }
 span{
-    width: 80%;
+    width: 100%;
     list-style: none;
     font-size: 1.1vw;
     background-color: red;
-    margin: 1% 8%;
+    margin: 1% 5%;
     padding: 2%;
 
 }
 p{  
-    width: 80%;
+    width: 100%;
     font-size: 1.1vw;
     background-color: greenyellow;
-    margin: 1% 8%;
+    margin: 1% 5%;
     padding: 2%;
 }
 
 .subTitle_calc{padding-left:5% ;}
 
 label, input{
-    width: 80%;
+    width: 90%;
     margin: 1%;
     padding: 1%;
 }
