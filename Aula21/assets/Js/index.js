@@ -7,11 +7,12 @@ function myEscop (){
 
     const inputPeso = form.querySelector('.peso');
     const inputAltura = form.querySelector('.altura');
+    
     const peso = Number(inputPeso.value)
     const altura = Number(inputAltura.value)
 
-    const imc = peso / (altura * altura); // resultado do imc 
-    console.log(peso, altura)
+    const imc = peso / (altura * altura); // resultado do imc    
+
     function imc2(){
 
       if(!peso || peso >= 596){
