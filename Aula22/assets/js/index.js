@@ -14,7 +14,7 @@ function Escop(){
         let t = new Date();
         document.querySelector('#time').textContent = t.getSeconds();
     }
-    function action2(){
+    function action2(){  
         let t = new Date();
         document.querySelector('#time2').textContent = t.getSeconds();
     }
