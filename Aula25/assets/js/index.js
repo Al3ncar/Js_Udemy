@@ -68,4 +68,30 @@ console.log('Mês', data5.getMonth() + 1) ;
 console.log('Dia da Semana', data5.getDay() + 1) ;
 
 //podemos ter os milesimos de segundos com o Date now, exemplo:
-console.log(Date.now());
+console.log(Date.now()); // pegando os milisegundos atuais
+
+const data6 = new Date(1676510700004); // colocando os milisegundos atravez dos milisegundos
+console.log(data6.toString()); // Transformando em texto 
+
+// FUNÇÃO QUE RETORNA A DATA
+
+function Escop(){
+    function zeroAEsquerda(num){return num >= 10 ? num : `0${num}`};
+    
+    function formatDate(dataFormt){
+
+        const Mês = zeroAEsquerda(dataFormt.getMonth() + 1);
+        const Dia = zeroAEsquerda(dataFormt.getDate());
+        const Ano = zeroAEsquerda(dataFormt.getFullYear());
+        const hora = zeroAEsquerda(dataFormt.getHours());
+        const Min = zeroAEsquerda(dataFormt.getMinutes());
+        const Seg = zeroAEsquerda(dataFormt.getSeconds());
+        
+        return `Data: ${Dia} / ${Mês} / ${Ano}  Horas: ${hora}:${Min}:${Seg} `
+    };
+
+    const dataFormt = new Date();
+    const dataBrasil = formatDate(dataFormt);
+
+    console.log(dataBrasil)
+} Escop();
