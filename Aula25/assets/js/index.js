@@ -3,6 +3,7 @@
 
 const data = new Date(0)//  01/01/1970 Timestamp unix ou época unix 
 console.log(data.toString()) 
+
 // devido os horarios, notamos que ira retornar 31/12/1969 devido estarmos 3 horas atrasados
 
 //Para termos o inicio do timestamp unix, devemos construir um codigo cujo está 3 horas afrente
@@ -14,3 +15,7 @@ console.log(data2.toString())
 
 const data3 = new Date(2019, 4, 20, 20, 20, 59, 999)
 // construção logica  (ANO, MES, DIA, HORAS, MINUTOS, SEGUNDO, MILISEGUNDOS)
+
+//forma mais acessivel de construir uma data
+const data4 = new Date('2023-02-15T20:39:59.999')
+console.log(data4.toString())
