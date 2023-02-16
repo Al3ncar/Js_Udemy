@@ -17,5 +17,19 @@ const data3 = new Date(2019, 4, 20, 20, 20, 59, 999)
 // construção logica  (ANO, MES, DIA, HORAS, MINUTOS, SEGUNDO, MILISEGUNDOS)
 
 //forma mais acessivel de construir uma data
-const data4 = new Date('2023-02-15T20:39:59.999')
+const data4 = new Date('2023-02-15T20:39:59.999');
 console.log(data4.toString())
+
+//Lista para pegar cada elemento de data
+
+const data5 = new Date();
+
+console.log('Dia', data5.getDate())
+console.log('Mês', data5.getMonth())
+console.log('Ano', data5.getFullYear())
+console.log('Hora', data5.getHours())
+console.log('Min', data5.getMinutes())
+console.log('Seg', data5.getSeconds())
+console.log('ms', data5.getMilliseconds())
+console.log('D.Sem', data5.getDay())()
+console.log(data5.toString())
