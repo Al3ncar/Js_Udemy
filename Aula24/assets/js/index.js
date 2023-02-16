@@ -2,15 +2,21 @@
 
 // O operador ternario é um meio de reduzir o if/else, tendo a mesma lógica com uma estrutura diferente.
 
-const pontuacao = 1000;
+    const pontuacao = 1000;
 
-if(pontuacao >= 1000){
-    console.log(`Usuario Vip, seus pontos são ${pontuacao}`)
-}else{
-    console.log(`Usuario Normal, seus pontos são ${pontuacao} `)
-}
+    if(pontuacao >= 1000){
+        console.log(`Usuario Vip, seus pontos são ${pontuacao}`)
+    }else{
+        console.log(`Usuario Normal, seus pontos são ${pontuacao} `)
+    }
+
+
+// ---- ---- //
+
+
 
 // Usando o ternario:
+
 //Inicialmente devemos colocar o verificador, depois será a resposta verdadeira, depois a resposta falsa.
 // Sintaxe: 
     const resultPont = ( pontuacao >= 1000 )
@@ -27,7 +33,7 @@ if(pontuacao >= 1000){
 
 //Outra maneira de usar uma condição:
 
-const corUsario = 'Red';
-const colorWeb = corUsario || 'Black';
+    const corUsario = 'Red';
+    const colorWeb = corUsario || 'Black';
 
-console.log(colorWeb)
+    console.log(colorWeb)
