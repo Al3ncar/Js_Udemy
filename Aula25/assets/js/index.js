@@ -77,7 +77,7 @@ console.log(data6.toString()); // Transformando em texto
 
 function Escop(){
     function zeroAEsquerda(num){return num >= 10 ? num : `0${num}`};
-    
+
     function formatDate(dataFormt){
 
         const Mês = zeroAEsquerda(dataFormt.getMonth() + 1);
@@ -95,3 +95,24 @@ function Escop(){
 
     console.log(dataBrasil)
 } Escop();
+
+
+function Escop(){
+    function zeroAEsquerda(num){return num >= 10 ? num : `0${num}`};
+    function dataAtual(newDate){
+
+        const Mês = zeroAEsquerda(newDate.getMonth() + 1);
+        const Dia = zeroAEsquerda(newDate.getDate());
+        const Ano = zeroAEsquerda(newDate.getFullYear());
+        const hora = zeroAEsquerda(newDate.getHours());
+        const Min = zeroAEsquerda(newDate.getMinutes());
+        const Seg = zeroAEsquerda(newDate.getSeconds());
+        
+        return `Data: ${Dia} / ${Mês} / ${Ano}  Horas: ${hora}:${Min}:${Seg} `
+    }
+
+    const newDate = new Date();
+    const returnFunc = dataAtual(newDate)
+    console.log(returnFunc)
+
+}Escop();
