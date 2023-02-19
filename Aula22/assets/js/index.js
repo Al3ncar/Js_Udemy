@@ -21,3 +21,13 @@ function Escop(){
     const actionRemove = () => {document.querySelector('#executar').removeEventListener('click', action2)}
 
 }Escop()
+
+
+function Escop(){
+
+    document.querySelector('#ativar').addEventListener('click', myEscop)
+    function myEscop(){
+        let e = document.querySelector('#executar')
+        
+    }
+}
