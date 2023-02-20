@@ -48,6 +48,8 @@ if(diaSemana === 0){
   diaSemanaText = 'Sexta-Feira';
 }else if(diaSemana === 6){
   diaSemanaText = 'Sabado';
+}else if(diaSemana >= 7 || diaSemana <= 0){
+  diaSemanaText = 'Data Invalida'
 }
 
 console.log(DiaSemana);
