@@ -28,26 +28,28 @@ switch (expressão) {
   } 
 */ 
 
+
 const data = new Date();
 const DiaSemana = data.getDate();
-const diasemana = data.getDay();
+const diaSemana = data.getDay();
+let diaSemanaText;
 
-if(diaseman === 0){
-  diasemana = 'Domingo';
-}else if(diaseman === 1){
-  diasemana = 'Segunda-Feira';
-}else if(diaseman === 2){
-  diasemana = 'Terça-Feira';
-}else if(diaseman === 3){
-  diasemana = 'Quarta-Feira';
-}else if(diaseman ===4){
-  diasemana = 'Quinta-Feira';
-}else if(diaseman === 5){
-  diasemana = 'Sexta-Feira';
-}else if(diaseman === 6){
-  diasemana = 'Sabado';
+if(diaSemana === 0){
+  diaSemanaText = 'Domingo';
+}else if(diaSemana === 1){
+  diaSemanaText = 'Segunda-Feira';
+}else if(diaSemana === 2){
+  diaSemanaText = 'Terça-Feira';
+}else if(diaSemana === 3){
+  diaSemanaText = 'Quarta-Feira';
+}else if(diaSemana === 4){
+  diaSemanaText = 'Quinta-Feira';
+}else if(diaSemana === 5){
+  diaSemanaText = 'Sexta-Feira';
+}else if(diaSemana === 6){
+  diaSemanaText = 'Sabado';
 }
 
 console.log(DiaSemana);
-console.log(diasemana);
+console.log(diaSemana, diaSemanaText);
 
