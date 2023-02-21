@@ -1,4 +1,4 @@
-// Estrutura condicionais SWITCH
+/* // Estrutura condicionais SWITCH
 
 //A condicional switch avalia uma expressão, combinando o valor da expressão para um cláusula case, e executa as instruções associadas ao case.
 //sintaxe: 
@@ -58,6 +58,39 @@ console.log(DiaSemana, diaSemanaText);
 // Agora iremosd comntruir uma função no qual usaremos o SWITCH()
 //Sendo u7ma forma melhor de contruir uma condição de reptição
 
-switch(){
-  
+switch(diaSemana){
+  case 0: diaSemanaText = 'Domingo';
+    break;
+  case 1: diaSemanaText = 'Segunda-Feira';
+    break;
+  case 2: diaSemanaText = 'Terça-Feira';
+      break;
+  case 3: diaSemanaText = 'Quarta-Feira';
+    break;
+  case 4: diaSemanaText = 'Quinta-Feira';
+    break;
+  case 5: diaSemanaText = 'Sexta-Feira';
+    break;
+  case 6: diaSemanaText = 'Sabado';
+    break;
+  default: diaSemanaText = '';
+    break;
 }
+
+switch(/* o que vai ser validado */ diaSemana){
+  case 0/* Aprimeira condição 0 */:/* o que vai ser retornado */ diaSemanaText = 'Domingo';
+    /* O final da ação */ break;
+  case 0/* Aprimeira condição 0 */:/* o que vai ser retornado */ diaSemanaText = 'Domingo';
+    /* O final da ação */ break;
+  case 0/* Aprimeira condição 0 */:/* o que vai ser retornado */ diaSemanaText = 'Domingo';
+    /* O final da ação */ break;
+  case 0/* Aprimeira condição 0 */:/* o que vai ser retornado */ diaSemanaText = 'Domingo';
+    /* O final da ação */ break;
+  case 0/* Aprimeira condição 0 */:/* o que vai ser retornado */ diaSemanaText = 'Domingo';
+    /* O final da ação */ break;
+  case 0/* Aprimeira condição 0 */:/* o que vai ser retornado */ diaSemanaText = 'Domingo';
+    /* O final da ação */ break;
+  default/* caso nenhuma das condições for verdadeira  */: /* resposta final será essa */   diaSemanaText = '';
+    /* O final da ação */ break;
+}
+ 
