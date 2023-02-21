@@ -53,7 +53,7 @@ if(diaSemana === 0){
   diaSemanaText = 'Data Invalida'
 }
 
-console.log(DiaSemana, diaSemanaText);
+console.log(diaSemana, diaSemanaText);
 
 // Agora iremosd comntruir uma função no qual usaremos o SWITCH()
 //Sendo u7ma forma melhor de contruir uma condição de reptição
@@ -93,4 +93,42 @@ switch(/* o que vai ser validado */ diaSemana){
   default/* caso nenhuma das condições for verdadeira  */: /* resposta final será essa */   diaSemanaText = '';
     /* O final da ação */ break;
 }
- 
+
+// quando tivermos dentro de uma função podemos trocar o break por return
+//desta maneira 
+
+function getDayWeek(diaSemanaText2){
+  
+  switch(diaSemanaText2){
+
+    case 0: diaSemanaText2 = 'Domingo';
+      return diaSemanaText2
+
+    case 1: diaSemanaText2 = 'Segunda-Feira';
+      return diaSemanaText2
+
+    case 2: diaSemanaText2 = 'Terça-Feira';
+        return diaSemanaText2
+
+    case 3: diaSemanaText2 = 'Quarta-Feira';
+      return diaSemanaText2
+
+    case 4: diaSemanaText2 = 'Quinta-Feira';
+      return diaSemanaText2
+
+    case 5: diaSemanaText2 = 'Sexta-Feira';
+      return diaSemanaText2
+
+    case 6: diaSemanaText2 = 'Sabado';
+      return diaSemanaText2
+
+    default: diaSemanaText2 = '';
+      return diaSemanaText2
+  }
+
+}
+
+let diaSemanaText2 = getDayWeek(diaSemana);
+console.log( diaSemana, diaSemanaText2)
+
+//nessa função acima criamos um função reutilizavel, ou seja, uma função que pode ser reutilizavel varias vezes
