@@ -1,15 +1,15 @@
 function Escop(){
-  const data = document.querySelector('.data');
-  
-  const day = new Date();
 
+
+  const day = new Date();
   const numDay = day.getDay();
   const dayNew = day.getDate();
   const monthNew = day.getMonth();
   const yearNew = day.getFullYear();
   const hoursNew = day.getHours();
   const minutesNew = day.getMinutes();
-console.log()
+
+
   function getDayWeekText(numDay){
     let data;
     switch(numDay){
@@ -41,7 +41,7 @@ console.log()
   } const dayWeekText = getDayWeekText(numDay);
 
   function getMonthNew(monthNew){
-
+    let data;
     switch(monthNew){
 
       case 0: data = 'Janeiro';
@@ -85,6 +85,9 @@ console.log()
     }
   } const monthNewText = getMonthNew(monthNew)
   
+  const data = document.querySelector('.data');
+  const msg = data.textContent = `${dayWeekText}, `
+
   
   
 }Escop()
