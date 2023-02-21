@@ -41,53 +41,51 @@ function Escop(){
   } const dayWeekText = getDayWeekText(numDay);
 
   function getMonthNew(monthNew){
-    let data;
+    let data2;
     switch(monthNew){
 
-      case 0: data = 'Janeiro';
-        return data
+      case 0: data2 = 'Janeiro';
+        return data2
 
-      case 1: data = 'Fevereiro';
-        return data
+      case 1: data2 = 'Fevereiro';
+        return data2
 
-      case 2: data = 'Março';
-        return data
+      case 2: data2 = 'Março';
+        return data2
 
-      case 3: data = 'Abril';
-        return data
+      case 3: data2 = 'Abril';
+        return data2
 
-      case 4: data = 'Maio ';
-        return data
+      case 4: data2 = 'Maio ';
+        return data2
 
-      case 5: data = 'Junho ';
-        return data
+      case 5: data2 = 'Junho ';
+        return data2
 
-      case 6: data = 'Julho ';
-        return data
+      case 6: data2 = 'Julho ';
+        return data2
         
-      case 7: data = 'Agosto ';
-        return data
+      case 7: data2 = 'Agosto ';
+        return data2
 
-      case 8: data = 'Setembro ';
-        return data
+      case 8: data2 = 'Setembro ';
+        return data2
 
-      case 9: data = 'Outubro ';
-        return data
+      case 9: data2 = 'Outubro ';
+        return data2
 
-      case 10: data = 'Novembro ';
-        return data
+      case 10: data2 = 'Novembro ';
+        return data2
 
-      case 11: data = 'Dezembro';
-        return data
+      case 11: data2 = 'Dezembro';
+        return data2
 
-      default: data = '';
-        return data
+      default: data2 = '';
+        return data2
     }
   } const monthNewText = getMonthNew(monthNew)
   
-  const data = document.querySelector('.data');
-  const msg = data.textContent = `${dayWeekText}, `
+  const horas = document.querySelector('.horas');
+  const msg = horas.textContent = `${dayWeekText}, ${dayNew} de ${monthNewText} de ${yearNew} ${hoursNew}:${minutesNew}`
 
-  
-  
 }Escop()
