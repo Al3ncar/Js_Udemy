@@ -28,13 +28,14 @@ switch (expressão) {
   } 
 */ 
 
+// Agora iremos construir uma condição no qual  está retornando uma estrutura de semanas 
 
-const data = new Date();
-const DiaSemana = data.getDate();
-const diaSemana = data.getDay();
-let diaSemanaText;
+const data = new Date(); // pegando a data atual 
+const DiaSemana = data.getDate(); // Pegando a DATA DO MES
+const diaSemana = data.getDay(); // Pegando a DATA NA SEMANA
+let diaSemanaText; // Let que vai retornar o dia da semana
 
-if(diaSemana === 0){
+if(diaSemana === 0){ 
   diaSemanaText = 'Domingo';
 }else if(diaSemana === 1){
   diaSemanaText = 'Segunda-Feira';
@@ -52,6 +53,11 @@ if(diaSemana === 0){
   diaSemanaText = 'Data Invalida'
 }
 
-console.log(DiaSemana);
-console.log(diaSemana, diaSemanaText);
+console.log(DiaSemana, diaSemanaText);
 
+// Agora iremosd comntruir uma função no qual usaremos o SWITCH()
+//Sendo u7ma forma melhor de contruir uma condição de reptição
+
+switch(){
+  
+}
