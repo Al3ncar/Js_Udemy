@@ -1,6 +1,4 @@
 function Escop(){
-
-
   const day = new Date();
   const numDay = day.getDay();
   const dayNew = day.getDate();
@@ -86,6 +84,7 @@ function Escop(){
   } const monthNewText = getMonthNew(monthNew)
   
   const horas = document.querySelector('.horas');
-  const msg = horas.textContent = `${dayWeekText}, ${dayNew} de ${monthNewText} de ${yearNew} ${hoursNew}:${minutesNew}`
-
+  const msg = horas.textContent = `${dayWeekText}, ${dayNew} de ${monthNewText} de ${yearNew} as ${hoursNew}:${minutesNew}`
+  console.log(msg);
+  
 }Escop()
