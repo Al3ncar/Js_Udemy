@@ -7,6 +7,7 @@ function Escop(){
   const hoursNew = day.getHours();
   const minutesNew = day.getMinutes();
 
+  function zeroEsq(minutesNew){ return minutesNew >= 10 ? minutesNew : `0${minutesNew}`}
 
   function getDayWeekText(numDay){
     let data;
@@ -84,7 +85,7 @@ function Escop(){
   } const monthNewText = getMonthNew(monthNew)
   
   const horas = document.querySelector('.horas');
-  const msg = horas.textContent = `${dayWeekText}, ${dayNew} de ${monthNewText} de ${yearNew} as ${hoursNew}:${minutesNew}`
+  const msg = horas.textContent = `${dayWeekText}, ${dayNew} de ${monthNewText} de ${yearNew} as ${hoursNew}:${zeroEsq(minutesNew)}`
   console.log(msg);
   
 }Escop()
