@@ -37,6 +37,15 @@ function criaData(data) {
 h1.innerHTML = criaData(data);
 
 //  ---- Maneira de Fazer esse codigo  ----  //
+const h1 = document.querySelector('.container h1');
+const data2 = new Date()
+const opcoes = {
+    dateStyle: 'Full',
+    timeStyle: 'short'
+}
+
+h1.innerHTML = data2.toLocaleDateString('pt-BR', opcoes)
+//  ---- Maneira de Fazer esse codigo  ----  //
 
 const h1 = document.querySelector('.container h1');
 const data3 = new Date();
