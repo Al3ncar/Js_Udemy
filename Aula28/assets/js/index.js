@@ -6,7 +6,11 @@ var nome2 = 'Ighor';
 
 // let nome = ' Alencar'; // Caso esse codigo retorne ele ira
 
+
+
 // -----   ----- //
+
+
 
 const verdadeiro = true;
 
@@ -30,3 +34,40 @@ if(verdadeiro){
   console.log(nome3, nome4)
 }
 
+// Agora será retornado no console:
+//  IGOOOR Alencar
+ 
+
+
+// -----   ----- //
+
+
+
+//Let tem escopo de BLOCO { ... BLOCO }
+//Tudo que tiver dentro de chaves é um bloco
+
+{
+  let nome3 = 'IGOOOROOOOOO'
+  console.log(nome3, nome4)
+}
+
+//Quando VAR só tem escopo de função.
+
+// BLOCO ESCOPO
+  let nome4 = 'Coisa'; // CRIANDO VARIAVEL
+  const verdadeiro3 = true;
+
+
+  if(verdadeiro3){ 
+    // BLOCO ESCOPO
+      let nome = 'coisadoidamesmo'; // CRIANDO VARIAVEL
+      console.log(nome)
+
+      //Podemos criar blocos aninhados, desta maneira
+
+      if(verdadeiro3){ 
+        // BLOCO ESCOPO
+          console.log('OK')
+      }
+
+  }
