@@ -79,8 +79,6 @@
 //sintaxe:
     console.log('Mês', data5.getMonth() + 1) ;
 
-
-
 // ---- ---- //
 
 
@@ -124,6 +122,11 @@
 
 // ---- ---- //
 
+//PARSE
+//Parse é responsavel por retornar os millisegundos da era UNIX até O momento atual.
+
+    const data7 = Date().parse;
+    console.log(data7);
 
 
 // FUNÇÃO QUE RETORNA A DATA
