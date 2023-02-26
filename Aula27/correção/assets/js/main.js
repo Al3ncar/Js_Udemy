@@ -45,6 +45,8 @@ const opcoes = {
 }
 
 h1.innerHTML = data2.toLocaleDateString('pt-BR', opcoes)
+
+
 //  ---- Maneira de Fazer esse codigo  ----  //
 
 const h1 = document.querySelector('.container h1');
