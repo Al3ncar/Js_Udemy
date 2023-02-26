@@ -71,3 +71,5 @@ if(verdadeiro){
       }
 
   }
+
+// o CONSOLE irá retornar as coisas num quesito de BLOCOS 
