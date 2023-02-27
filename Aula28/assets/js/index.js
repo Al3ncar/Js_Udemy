@@ -69,7 +69,5 @@ if(verdadeiro){
         // BLOCO ESCOPO
           console.log('OK')
       }
-
   }
-
 // o CONSOLE irá retornar as coisas num quesito de BLOCOS 
