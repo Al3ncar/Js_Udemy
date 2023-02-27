@@ -81,8 +81,9 @@ function falaOi(){
   console.log(exemplo) // Olá Eu sou iGOR
 }falaOi()
 
-//Caso fosse assim:
 
+
+//Caso fosse assim:
 
 function falaOi(exemplo2){
   const exemplo2 = 'Olá Eu sou iGOR';
@@ -90,4 +91,21 @@ function falaOi(exemplo2){
 
 console.log(exemplo2) // Erro
 falaOi()
-//iria retornar um erro
+
+//iria retornar um erro 
+
+
+
+// -----   ----- //
+
+
+
+
+//Elevação ( Hoisting ), eleva a declaração das variaveis; exemplo:
+
+console.log(sobrenome);
+
+var sobrenome = "Olá como vai??";
+
+//Aprincipios era para que o codigo retonase erro, porem devido a elevação isso não irá acontece
+//é retornado undefined.
