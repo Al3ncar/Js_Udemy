@@ -71,3 +71,23 @@ if(verdadeiro){
       }
   }
 // o CONSOLE irá retornar as coisas num quesito de BLOCOS 
+
+// Escop de function
+//podemos usar uma const global e usa-la fora do bloco, exemplo:
+
+const exemplo = 'Olá Eu sou iGOR';
+
+function falaOi(){
+  console.log(exemplo) // Olá Eu sou iGOR
+}falaOi()
+
+//Caso fosse assim:
+
+
+function falaOi(exemplo2){
+  const exemplo2 = 'Olá Eu sou iGOR';
+}
+
+console.log(exemplo2) // Erro
+falaOi()
+//iria retornar um erro
