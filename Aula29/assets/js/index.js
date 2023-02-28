@@ -31,7 +31,7 @@ console.log(c3);
 
 //Outro exemplos de desestruturação
 
-const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const numeros = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000 ];
 
 const primeiroNum = numeros[0];
 const segundoNum = numeros[1];
