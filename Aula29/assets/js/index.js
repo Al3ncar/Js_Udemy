@@ -75,11 +75,24 @@ const numeros3 = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000 ];
 const [um, , tres, , cinco, , sete] = numeros3;
 
 console.log(um, tres, cinco, sete);
-
 //...rest, ...spread;
+
+
+//Maneira Tradicional
 const numerosInd = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
 ];
 console.log(numerosInd[1][1])
+
+//Maneira desestruturada
+
+const numerosInd2 = [  [1, 2, 3],[4, 5, 6],[7, 8, 9]  ];
+const [,[,,seis]] = numerosInd2;
+console.log(seis)
+
+
+const numerosInd3 = [  [1, 2, 3],[4, 5, 6],[7, 8, 9]  ];
+const [list1, list2, list3] = numerosInd3;
+console.log(list2[2])
