@@ -17,9 +17,9 @@ let a2 = 'AA'
 let b2 = 'AA'
 let c2 = 'AA'
 
-console.log(a3);
-console.log(b3);
-console.log(c3);
+console.log(a2);
+console.log(b2);
+console.log(c2);
 
 //Maneira desestruturada
 
@@ -30,6 +30,8 @@ console.log(b3);
 console.log(c3);
 
 //Outro exemplos de desestruturação
+
+//Maneira normal
 
 const numeros = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000 ];
 
@@ -52,3 +54,17 @@ console.log(sextoNum);
 console.log(setimoNum);
 console.log(oitavoNum);
 console.log(nonoNum);
+
+//Maneira desestruturada
+ 
+const numeros2 = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000 ];
+const [primNum, segundNum, ...rest] = numeros2
+
+console.log(primNum, segundNum);
+console.log(rest)
+
+//O operados ...
+
+//os 3 PONTOS pode ter lógicas diferente, sendo ele:
+//... rest => PEGAR O RESTO
+//... apread => ESPALHAR
