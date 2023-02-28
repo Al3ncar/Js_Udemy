@@ -18,12 +18,17 @@ console.log(names)
 
 const pessoas2 = {
     nome: 'Igor',
-    sobrenome:'Miranda',
+    sobrenome:'Alencar',
     idade:30,
     endereço:{
         rua: 'Av Sâo Miguel',
         numero: 123
     }
 };
-const { nome } = pessoas2;
-console.log(nome);
+//podemos colocar valores padrão como
+//      valor padrão
+const { nome = '', sobrenome, idade} = pessoas2;
+console.log(nome, sobrenome, idade);
+//Podemos alterar o nome usando chave
+const { nome: teste /* deste modo troquei a palavra NOME por TESTE */, sobrenomes, idades} = pessoas2;
+console.log(teste, sobrenomes, idades ) 
