@@ -68,3 +68,18 @@ console.log(rest)
 //os 3 PONTOS pode ter lógicas diferente, sendo ele:
 //... rest => PEGAR O RESTO
 //... apread => ESPALHAR
+
+//Podemos pular o indice dos numeros deste modo;
+
+const numeros3 = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000 ];
+const [um, , tres, , cinco, , sete] = numeros3;
+
+console.log(um, tres, cinco, sete);
+
+//...rest, ...spread;
+const numerosInd = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+console.log(numerosInd[1][1])
