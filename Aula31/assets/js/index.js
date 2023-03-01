@@ -16,3 +16,12 @@ for(
     /* incrementar ou decrementar a variavel */ i++
 ){  console.log(`Linha ${i}`); }
 
+
+console.log(' ')// Espaço no consele
+
+
+//podemos pular os valores da forma que quisermos
+
+for( let i = 0; i <= 100; i += 10){//Estamos pulando de 10 em 10
+    console.log(`Linha: ${i}`)
+}
