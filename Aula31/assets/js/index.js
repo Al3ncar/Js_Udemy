@@ -25,3 +25,11 @@ console.log(' ')// Espaço no consele
 for( let i = 0; i <= 100; i += 10){//Estamos pulando de 10 em 10
     console.log(`Linha: ${i}`)
 }
+
+console.log(' ')// Espaço no consele
+
+//podemos criar um de decremento dessa forma
+
+for(let i = 100; i >= 0; i -= 10){
+    console.log(`Linha: ${i}`)
+}
