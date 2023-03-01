@@ -79,5 +79,5 @@ const pessoas6 = {
         numero: 123
     }
 };
-const { nomes, ...resto} = pessoas6;
+const { nomes, ...resto} = pessoas6;+
 console.log(nome, resto);
