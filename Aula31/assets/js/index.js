@@ -33,3 +33,12 @@ console.log(' ')// Espaço no consele
 for(let i = 100; i >= 0; i -= 10){
     console.log(`Linha: ${i}`)
 }
+
+console.log(' ')// Espaço no consele
+
+// CONDIÇÃO DE PAR E IMPARES
+
+for(let i = 0; i <= 10; i++){
+    const par = i % 2 === 0 ? `${i} Par` : `${i} Impar`;
+    console.log(par)
+}
