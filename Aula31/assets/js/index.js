@@ -49,5 +49,5 @@ for(let i = 0; i <= 10; i++){
 const frutas = ['Maçã', 'Pêra', 'Uva']
 
 for(let i = 0; i < frutas.length; i++){
-    console.log(`Fruta ${i}`, frutas(i))
+    console.log(`Indice ${i}`, frutas(i));
 }
