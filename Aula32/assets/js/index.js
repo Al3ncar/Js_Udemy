@@ -1,5 +1,4 @@
 function myEscop(){
-    const cont = document.querySelector('.cont')
 
     const elementos = [
         {tag: 'p', texto: 'Frase 1'},
@@ -8,17 +7,19 @@ function myEscop(){
         {tag: 'section', texto: 'Frase 4'},
     ]
 
-    const element = elementos.length // 4
+    for(let i = 0; i < elementos.length; i++){
 
-    for(let i = 0; i < element; i++){
         const {tag, texto} = elementos[i]
+        const cont = document.querySelector('.cont')
+
+        function app(tag, texto, cont){
+
+            const createElements = document.createElement(`${tag}`)  
+            createElements.textContent = `${texto}`  
+            cont.appendChild(createElements)
+
+        }app(tag, texto, cont)
     }
-    
-    function app(tag){
-        const createElements = document.createElement(`${tag}`)  
-        createElements.textContent = `${texto}`  
-        cont.appendChild(`${createElements}`)
-    }app(tag, texto)
 
 }myEscop()
 
