@@ -43,4 +43,11 @@ for(let i = 0; i <= 10; i++){
     console.log(par)
 }
 
-const frutas = ['Maçã', 'Pêra', 'Uva', ]
+
+//Construindo um for de frutas
+
+const frutas = ['Maçã', 'Pêra', 'Uva']
+
+for(let i = 0; i < frutas.length; i++){
+    console.log(`Fruta ${i}`, frutas(i))
+}
