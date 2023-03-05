@@ -15,3 +15,7 @@
             BODY = FIPHO DO HTML
     //
 */
+
+//Quando estamso usando o DOM estamos usando a API do Dom, que pode alterar qualquer condição 
+
+//Quando estamos usando o DOM estamo falando de uma interface de objetos que pertime manipular o elemento dentro da pagina.
