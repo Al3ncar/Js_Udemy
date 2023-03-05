@@ -14,7 +14,7 @@
 // createElement() adiciona é um metodo que cria elementos HTML, está relacionado com outro método, chamado de appendChild()
 // No exemplo a seguir pode ver como funciona a criação de um elemento e como ele é coloca no HTML.
 
-
+// Em js Podemos criar um nó de texto com o createTextNode() ==> responsavel por criar um elemento de texto
 
 // ----   ----  //
 
