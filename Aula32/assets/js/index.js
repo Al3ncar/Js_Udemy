@@ -23,14 +23,6 @@ function myEscop(){
 }myEscop();
 
 
-
-
-
-
-
-
-
-
 /* function myEscop(){
 
     const elementos = [
@@ -78,19 +70,6 @@ function myEscop(){
 
 }myEscop()
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //const [t1, t2, t3, t4 ] = elementos
 // console.log(elementos.length)
