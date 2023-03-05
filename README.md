@@ -32,15 +32,3 @@
 
 >10° aula: Desafio [A, B, C]
 
->1° aula: console.log()
-
->1° aula: console.log()
-
->1° aula: console.log()
-
->1° aula: console.log()
-
->1° aula: console.log()
-
-
-
