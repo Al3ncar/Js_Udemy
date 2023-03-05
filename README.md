@@ -20,12 +20,12 @@
 
 >4° aula: Introdução das Variaveis 
 
->5° aula: Introdução dos Operadores Aritiméticos + Tipos de dados + tipos de Objetos + 
+>5° aula: Introdução dos Operadores Aritiméticos + Tipos de dados + Tipos de Objetos 
 
->6° aula: console.log()
+>6° aula: Declaração e Redeclaração das Variaveis + explicação do ECMAscript
 
->7° aula: console.log()
+>7° aula: Explicação de Dados Primitivos e Relacionado + diferença entre undefined e null
 
->8° aula: console.log()
+>8° aula: 
 
 
