@@ -30,7 +30,7 @@ p{
     background-color: #8e8e4d;
     
 }
-.cont div{
+div div{
     background-color:  #c3ba3a;
     
 
@@ -48,13 +48,13 @@ footer{
 
 }
 
-p, .cont div, section, footer{
+p, div div, section, footer{
     padding: 2% 3%; margin: 2% 0;
     border-radius: 2vw;
     font-size: 1.2vw;
 }
 
-p:hover, .cont div:hover, section:hover, footer:hover{
+p:hover, div div:hover, section:hover, footer:hover{
     background-color: greenyellow;
     transition: all 1s;
     transform: scale(1.1);

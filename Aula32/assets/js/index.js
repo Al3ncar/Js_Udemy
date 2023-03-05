@@ -7,16 +7,19 @@ function myEscop(){
         {tag: 'section', texto: 'Frase 4'},
     ];
 
+    const cont = document.querySelector('main');
+    const divElement = document.createElement('div');
+    cont.appendChild(divElement); 
+
     for(let i = 0; i < elementos.length; i++){
 
         const {tag, texto} = elementos[i];
-        const cont = document.querySelector('.cont');
-        
+            
             const createElements = document.createElement(`${tag}`) ; 
             createElements.textContent = `${texto}`;
-            cont.appendChild(createElements);
+            divElement.appendChild(createElements);
     }
-
+    
 }myEscop();
 
 
@@ -28,11 +31,27 @@ function myEscop(){
 
 
 
+/* function myEscop(){
 
+    const elementos = [
+        {tag: 'p', texto: 'Frase 1'},
+        {tag: 'div', texto: 'Frase 2'},
+        {tag: 'footer', texto: 'Frase 3'},
+        {tag: 'section', texto: 'Frase 4'},
+    ];
 
+    for(let i = 0; i < elementos.length; i++){
 
+        const {tag, texto} = elementos[i];
+        const cont = document.querySelector('.cont');
+            
+            const createElements = document.createElement(`${tag}`) ; 
+            createElements.textContent = `${texto}`;
+            cont.appendChild(createElements);
+    }
 
-
+}myEscop();
+ */
 
 /* function myEscop(){
 
