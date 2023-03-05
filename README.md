@@ -26,6 +26,21 @@
 
 >7° aula: Explicação de Dados Primitivos e Relacionado + diferença entre undefined e null
 
->8° aula: 
+>8° aula: Introdução dos Operadores Lógicos + Operadores de Atribuição + Explicação do parseInt() e parseFloat
+
+>9° aula: Introdução window + Introdução do alert(), confirm() e prompt()
+
+>10° aula: Desafio [A, B, C]
+
+>1° aula: console.log()
+
+>1° aula: console.log()
+
+>1° aula: console.log()
+
+>1° aula: console.log()
+
+>1° aula: console.log()
+
 
 
