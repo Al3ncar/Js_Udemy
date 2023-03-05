@@ -116,6 +116,11 @@ const Tela = window.document.write(yourName)
 
 /* console.log(window.document.body.innerHTML) */
 
+//Podemos usar o innerText, é uma maneira melhor de usar o inner no desenvolvimento da pagina.
+
+console.log(document.innerText = "salv")
+
+
 // Desafio da Aula 11
 
 const yourName = prompt("Qual é seu nome??")
