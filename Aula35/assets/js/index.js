@@ -27,9 +27,8 @@ const pessoas = {
 };
 
 for(let index in pessoas){
-    console.log(pessoas[index])
+    console.log(`${index}:` ,pessoas[index])
 }
-
 
 
 console.log(""); // Quebra de linha no console.
