@@ -42,3 +42,12 @@ console.log(pessoas['sobrenome']);
 
 const chaves = 'nome';
 console.log(pessoas[chaves]);
+
+console.log("")
+
+const merc = ['Pera', 'Maça', 'Banana', 'Laranja'];
+
+for(let ind in merc){
+    console.log(merc[ind], ind)
+
+}
