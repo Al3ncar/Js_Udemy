@@ -43,7 +43,9 @@ console.log(pessoas['sobrenome']);
 const chaves = 'nome';
 console.log(pessoas[chaves]);
 
-console.log("")
+
+console.log(""); // Quebra de linha no console.
+
 
 const merc = ['Pera', 'Maça', 'Banana', 'Laranja'];
 
