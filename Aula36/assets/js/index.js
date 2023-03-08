@@ -52,5 +52,5 @@ const user = {
 }
 
 for (let index in user){
-    console.log(index, user[index] )
+    console.log(`${index}:`, user[index] )
 }
