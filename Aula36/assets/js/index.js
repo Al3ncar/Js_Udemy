@@ -14,9 +14,7 @@ for(let value of  clothingStore){
 // exemplo: console.log( clothingStore[ value ] ), devido o of pegar o valor do indice
 
 
-
 console.log(""); // Quebra de linha no console.
-
 
 
 //Temos tambem um outra maneira de usar o for
@@ -25,11 +23,10 @@ clothingStore.forEach( function (value, index, array){
 
     console.log(value, index, array);
         // O VALUE é o valor do indice
-        // O INDEX é o proprio indice
+        // O INDEX é o indice do array
         // O ARRAY é o array completo 
 
 })
-
 
 //OS 4 TIPOS DE FOR:
 
