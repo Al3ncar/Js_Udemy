@@ -25,37 +25,3 @@ h1{
     font-size: 4vw;
     text-align: center;
 }
-
-p{
-    background-color: #8e8e4d;
-    
-}
-div div{
-    background-color:  #c3ba3a;
-    
-
-}
-
-section{
-    background-color:  #15ec00;
-    
-
-}
-
-footer{
-    background-color:#91e200;
-    
-
-}
-
-p, div div, section, footer{
-    padding: 2% 3%; margin: 2% 0;
-    border-radius: 2vw;
-    font-size: 1.2vw;
-}
-
-p:hover, div div:hover, section:hover, footer:hover{
-    background-color: greenyellow;
-    transition: all 1s;
-    transform: scale(1.1);
-}
