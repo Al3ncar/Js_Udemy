@@ -28,9 +28,29 @@ clothingStore.forEach( function (value, index, array){
 
 })
 
+
+
+console.log(""); // Quebra de linha no console.
+
+
+
 //OS 4 TIPOS DE FOR:
 
 // 1° FOR CLASSICO -> manipula até chegar no valor do indice, geralmente com iteraveis ( Array ou String )
 // 2° FOR IN -> já possui o indice, retorna o indice ou chaves ( String, Array, Object )
 // 3° FOR OF -> já possui o o VALOR do indice, retorna o valor em si ( Iteraveis, Arrays ou String )
 // 4° FOREACH() -> função que pega o valor e o indice
+
+//Usando Chaves
+
+// FOR IN funciona usando chaves
+
+const user = {
+    name: 'Natasha',
+    lastName: 'Golden',
+    yeardOld: 21
+}
+
+for (let index in user){
+    console.log(index, user[index] )
+}
