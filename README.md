@@ -64,3 +64,9 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Apresentação do Split
 - Apresentação do ToUpperCase()
 - Desafio da Aula 11
+
+>12° aula: 
+- Apresentaçâo do ToString()
+- Apresentaçâo do ToFixed()
+- Apresentaçâo do IsInteger()
+- Apresentaçâo do IsNaN()
