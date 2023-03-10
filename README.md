@@ -12,23 +12,41 @@
 
 >Manual das Aulas
 
->1° aula: console.log()
+>1° aula: 
+- console.log()
 
->2° aula: Introdução dos comentarios 
+>2° aula: 
+- Introdução dos comentarios 
 
->3° aula: Introdução Alert()
+>3° aula: 
+- Introdução Alert()
 
->4° aula: Introdução das Variaveis 
+>4° aula: 
+- Introdução das Variaveis 
 
->5° aula: Introdução dos Operadores Aritiméticos + Tipos de dados + Tipos de Objetos 
+>5° aula: 
+- Introdução dos Operadores Aritiméticos 
+- Tipos de dados 
+- Tipos de Objetos 
 
->6° aula: Declaração e Redeclaração das Variaveis + explicação do ECMAscript
+>6° aula: 
+- Declaração e Redeclaração das Variaveis 
+- Explicação do ECMAscript
 
->7° aula: Explicação de Dados Primitivos e Relacionado + diferença entre undefined e null
+>7° aula: 
+- Explicação de Dados Primitivos e Relacionado 
+- diferença entre undefined e null
 
->8° aula: Introdução dos Operadores Lógicos + Operadores de Atribuição + Explicação do parseInt() e parseFloat
+>8° aula: 
+- Introdução dos Operadores Lógicos 
+- Operadores de Atribuição 
+- Explicação do parseInt() e parseFloat
 
->9° aula: Introdução window + Introdução do alert(), confirm() e prompt()
+>9° aula: 
+- Introdução window 
+- Introdução do alert(), confirm() e prompt()
 
->10° aula: Desafio [A, B, C]
+>10° aula: 
+- Desafio [A, B, C]
 
+>11° aula: 
