@@ -70,3 +70,16 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Apresentaçâo do ToFixed()
 - Apresentaçâo do IsInteger()
 - Apresentaçâo do IsNaN()
+
+>13° aula: 
+- Apresentação do Math
+- Apresentação do floor
+- Apresentação do ceil
+- Apresentação do round
+- Apresentação do max
+- Apresentação do min
+- Apresentação do random
+- Apresentação do pi
+- Apresentação do pow
+- Apresentação do Raiz
+- Desafio da aula 13
