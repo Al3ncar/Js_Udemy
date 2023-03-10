@@ -83,3 +83,6 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Apresentação do pow
 - Apresentação do Raiz
 - Desafio da aula 13
+
+>14° aula:
+- Explicação dos indices no array
