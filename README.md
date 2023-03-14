@@ -86,4 +86,12 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 
 >14° aula:
 - Explicação dos indices no array
+- Adicionando coisas no Array
+- Explicando o push()
+- Explicando o unShift()
+- Explicando o pop()
+- Explicando o shift()
+- Explicando o slice()
+- Explicando o instanceof
+
 
