@@ -99,3 +99,10 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Relembrando os escopos
 - Explicando o que é arrow function 
 - Dica de clean code
+
+>16° aula: 
+- Dica de clean code
+- Acessando os array
+- Explicação do que é argumento 
+- Explicação do que é Paranetro
+´
