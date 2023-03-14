@@ -94,4 +94,8 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Explicando o slice()
 - Explicando o instanceof
 
-
+>15° aula:
+- Explicando o que é função
+- Relembrando os escopos
+- Explicando o que é arrow function 
+- Dica de clean code
