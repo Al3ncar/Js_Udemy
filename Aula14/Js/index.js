@@ -31,6 +31,8 @@ console.log(alunos)
 
 // MANEIRA MAIS ACESSIVEL DE ADICIONAR NO FIN é usando o push(), o push adiciona coisas no final do Array, exemplo:
 
+// PUSH()
+
 const alunos2 = [`Renan`, `Carol`, `Hetor`];
 console.log(alunos2);
 
