@@ -29,3 +29,22 @@ function Escop(){
     }
     
 }Escop()
+
+// Escolhento os numeros
+
+
+function Escop2(){
+
+    let n1 = 100; let n2 = 20;
+
+    function V (n1, n2){
+        n1 > n2 ?console.log( `${n1} é maior que ${n2}`) : console.log(`${n2} é maior que ${n1}`) 
+    }V(n1, n2)
+
+}Escop2()
+
+// CODIGO DA AULA 
+
+
+const max = (x, y) => x > y ? x : y;
+console.log(max(10, 3)) 
