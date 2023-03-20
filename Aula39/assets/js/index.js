@@ -31,12 +31,19 @@ let i2 = 0;
         i++  // Incremento de 0 a 10
     };
 
+    console.log('') // Espaço no console
+
 console.log("Dando errado");
+
+    console.log('') // Espaço no console
 
     while (i2 < nome.length) {
         console.log(nome[i2])
         i2++
     };
+
+    console.log('') // Espaço no console
+
 
 /* 
 //Não podemos declarar 2 while com uma mesma declaração 
@@ -69,5 +76,36 @@ function random(min, max) {
     while( rand !== 5 ){
         rand = random(min, max);
         console.log(rand);
+
     }
 
+
+    console.log('') // Espaço no console
+
+
+// O WHILE em lógica significa "enquanto"
+
+/* 
+// Do While
+
+    Ambos Whiles tem sitaxe semelhante, possuindo apenas uma unica diferença, sendo ela:
+
+        do( FAÇA ){
+            rotina( ISSO )
+        }while( ENQUANTO )(condição);
+
+    primeiro devemos colocar nossa rotina e depois nossa condição;
+*/
+
+function random2(min2, max2) {
+    const r = Math.random() * (max2 - min2) + min2;
+    return Math.floor(r);
+}
+    const min2 = 1;
+    const max2 = 10;
+    let rand2 = random2(min2, max2);
+
+    do {
+        rand2 = random2(min2, max2);
+        console.log(rand2);
+    } while( rand2 !== 5 );
