@@ -21,10 +21,18 @@
         ;
 
 */
-
+let nome = 'Helena';
 let i = 0;
+let i2 = 0;
 
 while(i <= 10){
     console.log(i)
     i++  // Incremento de 0 a 10
+};
+
+console.log("Dando errado")
+
+while (i2 < nome.length) {
+    console.log(nome[i2])
+    i2++
 }

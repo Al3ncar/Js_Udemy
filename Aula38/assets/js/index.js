@@ -5,8 +5,8 @@ function Escop(){
         const bodyColor = styleBody.backgroundColor
 
     for(let index of pags){
-        index.style.backgroundColor = bodyColor
-        index.style.color = '#fff'
+        index.style.backgroundColor = bodyColor;
+        index.style.color = '#fff'; 
     }
 
-}Escop()
+}Escop() 
