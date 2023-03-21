@@ -8,10 +8,40 @@
 // Use a função com o numero de 0 a 100 
 
 function rNumb (x) {
-    if(x !== true ){ console.log(`Seu numero é: ${x}`)};
     if(x % 3 === 0 && x % 5 === 0){ console.log(`FIZZBUZZ`)}else
     if(x % 3 === 0){ console.log(`FIZZ`)}else
-    if(x % 5 === 0){ console.log(`BUZZ`)}
+    if(x % 5 === 0){ console.log(`BUZZ`)}else
+    if(x !== true ){ console.log(`Seu numero é: ${x}`)};
+}
+for(let i = 0; i <= 10; i++){ console.log(i, rNumb(i)) }
+
+
+console.log("") // Espaço no console
+
+
+// # # Codigo da Aula # # //
+
+function fizzBuzz(numero){
+    if(typeof numero !== 'number') return numero;
+    if(numero % 3 === 0 && numero % 5 === 0) return `FIZZBUZZ`;
+    if(numero % 3 === 0) return `FIZZ`;
+    if(numero % 5 === 0) return `BUZZ`;
+    return numero;
 }
 
-for(let i = 0; i <= 30; i++){ console.log(i), rNumb(i) }
+console.log('a', fizzBuzz('a'))
+for(let i = 0; i <= 10 ; i++){ 
+    console.log(i, fizzBuzz(i))
+}
+
+console.log("") // Espaço no console
+
+// # # Melhoria no meu codigo # # //
+
+function rNumb2 (x) {
+    if(x % 3 === 0 && x % 5 === 0)return `FIZZBUZZ`;
+    if(x % 3 === 0)return`FIZZ`;
+    if(x % 5 === 0)return `BUZZ`;
+    if(x !== true )return `Seu numero é: ${x}`;
+}
+for(let i = 0; i <= 10; i++){ console.log(i, rNumb2(i)) }
