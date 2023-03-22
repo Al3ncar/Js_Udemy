@@ -29,12 +29,15 @@ function fizzBuzz(numero){
     return numero;
 }
 
+
 console.log('a', fizzBuzz('a'))
 for(let i = 0; i <= 10 ; i++){ 
     console.log(i, fizzBuzz(i))
 }
 
 console.log("") // Espaço no console
+
+
 
 // # # Melhoria no meu codigo # # //
 
