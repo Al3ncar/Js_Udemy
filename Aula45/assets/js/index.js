@@ -38,5 +38,18 @@ try {
 }
 
 
+    console.log("") // Espaço no console 
 
+
+
+// Instanceof
+
+    // O instanceof é um operador que testa para ver se a prototype da propriedade de um construtor aparece em qualquer lugar na cadeia de protótipo de um objeto. O valor de retorno é um valor booleano ( TRUE || FALSE ).
+//
+
+// Exemplo:
+
+function returnHours (data){
+    if(!(data instanceof Date)) { console.log("Não sou uma data")}
+} returnHours(" Seŕa que sou uma data ");
 
