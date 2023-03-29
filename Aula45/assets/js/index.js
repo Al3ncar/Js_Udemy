@@ -49,7 +49,32 @@ try {
 
 // Exemplo:
 
-function returnHours (data){
+function instacData (data){
     if(!(data instanceof Date)) { console.log("Não sou uma data")}
-} returnHours(" Seŕa que sou uma data ");
+} instacData(" Seŕa que sou uma data ");
+
+
+
+    console.log("") // Espaço no console 
+ 
+
+//  ----  ----   //
+
+
+function recebeDat (data) {
+
+    if(data && !(data instanceof Date)){
+        throw new TypeError(" Esperando instancia de Date. ")
+    };
+
+    if(!data) {data = new Date();}
+
+    return data.toLocaleTimeString('pt-BR', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hours12: false,
+    })
+} 
+
 
