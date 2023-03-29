@@ -77,4 +77,11 @@ function recebeDat (data) {
     })
 } 
 
-
+try{
+    const hora = recebeDat();
+    console.log( hora )
+} catch( err ){
+    // console.log( err )
+} finally{
+    console.log('Tenha um bom dia...')
+}
