@@ -138,3 +138,10 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - If e Else + Operadores logicos e operadores de comparação
 - Desafio "Digite um Numero!!!"
 
+>21° aula:
+- Desafio do IMC (Indice de Massa Corporia)
+
+>22° aula:
+- Desafio do addEventListener
+- introdução do addEventListener()
+- introdução do removeEventListener()
