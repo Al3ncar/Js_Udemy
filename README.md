@@ -145,3 +145,11 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Desafio do addEventListener
 - introdução do addEventListener()
 - introdução do removeEventListener()
+
+>23° aula:
+- introdução do textContent
+- diferença do (innerHTML) !== (textContent)
+- Introdução do createElemente()
+- introdução do classList()
+- introdução do appendChild()
+- introdução do insetBefore()
