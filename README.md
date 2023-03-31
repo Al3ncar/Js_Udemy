@@ -125,3 +125,16 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Menos igual ( <= )
 - Restritamente Igual ( === )
 - Diferente de ( !== )
+
+>19° aula:
+- Operadores lógicos
+- E ( && )
+- OU ( || )
+- NÃO ( ! )
+
+>20° aula:
+- Introdução do IF e ELSE
+- Condição em Sequencia 
+- If e Else + Operadores logicos e operadores de comparação
+- Desafio "Digite um Numero!!!"
+
