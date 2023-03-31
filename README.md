@@ -42,7 +42,7 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 >8° aula: 
 - Introdução dos Operadores Lógicos 
 - Operadores de Atribuição 
-- Explicação do parseInt() e parseFloat
+- Explicação do parseInt() e parseFloat()
 
 >9° aula: 
 - Introdução window 
@@ -61,7 +61,7 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Apresentação do Replace()
 - Apresentação do Length()
 - Apresentação do Slice()
-- Apresentação do Split
+- Apresentação do Split()
 - Apresentação do ToUpperCase()
 - Desafio da Aula 11
 
@@ -105,4 +105,13 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Acessando os array
 - Explicação do que é argumento 
 - Explicação do que é Paranetro
-´
+
+>17° aula:
+- Explicando melhor os tipos dos Dados
+- Valores Primitivos
+- Valores de Referência 
+- Desafios Registo
+- Exeplicando o que é o querySelector()
+- Exeplicando o que é o addEventListener()
+- Explicando o que é o innerHTML()
+- Usando o preventDefault()
