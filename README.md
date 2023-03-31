@@ -115,3 +115,13 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Exeplicando o que é o addEventListener()
 - Explicando o que é o innerHTML()
 - Usando o preventDefault()
+
+>18° aula:
+- Falando sobre a lógica de Programação
+- Operadores de comparação
+- Maior que ( > )
+- Maior igual ( >= )
+- Menor que ( < )
+- Menos igual ( <= )
+- Restritamente Igual ( === )
+- Diferente de ( !== )
