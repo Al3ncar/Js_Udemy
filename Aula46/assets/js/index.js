@@ -50,3 +50,10 @@ function funcaDoIntervalo(){ console.log(mostraHora());}
 // existe uma maneira de para o intevalo, sendo ela ClearInterval():
 
 setTimeout(() => { clearInterval(timer) }, 10000)
+
+
+// Difernça do setInterval() para o setTimeout()
+
+// O setInterval => Executa varias vezes, ele tambem pode ser parado pelo clearInterval()
+
+// O setTimeout => Executa uma unica vez
