@@ -149,7 +149,8 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 >23° aula:
 - introdução do textContent
 - diferença do (innerHTML) !== (textContent)
-- Introdução do createElemente()
+- introdução do createElemente()
+- introdução do createTextNode()
 - introdução do classList()
 - introdução do appendChild()
 - introdução do insetBefore()
