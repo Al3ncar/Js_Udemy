@@ -10,6 +10,7 @@
 
 // setInterval( o que ira acontecer, tempo que vai acontecer )
 
+const hrs = document.querySelector('.hora')
 
 function mostraHora() {
     let date = new Date();
@@ -21,7 +22,7 @@ function funcaDoIntervalo(){ console.log(mostraHora());}
 // setInterval vai configurar um intervalo de tempo, para que alguma função seja executada em determinado Momento 
 //Podemos colocar funções dentro do proprio setInterval 
 
-    let timer = setInterval(() => {  console.log( mostraHora() )  }, 1000); 
+    let timer = setInterval(() => {  console.log( mostraHora() ), hrs.textContent = mostraHora()  }, 1000); 
 
 // Direfença entre chamar a funhção e a referência dela 
 
@@ -42,7 +43,7 @@ function funcaDoIntervalo(){ console.log(mostraHora());}
 //setTimeout( função a ser executada, executa até um determinado tempo  )
 
 
-    setTimeout( () => { console.log("Olá Munnnddooo!!!") }, 10000)
+    setTimeout( () => { console.log("Olá Munnnddooo!!!"), hrs.textContent = "Olá Munnnddooo!!!" }, 10000)
     // Deste modo, o "Olá Munnnddooo!!!" só será executado 1 vez, daqui 10 segundos.
 
 //
