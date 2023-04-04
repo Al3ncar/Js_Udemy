@@ -5,16 +5,26 @@ function Escop(){
     const pausar = document.querySelector('Pausar');
     const zerar = document.querySelector('Zerar');
 
-    const time = 0
-    
+    let hours = 00
+    let second = 00
+    let minutes = 00
 
-    setInterval({ 
+    console.log(time)
+    for(let t = 0; t < 60; t++){
         
-    },1000)
-    
+    }
 
+/*     const timeme = setInterval(()=> {
+        second =+ 1;
+        if(second > 60){
+            minutes =+ 1;
+            second = 00;
+        }
+
+    }, 1000) */
+    
     iniciar.addEventListener('click', () => {
-        relogio.textContent = `${date()}`
+        relogio.textContent = `${timeme}`
     })
 
 } Escop()
