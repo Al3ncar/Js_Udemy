@@ -2,8 +2,8 @@ function Escop(){
 
     const relogio = document.querySelector('.relogio');
     const iniciar = document.querySelector('.Iniciar');
-    const pausar = document.querySelector('Pausar');
-    const zerar = document.querySelector('Zerar');
+    const pausar = document.querySelector('.Pausar');
+    const zerar = document.querySelector('.Zerar');
 
     let [ hours, second, minutes ] = [0, 0, 0];
 
@@ -20,9 +20,11 @@ function Escop(){
         
 
     const stopTime = () => {
-        
+        console.log(time)
+        setTimeout(() => { clearInterval(time())})
     }
 
-    iniciar.addEventListener('click', () => {time()})
+    iniciar.addEventListener('click', () => {Olá(), Olá2()})
+    pausar.addEventListener('click', () => {stopTime()})
 
 } Escop()
