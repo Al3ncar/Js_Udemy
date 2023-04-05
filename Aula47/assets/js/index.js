@@ -9,27 +9,25 @@ function Escop(){
     let second = 00
     let minutes = 00
 
-
-
-    iniciar.addEventListener('click', () => {
-        setInterval(() => {
-            relogio.textContent = `${hours} : ${minutes} : ${second}`
-
-        },1000)
+    let time = () => {
+        function zeroAEsquerda(num){return num >= 10 ? num : `0${num}`};
 
         setInterval(()=> {
-            second < 59 ?  second++ : second = 00
+            second < 59 ?  second++ : second = 00;
+            relogio.textContent = `${zeroAEsquerda(hours)} : ${ zeroAEsquerda(minutes) } : ${ zeroAEsquerda(second) }`
         },1000)
 
-        let timeMinute = setInterval(()=>{
-            if(minutes < 59) return minutes++ 
+        setInterval(()=>{
+            minutes < 59 ?  minutes++ : minutes = 00
         },60000)
 
-        let timeHours = setInterval(()=>{
-            if(hours < 59) return hours++ 
+        setInterval(()=>{
+            hours < 59 ?  hours++ : hours = 00
         },3600000)
+    }
 
+    
 
-    })
+    iniciar.addEventListener('click', () => {time()})
 
 } Escop()
