@@ -30,4 +30,19 @@ p{
     margin: 3% 0%;
     padding: 2%;
     text-align: center;
+    font-size: 2vw;
+}
+
+div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div button{
+    width: 20%;
+    padding: 1%; margin: 2%;
+    font-size: 1.1vw;
+    border: none;
+    background-color: lightgreen;
 }

@@ -18,15 +18,15 @@ function Escop(){
         },1000)
 
         setInterval(()=> {
-            second < 60 ?  second++ : second = 00
+            second < 59 ?  second++ : second = 00
         },1000)
 
         let timeMinute = setInterval(()=>{
-            if(minutes < 60) return minutes++ 
+            if(minutes < 59) return minutes++ 
         },60000)
 
         let timeHours = setInterval(()=>{
-            if(hours < 60) return hours++ 
+            if(hours < 59) return hours++ 
         },3600000)
 
 
