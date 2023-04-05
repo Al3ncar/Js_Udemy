@@ -10,16 +10,26 @@ function Escop(){
     let minutes = 00
 
 
-    let timer = setInterval(() => {
-        iniciar.addEventListener('click', () => {
 
-            // console.log(hours = hours + 1 )
-        })
-    
-    },1000)
-    
     iniciar.addEventListener('click', () => {
-        relogio.textContent = `${timer}`
+        setInterval(() => {
+            relogio.textContent = `${hours} : ${minutes} : ${second}`
+
+        },1000)
+
+        setInterval(()=> {
+            second < 60 ?  second++ : second = 00
+        },1000)
+
+        let timeMinute = setInterval(()=>{
+            if(minutes < 60) return minutes++ 
+        },60000)
+
+        let timeHours = setInterval(()=>{
+            if(hours < 60) return hours++ 
+        },3600000)
+
+
     })
 
 } Escop()
