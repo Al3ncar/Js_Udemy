@@ -9,12 +9,17 @@ function Escop(){
     let second = 00
     let minutes = 00
 
-    console.log(time)
 
+    let timer = setInterval(() => {
+        iniciar.addEventListener('click', () => {
 
+            // console.log(hours = hours + 1 )
+        })
+    
+    },1000)
     
     iniciar.addEventListener('click', () => {
-        relogio.textContent = `${timeme}`
+        relogio.textContent = `${timer}`
     })
 
 } Escop()
