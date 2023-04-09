@@ -1,4 +1,4 @@
-function Escop(){
+/* function Escop(){
 
     const relogio = document.querySelector('.relogio');
     const iniciar = document.querySelector('.Iniciar');
@@ -39,3 +39,20 @@ function Escop(){
     pausar.addEventListener('click', () => {stopTime()})
 
 } Escop()
+
+
+
+ */
+
+function Escop(){
+
+    const relogio = document.querySelector('.relogio');
+    const iniciar = document.querySelector('.Iniciar');
+    const pausar = document.querySelector('.Pausar');
+    const zerar = document.querySelector('.Zerar');
+    
+    iniciar.addEventListener('click', relogio.textContent= "Ele começou")
+    pausar.addEventListener('click', relogio.textContent= "Ele Parou")
+    zerar.addEventListener('click', relogio.textContent= "Ele Zerou")
+    
+}Escop()
