@@ -9,9 +9,18 @@ function Escop(){
     let timeM; let timeH; let timeS;
     
     const zeroAEsquerda = (num) => {return num >= 10 ? num : `0${num}`};
-    const timeSecond =  () => {timeS = setInterval(()=> { second < 59 ?  second++ : second = 00; }, 1000);}
-    const timeMinute = () => {timeM = setInterval(()=>{ minutes < 59 ?  minutes++ : minutes = 00 }, 60000);}
-    const timeHour = () => {timeH = setInterval(()=>{ hours < 59 ?  hours++ : hours = 00 }, 3600000);}
+
+    const times = () => {
+        clearInterval( timeS )
+        clearInterval( timeM )
+        clearInterval( timeH ) 
+
+        timeS = setInterval(()=> { second < 59 ?  second++ : second = 00; }, 1000);
+        timeM = setInterval(()=>{ minutes < 59 ?  minutes++ : minutes = 00 }, 60000);
+        timeH = setInterval(()=>{ hours < 59 ?  hours++ : hours = 00 }, 3600000);
+
+        relogio.style.color = 'black';
+    }
 
     setInterval(() => { relogio.textContent = `${zeroAEsquerda(hours)} : ${ zeroAEsquerda(minutes) } : ${ zeroAEsquerda(second) }`
     }, 1000)
@@ -31,7 +40,7 @@ function Escop(){
         relogio.style.color = 'black';
     }
 
-    iniciar.addEventListener('click', () => {timeSecond(), timeMinute(), timeHour(), relogio.style.color = 'black';})
+    iniciar.addEventListener('click', () => {times()})
     pausar.addEventListener('click', () => {stopTime()})
     zerar.addEventListener('click', () => { zerTime() })
 
