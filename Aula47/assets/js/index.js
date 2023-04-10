@@ -1,4 +1,4 @@
-/* function Escop(){
+function Escop(){
 
     const relogio = document.querySelector('.relogio');
     const iniciar = document.querySelector('.Iniciar');
@@ -6,53 +6,59 @@
     const zerar = document.querySelector('.Zerar');
 
     let [ hours, second, minutes ] = [0, 0, 0];
-    let buttn = false;
+
+    let timeM;
+    let timeH;
+    let timeS;
+    
     const zeroAEsquerda = (num) => {return num >= 10 ? num : `0${num}`};
-    
-    // const time = () => {
-    //     const timeSecond = setInterval(()=> { second < 59 ?  second++ : second = 00; }, 1000);
-    //     const timeMinute = setInterval(()=>{ minutes < 59 ?  minutes++ : minutes = 00 }, 60000);
-    //     const timeHour = setInterval(()=>{ hours < 59 ?  hours++ : hours = 00 }, 3600000);
-    // }
-    
-    // const timeSecond =  () => setInterval(()=> { second < 59 ?  second++ : second = 00; }, 1000);
-    // const timeMinute = () => setInterval(()=>{ minutes < 59 ?  minutes++ : minutes = 00 }, 60000);
-    // const timeHour = () => setInterval(()=>{ hours < 59 ?  hours++ : hours = 00 }, 3600000);
+    const timeSecond =  () => {timeS = setInterval(()=> { second < 59 ?  second++ : second = 00; }, 1000);}
+    const timeMinute = () => {timeM = setInterval(()=>{ minutes < 59 ?  minutes++ : minutes = 00 }, 60000);}
+    const timeHour = () => {timeH = setInterval(()=>{ hours < 59 ?  hours++ : hours = 00 }, 3600000);}
 
-
-    if(buttn === true){ setInterval(()=> { second < 59 ?  second++ : second = 00; }, 1000); }
-    if(buttn !== false){ setInterval(()=>{ minutes < 59 ?  minutes++ : minutes = 00 }, 60000) }
-    if(buttn !== false){ setInterval(()=>{ hours < 59 ?  hours++ : hours = 00 }, 3600000) }
-
-    const returnTime = setInterval(() => {
-        relogio.textContent = `${zeroAEsquerda(hours)} : ${ zeroAEsquerda(minutes) } : ${ zeroAEsquerda(second) }`
+    setInterval(() => { relogio.textContent = `${zeroAEsquerda(hours)} : ${ zeroAEsquerda(minutes) } : ${ zeroAEsquerda(second) }`
     }, 1000)
         
-    const validado = () => { buttn = true }
 
     const stopTime = () => {
-        setTimeout(() => { clearInterval( timeSecond )})
+        setTimeout(() => { clearInterval( timeS )});
+        setTimeout(() => { clearInterval( timeM )});
+        setTimeout(() => { clearInterval( timeH )});
+
+        
     }
 
-    // iniciar.addEventListener('click', () => {timeSecond, timeMinute(), timeHour()})
-    iniciar.addEventListener('click', () => {validado()})
+    iniciar.addEventListener('click', () => {timeSecond(), timeMinute(), timeHour()})
     pausar.addEventListener('click', () => {stopTime()})
+    zerar.addEventListener('click', () => { console.log(zero)})
 
 } Escop()
 
 
 
- */
 
+/* 
 function Escop(){
 
     const relogio = document.querySelector('.relogio');
     const iniciar = document.querySelector('.Iniciar');
     const pausar = document.querySelector('.Pausar');
     const zerar = document.querySelector('.Zerar');
+
+    let conj = false 
+    let circ = () => { conj = true, console.log(conj)}
+
+    let timeSec = 0;
+
+     let time = 
     
-    iniciar.addEventListener('click', relogio.textContent= "Ele começou")
-    pausar.addEventListener('click', relogio.textContent= "Ele Parou")
-    zerar.addEventListener('click', relogio.textContent= "Ele Zerou")
-    
-}Escop()
+    iniciar.addEventListener('click', () => { 
+        setInterval(()=>{  
+            if(timeSec < 60) return relogio.textContent = `${timeSec++}`  
+        }, 1000);
+    })
+
+    pausar.addEventListener('click', () => {relogio.innerHTML= "Ele Parou"})
+    zerar.addEventListener('click', () => {relogio.innerHTML= "Ele Zerou"})
+
+}Escop() */
