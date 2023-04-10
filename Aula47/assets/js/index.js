@@ -6,10 +6,7 @@ function Escop(){
     const zerar = document.querySelector('.Zerar');
 
     let [ hours, second, minutes ] = [0, 0, 0];
-
-    let timeM;
-    let timeH;
-    let timeS;
+    let timeM; let timeH; let timeS;
     
     const zeroAEsquerda = (num) => {return num >= 10 ? num : `0${num}`};
     const timeSecond =  () => {timeS = setInterval(()=> { second < 59 ?  second++ : second = 00; }, 1000);}
@@ -19,18 +16,24 @@ function Escop(){
     setInterval(() => { relogio.textContent = `${zeroAEsquerda(hours)} : ${ zeroAEsquerda(minutes) } : ${ zeroAEsquerda(second) }`
     }, 1000)
         
-
     const stopTime = () => {
-        setTimeout(() => { clearInterval( timeS )});
-        setTimeout(() => { clearInterval( timeM )});
-        setTimeout(() => { clearInterval( timeH )});
+        setTimeout(() => { clearInterval( timeS )}, 100);
+        setTimeout(() => { clearInterval( timeM )}, 100);
+        setTimeout(() => { clearInterval( timeH )}, 100);
 
-        
+        relogio.style.color = 'red';
     }
 
-    iniciar.addEventListener('click', () => {timeSecond(), timeMinute(), timeHour()})
+    const zerTime = () => {
+        [ hours, second, minutes ] = [0, 0, 0];
+        relogio.textContent = `${zeroAEsquerda(hours)} : ${ zeroAEsquerda(minutes) } : ${ zeroAEsquerda(second) }`
+
+        relogio.style.color = 'black';
+    }
+
+    iniciar.addEventListener('click', () => {timeSecond(), timeMinute(), timeHour(), relogio.style.color = 'black';})
     pausar.addEventListener('click', () => {stopTime()})
-    zerar.addEventListener('click', () => { console.log(zero)})
+    zerar.addEventListener('click', () => { zerTime() })
 
 } Escop()
 
