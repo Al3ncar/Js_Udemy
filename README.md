@@ -154,3 +154,29 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - introdução do classList()
 - introdução do appendChild()
 - introdução do insetBefore()
+
+>24° aula:
+- Introdução ternario 
+- Sintaxe ternario
+- Lógica ternario
+- Ternario com condiçoês
+
+>25° aula:
+- Introdução Object Date()
+- Criando objeto de data
+- Explicando o toString()
+- Elemento de Data
+- Indice dos meses
+- Indice das semanas
+- Explicação do Date.now()
+- Explicação do toDateString()
+- Explicando o Date().parse
+
+>26° aula:
+- Introdução da estrutura Switch
+- Sintaxe Switch
+- Case
+- Break
+- default
+- Lógica Switch
+- Switch com object Date()
