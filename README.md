@@ -180,3 +180,27 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - default
 - Lógica Switch
 - Switch com object Date()
+
+>27° aula: 
+- Desafio Data Atual *
+
+>28° aula:
+- Diferença entre let e const
+- Let e const { BLOCO }
+- Ordem dos escopos de "bloco"
+- Exemplo de elevação (Hoisting)
+
+>29° aula:
+- Atribuições via Desestruturações
+- Desestruturações da let
+- Desestruturações da Array
+
+>30° aula:
+- Desestruturação com chaves
+- Maneioras de desestruturar um BLOCO
+
+>31° aula:
+- Introdução da Estrutura de reptição (For)
+- Sintaxe do For Clássico
+- Lógica do for classico 
+- Explicando o metodo length()
