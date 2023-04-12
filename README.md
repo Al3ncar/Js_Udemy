@@ -49,7 +49,7 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Introdução do alert(), confirm() e prompt()
 
 >10° aula: 
-- Desafio [A, B, C]
+- Desafio [A, B, C] *
 
 >11° aula: 
 - Introdução dos indices 
@@ -63,7 +63,7 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Apresentação do Slice()
 - Apresentação do Split()
 - Apresentação do ToUpperCase()
-- Desafio da Aula 11
+- Desafio Seu Nome * 
 
 >12° aula: 
 - Apresentaçâo do ToString()
@@ -82,7 +82,7 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Apresentação do pi
 - Apresentação do pow
 - Apresentação do Raiz
-- Desafio da aula 13
+- Desafio do Numero *
 
 >14° aula:
 - Explicação dos indices no array
@@ -110,7 +110,7 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Explicando melhor os tipos dos Dados
 - Valores Primitivos
 - Valores de Referência 
-- Desafios Registo
+- Desafios Registo *
 - Exeplicando o que é o querySelector()
 - Exeplicando o que é o addEventListener()
 - Explicando o que é o innerHTML()
@@ -139,7 +139,7 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Desafio "Digite um Numero!!!"
 
 >21° aula:
-- Desafio do IMC (Indice de Massa Corporia)
+- Desafio do IMC (Indice de Massa Corporia) *
 
 >22° aula:
 - Desafio do addEventListener
