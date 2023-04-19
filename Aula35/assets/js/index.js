@@ -1,55 +1,56 @@
-// FOR IN - ESTRUTURA DE REPETIÇÃO
+// FOR OF 
 
-//Array com apenas um par de colchetes e chamado de VETOR, array de unica dimenção
+//Diferente do For In este pega o valor do indice. Ambos tem a sintaxe semelhante, 
+//possuindo uma unica diferença, o " of " no lugar do " in ", desta maneira:
 
-const frutas = ['Pera', 'Maça', 'Uva'];
+const clothingStore = ['camiseta', 'short', 'blusão', 'tenis'];
 
-for (let i = 0; i < frutas.length; i++ ){  console.log( frutas[i] );  }
-
-
-console.log(""); // Quebra de linha no console.
-
-
-//For in ==> lê os indices(Array) ou chaves do objeto
-
-for /* palavra reservada */ (let/* palavra reservada */ indice /*responsavel por pegar o indice */ in /*no*/ frutas/* Array de frutas */){
-    console.log(frutas[indice]);// retorna todas as frutas no console;
+for(let value of  clothingStore){
+    console.log(value)//
 }
 
+//tendo tambem uma lógica diferente, o of PEGA O VALOR DO ARRAY/CHAVES
+//não sendo necessario colocar:
+// exemplo: console.log( clothingStore[ value ] ), devido o of pegar o valor do indice
+
 
 console.log(""); // Quebra de linha no console.
 
 
-const pessoas = {
-    nome: 'GODOLFREDO',
-    sobrenome: 'CLADIMISON LIMA',
-    idade: 35
-};
+//Temos tambem um outra maneira de usar o for
 
-for(let index in pessoas){
-    console.log(`${index}:` ,pessoas[index])
+clothingStore.forEach( function (value, index, array){
+
+    console.log(value, index, array);
+        // O VALUE é o valor do indice
+        // O INDEX é o indice do array
+        // O ARRAY é o array completo 
+
+})
+
+
+
+console.log(""); // Quebra de linha no console.
+
+
+
+//OS 4 TIPOS DE FOR:
+
+// 1° FOR CLASSICO -> manipula até chegar no valor do indice, geralmente com iteraveis ( Array ou String )
+// 2° FOR IN -> já possui o indice, retorna o indice ou chaves ( String, Array, Object )
+// 3° FOR OF -> já possui o o VALOR do indice, retorna o valor em si ( Iteraveis, Arrays ou String )
+// 4° FOREACH() -> função que pega o valor e o indice
+
+//Usando Chaves
+
+// FOR IN funciona usando chaves
+
+const user = {
+    name: 'Natasha',
+    lastName: 'Golden',
+    yeardOld: 21
 }
 
-
-console.log(""); // Quebra de linha no console.
-
-
-
-//Acesando o acessando valores da chaves individualmente
-
-console.log(pessoas.nome);
-console.log(pessoas['sobrenome']);
-
-const chaves = 'nome';
-console.log(pessoas[chaves]);
-
-
-console.log(""); // Quebra de linha no console.
-
-
-const merc = ['Pera', 'Maça', 'Banana', 'Laranja'];
-
-for(let ind in merc){
-    console.log(merc[ind], ind)
-
+for (let index in user){
+    console.log(`${index}:`, user[index] )
 }
