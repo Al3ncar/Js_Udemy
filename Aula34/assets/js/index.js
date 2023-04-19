@@ -1,21 +1,55 @@
-// Modelo de Objeto de Documento ( DOM )
+// FOR IN - ESTRUTURA DE REPETIÇÃO
 
-//O Modelo de Objeto de Documento ( DOM ) é uma interface de programação para documentos HTML, 
-//XML e SVG . Ele fornece uma representação estruturada do documento como uma árvore. 
-//O DOM define métodos que permitem acesso à árvore, para que eles possam alterar a estrutura, 
-//estilo e conteúdo do documento.
+//Array com apenas um par de colchetes e chamado de VETOR, array de unica dimenção
 
-// Modelo de Objeto de Documento
+const frutas = ['Pera', 'Maça', 'Uva'];
 
-/* 
-    //  ARVORE DO DOM
-            WINDOW = PAI DE TODOS
-            DOCUMENT = FILHO DO WINDOW
-            HTML = FILHA DO DOCUMENT
-            BODY = FIPHO DO HTML
-    //
-*/
+for (let i = 0; i < frutas.length; i++ ){  console.log( frutas[i] );  }
 
-//Quando estamso usando o DOM estamos usando a API do Dom, que pode alterar qualquer condição 
 
-//Quando estamos usando o DOM estamo falando de uma interface de objetos que pertime manipular o elemento dentro da pagina.
+console.log(""); // Quebra de linha no console.
+
+
+//For in ==> lê os indices(Array) ou chaves do objeto
+
+for /* palavra reservada */ (let/* palavra reservada */ indice /*responsavel por pegar o indice */ in /*no*/ frutas/* Array de frutas */){
+    console.log(frutas[indice]);// retorna todas as frutas no console;
+}
+
+
+console.log(""); // Quebra de linha no console.
+
+
+const pessoas = {
+    nome: 'GODOLFREDO',
+    sobrenome: 'CLADIMISON LIMA',
+    idade: 35
+};
+
+for(let index in pessoas){
+    console.log(`${index}:` ,pessoas[index])
+}
+
+
+console.log(""); // Quebra de linha no console.
+
+
+
+//Acesando o acessando valores da chaves individualmente
+
+console.log(pessoas.nome);
+console.log(pessoas['sobrenome']);
+
+const chaves = 'nome';
+console.log(pessoas[chaves]);
+
+
+console.log(""); // Quebra de linha no console.
+
+
+const merc = ['Pera', 'Maça', 'Banana', 'Laranja'];
+
+for(let ind in merc){
+    console.log(merc[ind], ind)
+
+}
