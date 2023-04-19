@@ -1,12 +1,12 @@
-//QuerySelectorAll 
-//Enquanto o querySelector seleciona apenas um elemento o ALL seleciona todos:
-const contPargs = document.querySelector('.paragrafos') // Exemplo do queryselector()
+function Escop(){
 
+    const pags = document.querySelectorAll('p')
+        const styleBody = getComputedStyle(document.body)
+        const bodyColor = styleBody.backgroundColor
 
-//O querySelectorAll() seleciona uma coleção de dados;
-const pargs = document.querySelectorAll('p')
+    for(let index of pags){
+        index.style.backgroundColor = bodyColor;
+        index.style.color = '#fff'; 
+    }
 
-
-//Para podermos pegar os estiilo do body vamos usar o:
-const styleBody = getComputedStyle(document.body) // Pegando o estilo que está computado no BODY
-const backgroundColorBody = styleBody.backgroundColor
+}Escop() 

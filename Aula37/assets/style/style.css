@@ -10,18 +10,24 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right top, #7e7f51, #8e8e4d, #9e9d49, #b0ab42, #c3ba3a, #c5c32e, #c6cc1f, #c6d600, #afdc00, #91e200, #6ae700, #15ec00);
+    background-color:  #083005;
 
 }
 main{
     width:40%; 
     padding: 3%;
-    border-radius: 2vw;
+    border-radius: 1vw;
     background-color: whitesmoke;
-
 }
 h1{
     font-family: sans-serif;
     font-size: 4vw;
+    text-align: center;
+}
+
+p{
+    width: 100%;
+    margin: 3% 0%;
+    padding: 2%;
     text-align: center;
 }
