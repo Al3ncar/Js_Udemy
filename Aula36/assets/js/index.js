@@ -1,56 +1,12 @@
-// FOR OF 
-
-//Diferente do For In este pega o valor do indice. Ambos tem a sintaxe semelhante, 
-//possuindo uma unica diferença, o " of " no lugar do " in ", desta maneira:
-
-const clothingStore = ['camiseta', 'short', 'blusão', 'tenis'];
-
-for(let value of  clothingStore){
-    console.log(value)//
-}
-
-//tendo tambem uma lógica diferente, o of PEGA O VALOR DO ARRAY/CHAVES
-//não sendo necessario colocar:
-// exemplo: console.log( clothingStore[ value ] ), devido o of pegar o valor do indice
+//QuerySelectorAll 
+//Enquanto o querySelector seleciona apenas um elemento o ALL seleciona todos:
+const contPargs = document.querySelector('.paragrafos') // Exemplo do queryselector()
 
 
-console.log(""); // Quebra de linha no console.
+//O querySelectorAll() seleciona uma coleção de dados;
+const pargs = document.querySelectorAll('p')
 
 
-//Temos tambem um outra maneira de usar o for
-
-clothingStore.forEach( function (value, index, array){
-
-    console.log(value, index, array);
-        // O VALUE é o valor do indice
-        // O INDEX é o indice do array
-        // O ARRAY é o array completo 
-
-})
-
-
-
-console.log(""); // Quebra de linha no console.
-
-
-
-//OS 4 TIPOS DE FOR:
-
-// 1° FOR CLASSICO -> manipula até chegar no valor do indice, geralmente com iteraveis ( Array ou String )
-// 2° FOR IN -> já possui o indice, retorna o indice ou chaves ( String, Array, Object )
-// 3° FOR OF -> já possui o o VALOR do indice, retorna o valor em si ( Iteraveis, Arrays ou String )
-// 4° FOREACH() -> função que pega o valor e o indice
-
-//Usando Chaves
-
-// FOR IN funciona usando chaves
-
-const user = {
-    name: 'Natasha',
-    lastName: 'Golden',
-    yeardOld: 21
-}
-
-for (let index in user){
-    console.log(`${index}:`, user[index] )
-}
+//Para podermos pegar os estiilo do body vamos usar o:
+const styleBody = getComputedStyle(document.body) // Pegando o estilo que está computado no BODY
+const backgroundColorBody = styleBody.backgroundColor
