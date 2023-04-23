@@ -1,20 +1,87 @@
-// Try Catch => são semelhantea lógica de if e else
+// try / catch / finally
 
-// caso a try não retorne algo, o catch será retornado
-// try{ console.log(soma(1, 2)); console.log(soma('1', 2)) }
-// catch( err ){ console.log("Não existe algo semelhante a isso... ") }
-
-
-// Throw cria um possivel erro, sendo mostrado no console
-
-// console.log(erroNaoo)
-
-function soma (x , y) {
-    if(typeof x !== 'number' || typeof y !== 'number'){throw new ReferenceError ('X ou Y não são numbers');}
-    return x + y
+try{ //  É EXECUTADO QUANDO NÃO HÁ ERROS 
+    console.log("Abrindo arquivo ")
+    console.log("Manipulando arquivo ")
+    
+} catch (err){ // É EXECUTADO QUANDO HÁ ERROS 
+    console.log("Deu erro ao fechar arquivos ")
+    
+} finally{ //  SEMPRE SERÁ EXECUTADO 
+    console.log("Fechando Arquivo ") 
 }
-try{ console.log(soma(1, 2)); console.log(soma('1', 2)) }
-catch( err ){ console.log("Não existe algo semelhante a isso... ") }
+
+
+    console.log("") // Espaço no console 
+
+
+// Podemos construir estruturas alinhas desta maneira
+// Dentro do try pode vir outro try 
+
+try {
+    console.log("Abrindo arquivo ")
+    console.log("Manipulando arquivo ")
+
+    try {
+        console.log(a)
+    } catch(err) {
+        console.log(" Deu ERRO")
+    } finally {
+        console.log(" Tambem sou FINALLY")
+    }
+
+} catch (err) {
+    console.log("Tratando ERRO ")
+
+}finally{
+    console.log("FINNALY: Sempre serei executado")
+}
+
+
+    console.log("") // Espaço no console 
 
 
 
+// Instanceof
+
+    // O instanceof é um operador que testa para ver se a prototype da propriedade de um construtor aparece em qualquer lugar na cadeia de protótipo de um objeto. O valor de retorno é um valor booleano ( TRUE || FALSE ).
+//
+
+// Exemplo:
+
+function instacData (data){
+    if(!(data instanceof Date)) { console.log("Não sou uma data")}
+} instacData(" Seŕa que sou uma data ");
+
+
+
+    console.log("") // Espaço no console 
+ 
+
+//  ----  ----   //
+
+
+function recebeDat (data) {
+
+    if(data && !(data instanceof Date)){
+        throw new TypeError(" Esperando instancia de Date. ")
+    };
+
+    if(!data) {data = new Date();}
+
+    return data.toLocaleTimeString('pt-BR', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hours12: false,
+    })
+} 
+
+try{
+    const hora = recebeDat();
+    console.log( hora )
+} catch( err ){
+    // console.log( err )
+} finally{
+    console.log('Tenha um bom dia...')
+}
