@@ -1,87 +1,60 @@
-// try / catch / finally
 
-try{ //  É EXECUTADO QUANDO NÃO HÁ ERROS 
-    console.log("Abrindo arquivo ")
-    console.log("Manipulando arquivo ")
-    
-} catch (err){ // É EXECUTADO QUANDO HÁ ERROS 
-    console.log("Deu erro ao fechar arquivos ")
-    
-} finally{ //  SEMPRE SERÁ EXECUTADO 
-    console.log("Fechando Arquivo ") 
+/* 
+    // setInterval()
+
+    O setInterval() método, oferecido nas interfaces Window e Worker, chama repetidamente uma função ou executa um trecho de código, com um atraso de tempo fixo entre cada chamada.
+
+*/
+
+// sintaxe:
+
+// setInterval( o que ira acontecer, tempo que vai acontecer )
+
+const hrs = document.querySelector('.hora')
+
+function mostraHora() {
+    let date = new Date();
+    return date.toLocaleTimeString("pt-BR",{ hour12: false });
 }
 
+function funcaDoIntervalo(){ console.log(mostraHora());}
 
-    console.log("") // Espaço no console 
+// setInterval vai configurar um intervalo de tempo, para que alguma função seja executada em determinado Momento 
+//Podemos colocar funções dentro do proprio setInterval 
 
+    let timer = setInterval(() => {  console.log( mostraHora() ), hrs.textContent = mostraHora()  }, 1000); 
 
-// Podemos construir estruturas alinhas desta maneira
-// Dentro do try pode vir outro try 
+// Direfença entre chamar a funhção e a referência dela 
 
-try {
-    console.log("Abrindo arquivo ")
-    console.log("Manipulando arquivo ")
+    // setInterval(funcaDoIntervalo, 1000); // Passando a referência
+    // setInterval(funcaDoIntervalo(), 1000); // Chamando a função
 
-    try {
-        console.log(a)
-    } catch(err) {
-        console.log(" Deu ERRO")
-    } finally {
-        console.log(" Tambem sou FINALLY")
-    }
-
-} catch (err) {
-    console.log("Tratando ERRO ")
-
-}finally{
-    console.log("FINNALY: Sempre serei executado")
-}
-
-
-    console.log("") // Espaço no console 
-
-
-
-// Instanceof
-
-    // O instanceof é um operador que testa para ver se a prototype da propriedade de um construtor aparece em qualquer lugar na cadeia de protótipo de um objeto. O valor de retorno é um valor booleano ( TRUE || FALSE ).
 //
 
-// Exemplo:
 
-function instacData (data){
-    if(!(data instanceof Date)) { console.log("Não sou uma data")}
-} instacData(" Seŕa que sou uma data ");
+//setTimeout()
 
+    // O método global setTimeout()define um cronômetro que executa uma função ou trecho de código especificado assim que o cronômetro expira.
 
+//
 
-    console.log("") // Espaço no console 
- 
+// sintaxe:
 
-//  ----  ----   //
+//setTimeout( função a ser executada, executa até um determinado tempo  )
 
 
-function recebeDat (data) {
+    setTimeout( () => { console.log("Olá Munnnddooo!!!"), hrs.textContent = "Olá Munnnddooo!!!" }, 10000)
+    // Deste modo, o "Olá Munnnddooo!!!" só será executado 1 vez, daqui 10 segundos.
 
-    if(data && !(data instanceof Date)){
-        throw new TypeError(" Esperando instancia de Date. ")
-    };
+//
 
-    if(!data) {data = new Date();}
+// existe uma maneira de para o intevalo, sendo ela ClearInterval():
 
-    return data.toLocaleTimeString('pt-BR', {
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hours12: false,
-    })
-} 
+setTimeout(() => { clearInterval(timer) }, 10000)
 
-try{
-    const hora = recebeDat();
-    console.log( hora )
-} catch( err ){
-    // console.log( err )
-} finally{
-    console.log('Tenha um bom dia...')
-}
+
+// Difernça do setInterval() para o setTimeout()
+
+// O setInterval => Executa varias vezes, ele tambem pode ser parado pelo clearInterval()
+
+// O setTimeout => Executa uma unica vez
