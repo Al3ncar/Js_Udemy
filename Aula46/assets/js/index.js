@@ -1,60 +1,76 @@
+function Escop(){
+
+    const relogio = document.querySelector('.relogio');
+    const iniciar = document.querySelector('.Iniciar');
+    const pausar = document.querySelector('.Pausar');
+    const zerar = document.querySelector('.Zerar');
+
+    let [ hours, second, minutes ] = [0, 0, 0];
+    let timeM; let timeH; let timeS;
+    
+    const zeroAEsquerda = (num) => {return num >= 10 ? num : `0${num}`};
+
+    const times = () => {
+        clearInterval( timeS )
+        clearInterval( timeM )
+        clearInterval( timeH ) 
+
+        timeS = setInterval(()=> { second < 59 ?  second++ : second = 00; }, 1000);
+        timeM = setInterval(()=>{ minutes < 59 ?  minutes++ : minutes = 00 }, 60000);
+        timeH = setInterval(()=>{ hours < 59 ?  hours++ : hours = 00 }, 3600000);
+
+        relogio.style.color = 'black';
+    }
+
+    setInterval(() => { relogio.textContent = `${zeroAEsquerda(hours)} : ${ zeroAEsquerda(minutes) } : ${ zeroAEsquerda(second) }`
+    }, 1000)
+        
+    const stopTime = () => {
+        setTimeout(() => { clearInterval( timeS )}, 100);
+        setTimeout(() => { clearInterval( timeM )}, 100);
+        setTimeout(() => { clearInterval( timeH )}, 100);
+
+        relogio.style.color = 'red';
+    }
+
+    const zerTime = () => {
+        [ hours, second, minutes ] = [0, 0, 0];
+        relogio.textContent = `${zeroAEsquerda(hours)} : ${ zeroAEsquerda(minutes) } : ${ zeroAEsquerda(second) }`
+
+        relogio.style.color = 'black';
+    }
+
+    iniciar.addEventListener('click', () => {times()})
+    pausar.addEventListener('click', () => {stopTime()})
+    zerar.addEventListener('click', () => { zerTime() })
+
+} Escop()
+
+
+
 
 /* 
-    // setInterval()
+function Escop(){
 
-    O setInterval() método, oferecido nas interfaces Window e Worker, chama repetidamente uma função ou executa um trecho de código, com um atraso de tempo fixo entre cada chamada.
+    const relogio = document.querySelector('.relogio');
+    const iniciar = document.querySelector('.Iniciar');
+    const pausar = document.querySelector('.Pausar');
+    const zerar = document.querySelector('.Zerar');
 
-*/
+    let conj = false 
+    let circ = () => { conj = true, console.log(conj)}
 
-// sintaxe:
+    let timeSec = 0;
 
-// setInterval( o que ira acontecer, tempo que vai acontecer )
+     let time = 
+    
+    iniciar.addEventListener('click', () => { 
+        setInterval(()=>{  
+            if(timeSec < 60) return relogio.textContent = `${timeSec++}`  
+        }, 1000);
+    })
 
-const hrs = document.querySelector('.hora')
+    pausar.addEventListener('click', () => {relogio.innerHTML= "Ele Parou"})
+    zerar.addEventListener('click', () => {relogio.innerHTML= "Ele Zerou"})
 
-function mostraHora() {
-    let date = new Date();
-    return date.toLocaleTimeString("pt-BR",{ hour12: false });
-}
-
-function funcaDoIntervalo(){ console.log(mostraHora());}
-
-// setInterval vai configurar um intervalo de tempo, para que alguma função seja executada em determinado Momento 
-//Podemos colocar funções dentro do proprio setInterval 
-
-    let timer = setInterval(() => {  console.log( mostraHora() ), hrs.textContent = mostraHora()  }, 1000); 
-
-// Direfença entre chamar a funhção e a referência dela 
-
-    // setInterval(funcaDoIntervalo, 1000); // Passando a referência
-    // setInterval(funcaDoIntervalo(), 1000); // Chamando a função
-
-//
-
-
-//setTimeout()
-
-    // O método global setTimeout()define um cronômetro que executa uma função ou trecho de código especificado assim que o cronômetro expira.
-
-//
-
-// sintaxe:
-
-//setTimeout( função a ser executada, executa até um determinado tempo  )
-
-
-    setTimeout( () => { console.log("Olá Munnnddooo!!!"), hrs.textContent = "Olá Munnnddooo!!!" }, 10000)
-    // Deste modo, o "Olá Munnnddooo!!!" só será executado 1 vez, daqui 10 segundos.
-
-//
-
-// existe uma maneira de para o intevalo, sendo ela ClearInterval():
-
-setTimeout(() => { clearInterval(timer) }, 10000)
-
-
-// Difernça do setInterval() para o setTimeout()
-
-// O setInterval => Executa varias vezes, ele tambem pode ser parado pelo clearInterval()
-
-// O setTimeout => Executa uma unica vez
+}Escop() */
