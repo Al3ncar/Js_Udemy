@@ -1,6 +1,9 @@
 # JavaScript Udemy
 
+--- 
+
 ### Descrição
+
 ---
 Aqui está todas minha anotações no decorrer do curso de JavaScript, neste projeto tem cerca de mais de 50 arquivos, todos esses arquivos vão ser documentações, registro, lógica de programação e atividades. 
 
@@ -11,7 +14,7 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Projeto em desenvolvimento
 
 
-## # Roteiro das Aulas
+###  Aulas
 ---
 
 >1° aula: 
@@ -204,3 +207,21 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Sintaxe do For Clássico
 - Lógica do for classico 
 - Explicando o metodo length()
+
+>32° aula:
+- Desafio Frases *
+
+>33° aula:
+- Introdução do Modelo de Objeto de Documento ( DOM )
+- Arvore/Ordem do DOM
+- Window > Document > HTML > Body 
+- API do DOM 
+- Interface de objeto
+
+>34° aula:
+- AJUSTAR ESSA AULA
+- COPIA DA AULA ANTERIOR
+
+>34° aula:
+- Introdução da Estrutura de reptição (For In)
+
