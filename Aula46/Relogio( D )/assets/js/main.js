@@ -1,20 +1,20 @@
 function relogio() {
 
-    function criaHoraDosSegundos(segundos) { // função responsavel por retornar o Tempo 
-      const data = new Date(segundos * 1000); // Pegando a hora do inicio da era onix 
-      return data.toLocaleTimeString('pt-BR', { hour12: false, timeZone: 'UTC' }); // retornando o tempo com parametros 
+    function criaHoraDosSegundos(segundos) {   // função responsavel por retornar o Tempo 
+      const data = new Date(segundos * 1000);  // Pegando a hora do inicio da era onix 
+      return data.toLocaleTimeString('pt-BR', { hour12: false, timeZone: 'UTC' });  // retornando o tempo com parametros 
     }
   
-    const relogio = document.querySelector('.relogio'); // Pegando a tag P no documento 
-    let segundos = 0; // Variavel responsavel pelo tempo
-    let timer; // Guardando o setInterval()
+    const relogio = document.querySelector('.relogio');   // Pegando a tag P no documento 
+    let segundos = 0;   // Variavel responsavel pelo tempo
+    let timer;  // Guardando o setInterval()
   
-    function iniciaRelogio() { // Função responsavel por iniciar o relogio
+    function iniciaRelogio() {  // Função responsavel por iniciar o relogio
 
-      timer = setInterval(function() { // SetInterval responsavel por rolar o tempo
+      timer = setInterval(function() {  // SetInterval responsavel por rolar o tempo
 
-        segundos++; // somando a let segundos 
-        relogio.innerHTML = criaHoraDosSegundos(segundos); // mostrando a pagina o tempo executado
+        segundos++;   // somando a let segundos 
+        relogio.innerHTML = criaHoraDosSegundos(segundos);  // mostrando a pagina o tempo executado
 
       }, 1000);
 

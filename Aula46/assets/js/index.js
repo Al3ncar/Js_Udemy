@@ -74,3 +74,23 @@ function Escop(){
     zerar.addEventListener('click', () => {relogio.innerHTML= "Ele Zerou"})
 
 }Escop() */
+
+
+function relogio(){
+    function criaTempo(s){
+        const data = new Date(s * 1000);
+        return data.toLocaleTimeString('pt-BR', {hour12: false, timeZone: 'UTC' })       
+    }
+
+    const getRelogio = document.querySelector('.relogio');
+    let s = 0;
+    let timer;
+
+    function ativarTemp (){
+        timer = setInterval(()=>{
+            s++;  getRelogio.innerHTML = criaTempo(s);
+        },1000)
+    }
+
+
+}relogio()
