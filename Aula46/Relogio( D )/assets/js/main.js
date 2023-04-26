@@ -1,4 +1,4 @@
-/* function relogio() {
+function relogio() {
 
     function criaHoraDosSegundos(segundos) {   // função responsavel por retornar o Tempo 
       const data = new Date(segundos * 1000);  // Pegando a hora do inicio da era onix 
@@ -39,10 +39,10 @@
       }
     });
   } relogio();
- */
+
 
 // ----------------  Maneira Simples ---------------------- //
-
+/* 
 
   function criaHoraDosSegundos(segundos) {  
     const data = new Date(segundos * 1000);  
@@ -74,5 +74,7 @@
 
   zerar.addEventListener('click', function(event) {
     clearInterval(timer);
-    segundos = 0; relogio.innerHTML = '00:00:00'
-  });
+    segundos = 0; relogio.innerHTML = '00:00:00';
+  }); 
+  
+*/
