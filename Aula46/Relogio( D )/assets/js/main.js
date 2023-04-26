@@ -22,23 +22,24 @@ function relogio() {
   
     document.addEventListener('click', function(e) { // Evento adicionado de click 
       const el = e.target; // pegado o alvo do evento
-  
+      let classes = relogio.classList;
+
       if (el.classList.contains('zerar')) { // se 
         clearInterval(timer);
         relogio.innerHTML = '00:00:00';
-        relogio.classList.remove('pausado');
+        classes.remove('pausado');
         segundos = 0;
       }
   
       if (el.classList.contains('iniciar')) {
-        relogio.classList.remove('pausado');
+        classes.remove('pausado');
         clearInterval(timer);
         iniciaRelogio();
       }
   
       if (el.classList.contains('pausar')) {
         clearInterval(timer);
-        relogio.classList.add('pausado');
+        classes.add('pausado');
       }
     });
   }

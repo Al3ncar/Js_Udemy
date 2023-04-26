@@ -92,5 +92,10 @@ function relogio(){
         },1000)
     }
 
+    document.addEventListener('click', function(e){
+        let el = e.target
+
+        if(el.classList.contains('zerar')){}
+    })
 
 }relogio()
