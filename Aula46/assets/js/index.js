@@ -1,4 +1,4 @@
-function Escop(){
+/* function Escop(){
 
     const relogio = document.querySelector('.relogio');
     const iniciar = document.querySelector('.Iniciar');
@@ -46,7 +46,7 @@ function Escop(){
 
 } Escop()
 
-
+ */
 
 
 /* 
@@ -76,7 +76,7 @@ function Escop(){
 }Escop() */
 
 
-function relogio(){
+/* function relogio(){
     function criaTempo(s){
         const data = new Date(s * 1000);
         return data.toLocaleTimeString('pt-BR', {hour12: false, timeZone: 'UTC' })       
@@ -98,4 +98,33 @@ function relogio(){
         if(el.classList.contains('zerar')){}
     })
 
-}relogio()
+}relogio() */
+
+
+function Relogio(){
+
+    function getTimer(second){
+        const date = new Date(second * 1000)
+        return date.toLocaleTimeString('pt-BR', { hour12: false, timeZone: 'UTC'})
+    }
+
+    let second = 0;
+    let timer;
+
+    function Relog(){
+        timer = setInterval(()=>{
+            relogio.textContent = getTimer(second++ )
+        }, 1000)
+    }
+
+    const relogio = document.querySelector('.relogio');
+    const iniciar = document.querySelector('.Iniciar');
+    const pausar = document.querySelector('.Pausar');
+    const zerar = document.querySelector('.Zerar');
+
+    iniciar.addEventListener('click', () => {console.log(Relog())})
+
+    pausar.addEventListener('click', () => {relogio.innerHTML= "Ele Parou"})
+    zerar.addEventListener('click', () => {relogio.innerHTML= "Ele Zerou"})
+
+} Relogio()
