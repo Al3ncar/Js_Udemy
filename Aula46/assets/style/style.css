@@ -67,3 +67,7 @@ div button{
 
 div button:active{background-color: #0e9c36;}
 div button:hover{transform: scale(1.1); }
+
+.pausado{
+    color: red;
+}

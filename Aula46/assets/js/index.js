@@ -101,15 +101,17 @@ function Escop(){
 }relogio() */
 
 
-function Relogio(){
+/* function Relogio(){
+
+    const relogio = document.querySelector('.relogio');
 
     function getTimer(second){
         const date = new Date(second * 1000)
         return date.toLocaleTimeString('pt-BR', { hour12: false, timeZone: 'UTC'})
     }
 
-    let second = 0;
-    let timer;
+        let second = 0;
+        let timer;
 
     function Relog(){
         timer = setInterval(()=>{
@@ -117,14 +119,24 @@ function Relogio(){
         }, 1000)
     }
 
-    const relogio = document.querySelector('.relogio');
-    const iniciar = document.querySelector('.Iniciar');
-    const pausar = document.querySelector('.Pausar');
-    const zerar = document.querySelector('.Zerar');
+    document.addEventListener('click', (event) => {
+        const elemts = event.target
+        const classl = elemts.classList;
 
-    iniciar.addEventListener('click', () => {console.log(Relog())})
+        if(classl.contains('Iniciar')){
+            clearInterval(timer), Relog();
+            relogio.classList.remove('pausado')
+        }
+        if(classl.contains('Pausar')){
+            clearInterval(timer); 
+            relogio.classList.add('pausado')
+        }
+        if(classl.contains('Zerar')){
+            second = 0, relogio.textContent = `00:00:00`;
+            relogio.classList.remove('pausado')
+        }
+    })
 
-    pausar.addEventListener('click', () => {relogio.innerHTML= "Ele Parou"})
-    zerar.addEventListener('click', () => {relogio.innerHTML= "Ele Zerou"})
+} Relogio() */
 
-} Relogio()
+
