@@ -140,3 +140,42 @@ function Escop(){
 } Relogio() */
 
 
+function Relog() {
+    const relogio = document.querySelector('.relogio');
+
+    function getH (sec) {
+        const date = new Date(sec * 1000)
+        return date.toLocaleTimeString('pt-BR', {hour12: false, timeZone: 'UTC'})
+    }
+
+    let sec = 0;
+    let times;
+
+    function Rel () {
+        times = setInterval(() => {
+            relogio.textContent = getH(sec++)
+        }, 1000)
+    }
+
+    document.addEventListener('click', (e) => {
+        const el = e.target;
+        const ClaEl = el.classList;
+
+        if(ClaEl.contains('Iniciar')){ 
+            clearInterval(times); Rel();
+            relogio.classList.remove('pausado')
+        }
+
+        if(ClaEl.contains('Pausar')){ 
+            clearInterval(times);
+            relogio.classList.add('pausado')
+        }
+
+        if(ClaEl.contains('Zerar')){ 
+            clearInterval(times); sec = 0
+            relogio.textContent = `00:00:00`
+            relogio.classList.remove('pausado')
+        }
+
+    })
+}Relog()
