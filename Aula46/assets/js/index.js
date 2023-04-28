@@ -46,8 +46,8 @@
 
 } Escop()
 
- */
 
+ */
 
 /* 
 function Escop(){
@@ -139,7 +139,7 @@ function Escop(){
 
 } Relogio() */
 
-
+/* 
 function Relog() {
     const relogio = document.querySelector('.relogio');
 
@@ -176,6 +176,43 @@ function Relog() {
             relogio.textContent = `00:00:00`
             relogio.classList.remove('pausado')
         }
+    })
+}Relog(); */
 
+function Relog(){
+    const relogio = document.querySelector('.relogio');
+
+    function CriaHora (segund) {
+        const date = new Date(segund * 1000)
+        return date.toLocaleTimeString('pt-BR', {hour12: false, timeZone: 'UTC'})
+    };
+
+        let segund = 0;
+        let timer;
+
+    function returnTime () {
+        timer = setInterval(() => {
+            relogio.textContent = CriaHora(segund++)
+        },1000)
+    };
+
+    document.addEventListener('click', (e) => {
+        const el = e.target;
+        const cll = el.classList;
+
+        if(cll.contains('Iniciar')){
+            clearInterval(timer); returnTime();
+            relogio.classList.remove('pausado')
+        }
+        if(cll.contains('Zerar')){
+            clearInterval(timer);
+            segund = 0;
+            relogio.textContent = `00:00:00`
+            relogio.classList.remove('pausado')
+        }
+        if(cll.contains('Pausar')){
+            clearInterval(timer);
+            relogio.classList.add('pausado')
+        }
     })
 }Relog()
