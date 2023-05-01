@@ -12,7 +12,9 @@ let b = a; //  Copia de A
 console.log(a, b) // A A 
 
 a = "Outra coisa"
-console.log(a, b) // deste modo não afeto o valor de B
+console.log(a, b) // Outra coisa A
+
+// deste modo não afeto o valor de B
 // Sempre que uma variavel for igual outra variavel com dados primitivos
 
 
@@ -23,13 +25,14 @@ console.log(a, b) // deste modo não afeto o valor de B
 
 let aTest = [1, 2, 3];
 let bTest = aTest
-console.log(aTest, bTest )
+console.log(aTest, bTest ) // [ 1, 2, 3 ] [ 1, 2, 3 ]
 
 aTest.push(4)
-console.log(aTest)
+console.log(aTest, bTest) // [ 1, 2, 3, 4 ]
 
 bTest.pop()
-console.log(aTest, bTest)
+console.log(aTest, bTest) // [ 1, 2, 3 ] [ 1, 2, 3 ]
+
 
 // Valores de referencia alteram ambos as condições
 // Valores primitivos são copias dos outros valores, Primitivos são valores COPIADO
