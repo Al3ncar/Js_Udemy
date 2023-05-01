@@ -8,14 +8,17 @@
 
 // += 
 //Isso:
+
 let N1 = 25
 N1 = N1 + 25
-console.log(N1)
+console.log(N1) // 50
 
 //É a mesma coisa disso:
+
+
 let N2 = 25
 N2+= 25 // N2 = N2 + 25
-console.log(N1)
+console.log(N1) // 50
 
 //Tal expressão pode acontecer com diferentes operadores
 //como:
@@ -38,8 +41,30 @@ console.log(N4)
 /* 
   **= -> Potenciação
   ++  -> Incremento 
-  __  -> Decremento
+  --  -> Decremento
 */
+
+//   **=  -> Potenciação
+
+let N5 = 3;
+N5 **= 3;
+
+console.log(N5); // 27
+
+//   ++  -> Incremento 
+
+let N6 = 10
+N6 ++;
+
+console.log(N6) // 11
+
+//   --  -> Decremento
+
+let N7 = 10;
+N7 --;
+
+console.log(N7); // 9
+
 //Sempre que vermos NAN, significa NOT A NUMBER 
 
 //PARSEINT() --> Metodo que converte o valor para inteiro
