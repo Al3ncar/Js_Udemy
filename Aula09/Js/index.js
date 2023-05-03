@@ -14,7 +14,7 @@
   ele é uma caixa de mensagem que o navegador renderiza como pop-up
 */
 
-/* const Msg = alert("Exemplo de Alert") */
+ /* const Msg = alert("Exemplo de Alert")   */
 
 
 /* const Confirma = confirm("Deseja ver como funciona o comfirm??")
@@ -53,3 +53,11 @@ alert(Result2)
 //Meneira feita em aula
 alert(`O resultado da sua conta é ${Num1 + Num2}`)
 //Eu posso colocar expressoẽs dentro de uma Tamplete String
+
+
+
+// exemplo;
+
+window.alert('Olá, eu sou alert completo');
+
+alert('Olá, eu sou alert simples');
