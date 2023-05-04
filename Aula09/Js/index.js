@@ -51,13 +51,13 @@ const Result2 = `O resultado da sua conta é ` + (Num1 + Num2)
 alert(Result2)
 
 //Meneira feita em aula
-alert(`O resultado da sua conta é ${Num1 + Num2}`)
+alert(`O resultado da sua cont é ${Num1 + Num2}`)
 //Eu posso colocar expressoẽs dentro de uma Tamplete String
 
 
 
 // exemplo;
 
-window.alert('Olá, eu sou alert completo');
+window.prompt('Olá, eu sou prompt completo??');
 
-alert('Olá, eu sou alert simples');
+prompt('Olá, eu sou prompt simples??');
