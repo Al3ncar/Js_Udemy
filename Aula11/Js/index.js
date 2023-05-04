@@ -51,6 +51,8 @@ console.log(umString.concat(`, estou concatenando mais um texto`)) ;
 
 console.log(umString.indexOf(`texto`)) // 3
 console.log(umString.indexOf(`to`, 3)) // 6 -> 6,
+
+
 // lastIndexOf() retorna o índice da última ocorrência do valor especificado
 // encontrado na String. 
 
@@ -62,7 +64,9 @@ console.log(umString.indexOf(`to`, 3)) // 6 -> 6,
 // verificação de uma string
 
 let palavra = "Qu4lqu3r t/p0 d& c@r@cte[ 1682 "
-console.log(palavra.match(/[43@#/[]/g))
+console.log(palavra.match(/[43@#/[]/g)) 
+// [ '4', '3', '/', '@', '@', '[' ]
+
 
 // .match(/[o que vai ser verificado na string]/ g = global) Podemos ver se tem
 // letras do A ao Z
