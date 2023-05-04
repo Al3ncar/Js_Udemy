@@ -1,8 +1,11 @@
 // As strings são indexadas e cada caracter tem um indice começando de 0
 
-const umString = `Um texto` // 01234567 = "Um Texto"
-console.log(umString)
-/*
+const umString = `Um texto` 
+
+
+console.log(umString) // 01234567 = "Um Texto"
+
+/*image.png
 
 //Posso escolher qual caracter quero que apareça
  const umString =
@@ -20,15 +23,29 @@ console.log(umString)
 
 console.log(umString[4]) // e
 
-// ---- CharAt() ---- // Podemos usar tambem um método chamado de charAt() Esse
+// ---- CharAt() ---- // 
+
+
+// Podemos usar tambem um método chamado de charAt() Esse
 // método charAt() retorna o caractere especificado a partir de uma string.
+
+
 console.log(umString.charAt(4)) // e
 
-// ---- Concat() ---- // Temos tambem maneiras de Concatenar strings usando o
-// método chamado de concat
-console.log(umString.concat(`, estou concatenando mais um texto`)) //
+// ---- Concat() ---- //
 
-// ---- IndexOf() ---- // podemos saber em qual indice começa a palavra "texto"
+
+// Temos tambem maneiras de Concatenar strings usando o
+// método chamado de concat
+
+
+console.log(umString.concat(`, estou concatenando mais um texto`)) ;
+// Um texto, estou concatenando mais um texto
+
+// ---- IndexOf() ---- //
+
+
+// podemos saber em qual indice começa a palavra "texto
 // Posso pedir pra ele começar no indece 3, colocando um numero logo após o
 // texto indexOf(`palavra a ser buscada`, indice que deve começar)
 
@@ -37,7 +54,10 @@ console.log(umString.indexOf(`to`, 3)) // 6 -> 6,
 // lastIndexOf() retorna o índice da última ocorrência do valor especificado
 // encontrado na String. 
 
-//---- Match() ---- // O método match() retorna uma
+//---- Match() ---- // 
+
+
+// O método match() retorna uma
 // correspondência entre uma string com uma expressão regular. Esse método é uma
 // verificação de uma string
 
