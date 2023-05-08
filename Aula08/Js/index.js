@@ -69,13 +69,19 @@ console.log(N7); // 9
 
 //PARSEINT() --> Metodo que converte o valor para inteiro
 // Transforma string em Number
+
+
 let Numb1 = "14.1515151551151"
 console.log(parseInt(Numb1)) // 14
 
+
+
 //PARSEFLOT() --> Converte a string em number
 //Converte textos para numeros flutuantes 
+
 let Numb2 = "23.55555"
-console.log(parseFloat(Numb2))
+console.log(parseFloat(Numb2)) // 23.55555
+
  
 /* 
 <-- METODO --> 
