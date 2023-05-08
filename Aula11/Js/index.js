@@ -49,8 +49,8 @@ console.log(umString.concat(`, estou concatenando mais um texto`)) ;
 // Posso pedir pra ele começar no indece 3, colocando um numero logo após o
 // texto indexOf(`palavra a ser buscada`, indice que deve começar)
 
-console.log(umString.indexOf(`texto`)) // 3
 console.log(umString.indexOf(`to`, 3)) // 6 -> 6,
+console.log(umString.indexOf(`texto`)) // 3
 
 
 // lastIndexOf() retorna o índice da última ocorrência do valor especificado
@@ -72,8 +72,11 @@ console.log(palavra.match(/[43@#/[]/g))
 // letras do A ao Z
 
 let texto2 = "Qu4lqu3r t/p0 d& c@r@cte[ "
+
 console.log(palavra.match(/[a-z]/g)) // minúsculas
+
 console.log(palavra.match(/[A-Z]/g)) // MAIÚSCULAS
+
 console.log(palavra.match(/[0-9]/g)) // Apenas numeros
 
 // ---- Search() ---- // 
@@ -90,7 +93,10 @@ console.log(texto3.search(/[a-z]/g))
 let texto4 = "Um texto apenas, Um coisa muito importante ter mais de Um text"
 
 console.log(texto4.replace("Um", "Outro"))
-console.log(texto4.replace(/Um/g, "Outro")) // Dessa maneira eu consigo alterar todos os "Um"
+
+console.log(texto4.replace(/Um/g, "Outro")) 
+
+// Dessa maneira eu consigo alterar todos os "Um"
 
 // ---- Length() ---- // 
 
@@ -98,6 +104,12 @@ console.log(texto4.replace(/Um/g, "Outro")) // Dessa maneira eu consigo alterar 
 
 let texto5 = "Coisas devem serem feitas"
 console.log(texto5.length) // 25
+
+let textos5 = [
+  {msg: "olá"}, {msg: "como"},
+  {msg: "voce"}, {msg: "esta?"},
+]
+console.log(textos5.length) // 4
 
 // ---- Slice() ---- // 
 
@@ -108,28 +120,34 @@ console.log(texto5.length) // 25
 let texto6 = "Coisas seram feitas"
 console.log(texto6.slice(7, 19)) // seram feitas
 
-//podemos escolher tambem as ultimas letras usando o sinal de menos, sendo considerado como um subtração
+//podemos escolher tambem as ultimas letras usando o sinal de menos, sendo considerado uma subtração
 
-console.log(texto6.slice(-3)) // As 3 ultimas letras são "tas"
+console.log(texto6.slice(-3)) 
+// As 3 ultimas letras são "tas"
 
 // ---- Split ---- // 
 
 // Divide a string em algum caracter especifico. Ele irá
 // criar um Array com as palavras dividas.
 
-console.log(texto4.split(" "))/* exemplo:
-[
-  'Um', 'texto', 'apenas,', 'Um', 'coisa', 'muito','importante', 'ter', 'mais','de', 'Um','text'
-]
-*/
+console.log(texto4.split(" "))
+/* exemplo: [
+  'Um', 'texto', 'apenas,', 'Um', 
+  'coisa', 'muito','importante', 'ter', 
+  'mais','de', 'Um','text'
+]*/
 
 // ---- ToUpperCase() ---- // 
 
 //Ele altera todas as string para Maiúscula
 
 let texto7 = "Esse é mais um exemplo de texto usado"
+
 console.log(texto7.toUpperCase()) // MAIÚSCULAS
+//ESSE É MAIS UM EXEMPLO DE TEXTO USADO
+
 console.log(texto7.toLowerCase()) // minúsculas
+//esse é mais um exemplo de texto usado
 
 /*
 const yourName = prompt("Qual é seu nome??")
