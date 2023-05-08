@@ -14,7 +14,7 @@ console.log(n1 + n2); // 5
 // porem dessa maneira o numero em sua origem permanecerá como um number; sendo
 // assim apenas nessa expressão o valor será uma string;
 
-console.log(n1.toString() + n2); // 25 = 2 e 5
+console.log(n1.toString() + n2); // 23 = 2 e 3
 console.log(typeof n1); // Number;
 
 //para realmente altera o tipo do n1 devemos fazer dessa forma;
