@@ -37,7 +37,8 @@ console.log(Math.min(1, -2, 3, 6, 45, -56, 9, -5, 17, n4 + n5 ))
 console.log(Math.random()) // Aleatório
 
 //pi ==> Adiciona o numero de pi
-console.log(Math.PI)
+
+console.log(Math.PI) // 3.141592653589793
 
 //pow ==> são os numeros potenciais 
 let n6  = 9
