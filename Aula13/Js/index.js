@@ -32,8 +32,9 @@ console.log(Math.max(1, -2, 3, 6, 45, -56, 9, -5, 17, n4 + n5 ))
 //min ==> ele vai buscar o menor valor de um determinada array ou sequencia 
 console.log(Math.min(1, -2, 3, 6, 45, -56, 9, -5, 17, n4 + n5 ))
 
-//random ==> ele adiciona numeros aleatorios de 0.00... até 0.99...
-console.log(Math.random())
+//random ==> ele adiciona numeros aleatórios de 0.00... até 0.99...
+
+console.log(Math.random()) // Aleatório
 
 //pi ==> Adiciona o numero de pi
 console.log(Math.PI)
@@ -51,7 +52,7 @@ console.log(n6 ** 0.5) // Outra maneira
 console.log(100 / 0) // Infinity
 console.log(100 / 0.0000000000001) // 100000000000000000000
 
-//Método é tudo aquela função que está em um objeto
+//Método é tuda aquela função que está em um objeto
 
 // Desafio da aula 13
 
