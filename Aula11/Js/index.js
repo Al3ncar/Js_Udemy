@@ -147,8 +147,7 @@ console.log(texto7.toUpperCase()) // MAIÚSCULAS
 //ESSE É MAIS UM EXEMPLO DE TEXTO USADO
 
 console.log(texto7.toLowerCase()) // minúsculas
-//esse é mais um exemplo de texto usado
-
+//
 /*
 const yourName = prompt("Qual é seu nome??")
 const Tela = window.document.write(yourName)
@@ -185,3 +184,8 @@ document.body.innerHTML += `As últimas 3 letras do seu nome são: ${lastName}  
 document.body.innerHTML += `As palavras do seu nome são:  ${splt} <br/>`;
 document.body.innerHTML += `Seu nome com letras maiúsculas: ${upCase} <br/>`;
 document.body.innerHTML += `Seu nome com letras minúsculas: ${lowCase} <br/>`;
+
+
+document.body.innerHTML = `Olá`;
+
+document.body.innerHTML = `<p>caraio</p>`;
