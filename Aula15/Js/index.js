@@ -1,16 +1,19 @@
 //Funções executam ações, funções recebem e atualizam valores
 
-function saudacao(nome /* parametros */){ // corpo da função
+function saudacao(nome /* parametros */){ 
+    // corpo da função
     console.log(`Bom dia ${nome}`)
 }
-// Podemos passar valores para serem ultilizados na string que está na funçao 
-saudacao("Dodio") 
-saudacao("Otavio")
-saudacao("Mateus")
-saudacao("Murilo")
-saudacao("Alfredo")
 
-const variavel = saudacao("Pedro")
+// Podemos passar valores para serem ultilizados na string que está na funçao 
+
+saudacao("Dodio") // Bom dia Dodio
+saudacao("Otavio")// Bom dia Otavio
+saudacao("Mateus")// Bom dia Mateus
+saudacao("Murilo")// Bom dia Murilo
+saudacao("Alfredo")// Bom dia Alfredo
+
+const variavel = saudacao("Pedro")// Bom dia Pedro
 
 
 /* ----- */
@@ -25,10 +28,10 @@ function test (names){
     )
 }
 
-test(`Anthony`)
+test(`Anthony`) // Olá, como voce está Anthony
 
-const people = test(`Maria`)
-console.log(people)
+const people = test(`Maria`) // Olá, como voce está Maria
+console.log(people) // Me chamo cleidion
 
 
 /* ----- */
@@ -54,9 +57,9 @@ function soma(x, y){
     return result;
 }
 
-console.log(soma(2, 2))
-console.log(soma(23, 7))
-console.log(soma(9, 12))
+console.log(soma(2, 2)) // 4
+console.log(soma(23, 7)) // 30
+console.log(soma(9, 12)) // 21
 
 
 /* ----- */
