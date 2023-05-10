@@ -1,4 +1,4 @@
-//Array são coleção de coisas, dentro do array podemos colocar qualquer tipo de dado. Arrays são indexdos por elementos
+//Array são coleção de coisas, dentro de um array podemos colocar qualquer tipo de dado. Arrays são indexdos por elementos
 //NÃO É BOA PRATICA FICAR MISTURANDO TIPOS DE DADOS DENTRO DE UM ARRAY.
 
 //INDICE DO ARRAY: 0  ,    1   ,   2
@@ -34,7 +34,8 @@ console.log(alunos)
 // PUSH()
 
 const alunos2 = [`Renan`, `Carol`, `Hetor`];
-console.log(alunos2);
+console.log(alunos2); // [ 'Renan', 'Carol', 'Hetor' ]
+
 
 alunos2.push("Jaiane"); // Adiciona no FIN
 alunos2.push("Thalita"); // Adiciona no FIN
@@ -48,24 +49,24 @@ console.log(alunos2); //  [ESSES ELEMENTOS ESTÃO NO FINAL]
 // MANEIRA MAIS ACESSIVEL DE ADICIONAR NO COMEÇO é usar o unshift(), o unshift adiciona coisas no começo do Array, exemplo:
 
 const alunos3 = [`Ayla`, `Helena`, `Gabriel`];
-console.log(alunos3);
+console.log(alunos3); // [ 'Ayla', 'Helena', 'Gabriel' ]
 
 alunos3.unshift("Manuel") // Adiciona no COMEÇO
 alunos3.unshift("Laura") // Adiciona no COMEÇO
 alunos3.unshift("Antony") // Adiciona no COMEÇO
-
-//                   [ESSES ELEMENTOS ESTÃO NO COMEÇO]   
-console.log(alunos3)//[ 'Antony', 'Laura', 'Manuel', 'Ayla', 'Helena', 'Gabriel' ]
-
+  
+console.log(alunos3) // [ESSES ELEMENTOS ESTÃO NO COMEÇO] 
+//[ 'Antony', 'Laura', 'Manuel', 'Ayla', 'Helena', 'Gabriel' ]
 
 
 //MANEIRA MAIS ACESSIVEL DE EXCLUIR O ULTIMO ELEMENTO do array, desta maneira podemos apagar o ultimo elemento que está no meu array, exemplo: 
 
 const alunos4 = [`Geovanna`, `Melisa`, `Matias`];
-console.log(alunos4);
+console.log(alunos4); // [ 'Geovanna', 'Melisa', 'Matias' ]
 
 alunos4.pop(); //Será excluido no FIN
 console.log(alunos4); // [ 'Geovanna', 'Melisa' ]
+
 
 //TAMBEM conseguimos guardar o que foi excluido, exemplo:
 
