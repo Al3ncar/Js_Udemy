@@ -1,4 +1,5 @@
 // Quando falamos dos tipos de dados estamos falando do valor do valor.
+
 /*   
 Primitivos (Imutaveis)- string, number, boolean, null (bigint, symbol)
 Referencia (Mutavel) - array, object, function
