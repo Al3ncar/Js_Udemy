@@ -20,7 +20,7 @@ myEscop()
 // IIFE ==> (Immediately Invoked Function Expression)
 // Basicamente são funções que são criadas e alto invocadas
 
-// O querySelector basicamente seleciona os ele[mentos com a class:
+// O querySelector basicamente seleciona os elementos com a class:
 // usado como (" form / nome da class ");
 // usado como (" .form / usado como css ")
 // usado como (" #form / usado com id ")
