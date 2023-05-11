@@ -77,5 +77,5 @@ document.body.innerHTML += `Com duas casas decimais: ${csDec} <br />`;
 
 console.log(res)
 
-//Temos método que podem ser ultilizados para selecionar coisas no html
+//Temos método que podem ser utilizados para selecionar tegs no html
 //sendo ele o document.getElementById("valor do Id registrado no html")

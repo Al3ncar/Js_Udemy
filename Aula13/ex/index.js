@@ -2,6 +2,7 @@ let number = Number(prompt(`Olá, digite um numero `))
 
 //let number = prompt(`Olá digite umm numero `);
 // number = Number(number)
+
 const element = document.getElementById("result-prompt");
 const text = document.getElementById("texto");
 
