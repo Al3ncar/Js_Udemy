@@ -1,6 +1,6 @@
 // Escreva uma função que receba 2 numeros e retorne o maior deles 
 
-// Usando numeros aleatorios
+// Usando numeros aleatórios
 function Escop(){
 
     function random(n1, n2, n3, n4){
