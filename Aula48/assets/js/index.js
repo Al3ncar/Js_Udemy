@@ -17,8 +17,6 @@ function tesk(){
         Val = inp.value;
 
         if(el.classList.contains('btn-add-tarefa')){
-
-            
             taref.innerHTML += `<li>${Val}</li>` + `<button>Apagar</button>`
         }
     })
