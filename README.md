@@ -219,9 +219,67 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Interface de objeto
 
 >34° aula:
-- AJUSTAR ESSA AULA
-- COPIA DA AULA ANTERIOR
-
->34° aula:
 - Introdução da Estrutura de reptição (For In)
+- Sintaxe do (For in) 
+- Acessando Array individualmente
 
+>35° aula:
+- Introdução da Estrutura de reptição (For of)
+- Diferença de (For in) para (For of)
+- Outras maneira de usar o (For of)
+- Os 4 laços de repetição (For clássico), (For in), (For of), (Foreach)
+
+>36° aula:
+- Introdução do QuerySelectorAll()
+- Sintaxe do QuerySelectorAll()
+- Estilizando a body com DOM
+
+>37° aula:
+- Desafio do NodeList(Browser)
+
+>38° aula:
+- Introdução do (While) e (Do While)
+- Sintaxe do (While) e (Do While)
+- Representação lógica
+
+>39° aula:
+- Introdução do Break e Continue
+- Sintaxe do Break e Continue
+
+>40° aula:
+- Desafio de lógica de programação I
+
+>41° aula:
+- Desafio de lógica de programação II
+
+>42° aula:
+- Desafio de lógica de programação III
+
+>43° aula:
+- Introdução do (Try) e (Catch)
+- Sintaxe do (Try) e (Catch)
+
+>44° aula:
+- Introdução do (Finally) 
+- Sintaxe do (Finally)
+- Revisão do (Try) e (Catch) II
+- Introdução do Instanceof
+- Sintaxe do (Instanceof)
+
+>45° aula:
+- Introdução do setInterval() e setTimeout()
+- Sintaxe do setInterval() e setTimeout()
+- Introdução ClearInterval():
+- Sintaxe do ClearInterval():
+- Difernça do setInterval() para o setTimeout()
+
+>46° aula:
+- Desafio do Relógio 
+
+>47° aula: 
+- Introdução do (Add)
+- Sintaxe do (Add)
+- Manipulando nome das classes com o DOM 
+
+>47° aula: 
+- Criação de um ToDo List
