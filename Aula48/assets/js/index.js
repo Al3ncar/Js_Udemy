@@ -73,8 +73,6 @@ function addTarefSav(){
     }
 } addTarefSav()
 
-
-
 /* function tesk(){
     let cont = document.querySelector('.container');
     let inp = document.querySelector('.input-nova-tarefa');
