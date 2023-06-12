@@ -2,62 +2,51 @@ const inpTarefa = document.querySelector('.input-nova-tarefa')
 const btnTarefa = document.querySelector('.btn-add-tarefa')
 const taref = document.querySelector('.tarefa')
 
-function criaLi(){ 
-    const li = document.createElement('li'); 
-    return li; 
+function criaLi(){
+    const li = document.createElement("li"); return li;
 }
 
-/* function atualizarInp (textInp) {
-    const li = criaLi();
-    li.innerText = textInp;
-    Tar.appendChild(li);
-} */
+function apagar(li){
+    li.innerText += ' ';
+    const btn = document.createElement('button');
+    btn.innerHTML = 'Apagar';
+    btn.setAttribute('class', 'apagar')
+    li.appendChild(btn)
+}
+
+function limpInp(){
+    inpTarefa.value = "";
+    inpTarefa.focus();
+}
 
 function atualInp(textIn){
     const li = criaLi();
     li.innerText =  textIn;
-    taref.appendChild(li)
-}
+    taref.appendChild(li);
+    limpInp();
+    apagar(li)
+    savTaref()
+};
 
-btnTarefa.addEventListener('click', () => {
-    if(!inpTarefa) return; 
-    atualInp(inpTarefa.value)
+inpTarefa.addEventListener('keypress', function(e){
+    if(e.keyCode === 13){
+        if(!inpTarefa.value) return; 
+        atualInp(inpTarefa.value)
+    }
 })
 
-r
+btnTarefa.addEventListener('click', function(){
+    if(!inpTarefa.value)return;
+    atualInp(inpTarefa.value)
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.addEventListener('click', function(e){
+    const el = e.target
+    if(el.classList.contains('apagar')){
+        el.parentElement.remove();
+        savTaref()
+    }
+})
 
 
 /* function tesk(){
