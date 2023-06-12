@@ -49,6 +49,32 @@ document.addEventListener('click', function(e){
 })
 
 
+function savTaref(){
+    const liTaref = taref.querySelectorAll('li');
+    const listDTref = [];
+
+    for(let tarefa of liTaref){
+        let tarefText = tarefa.innerText;
+        tarefText = tarefText.replace('Apagar', '');
+        listDTref.push(tarefText)
+    }
+
+
+    const tarefasJSON = JSON.stringify(listDTref);
+    localStorage.setItem('tarefas', tarefasJSON)
+}
+
+function addTarefSav(){
+    const tarefas = localStorage.getItem('tarefas');
+    const listDtaref = JSON.parse(tarefas)
+
+    for(let tarefas of listDtaref){
+        atualInp(tarefas)
+    }
+} addTarefSav()
+
+
+
 /* function tesk(){
     let cont = document.querySelector('.container');
     let inp = document.querySelector('.input-nova-tarefa');
