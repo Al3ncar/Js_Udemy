@@ -1,4 +1,3 @@
-
 // Não utilize VAR utilize CONST
 // Não podemos alterar a const
 
@@ -24,8 +23,13 @@ const seconodNumber = 10;
 
 const soma = firstNumber * seconodNumber; //50
 console.log(soma);
+
+console.log(" "); // espaço no console
+
 const somaDuplicada = soma * 2;
 console.log(somaDuplicada);
+
+console.log(" "); // espaço no console
 
 /* 
   // Deste modo podemos ver que não modificamos a constante
@@ -34,9 +38,10 @@ console.log(somaDuplicada);
 
 //Temos outra forma de fazer isso como a let
 
-let somaTriplicadado = soma * 3;
-somaTriplicadado = somaTriplicadado + 5;
+let somaTriplicadado = somaDuplicada * 3;
+console.log(somaTriplicadado);
 
+somaTriplicadado += 5;
 /* 
   // Desta forma usamos a propria let como valor e somamos
       o resultado a 5
@@ -44,12 +49,19 @@ somaTriplicadado = somaTriplicadado + 5;
   // Desta forma tambem não conseguimos recuperar o 
     valor da let de SomaTriplicada 
 */
+
 console.log(somaTriplicadado);
 
 //Temos um indentificador de valor conhecido como TYPEOF
 //Para saber o tipo e o valor de uma variavel usando o typeof é nescessario
 
+console.log(" "); // espaço no console
+
 console.log(typeof somaTriplicadado, somaTriplicadado); // number 155
+console.log(typeof (somaTriplicadado), somaTriplicadado); // number 155
+
+console.log(" "); // espaço no console
+
 //Inicialmente temos number que é o tipo de dado depois temos o valor
 
 /* 
