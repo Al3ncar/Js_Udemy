@@ -30,9 +30,12 @@ Aqui está todas minha anotações no decorrer do curso de JavaScript, neste pro
 - Introdução das Variaveis 
 
 >5° aula: 
+
+- Introdução das constantes
 - Introdução dos Operadores Aritiméticos 
 - Tipos de dados 
 - Tipos de Objetos 
+- Typeof
 
 >6° aula: 
 - Declaração e Redeclaração das Variaveis 
