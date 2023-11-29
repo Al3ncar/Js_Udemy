@@ -58,7 +58,20 @@ console.log(somaTriplicadado);
 console.log(" "); // espaço no console
 
 console.log(typeof somaTriplicadado, somaTriplicadado); // number 155
-console.log(typeof (somaTriplicadado), somaTriplicadado); // number 155
+console.log(typeof somaTriplicadado, somaTriplicadado); // number 155
+
+// valor inicial sera sempre number devido o typeof, e depois será renderizado o valor
+// caso eu queria saber o valor de uma soma devo envelopar a soma em (), exemplo:
+console.log(" "); // espaço no console
+
+let n1 = 5;
+let n2 = 15;
+
+console.log(typeof (n1 + n2)); // 20
+// caso eu queria saber o valor
+console.log(n1 + n2); // 20
+// caso eu queria saber o valor e o tipo
+console.log(typeof (n1 + n2), n1 + n2); // Number 20
 
 console.log(" "); // espaço no console
 
@@ -99,7 +112,7 @@ console.log(" "); // espaço no console
 
 const myName = "Igor ";
 const lastName = "Alencar";
-const yeadsOld = 17;
+const yeadsOld = 18;
 const weight = 84;
 const height = 1.82;
 let anoAtual = 2022;
@@ -108,7 +121,6 @@ let imc = weight / (height * height);
 let anoNascido = anoAtual - yeadsOld;
 
 let fullName = myName + lastName;
-console.log(fullName);
 
 console.log(
   fullName,
