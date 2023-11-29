@@ -8,11 +8,26 @@ console.log(Mynome);
 
 // a variavel "let" foi introduzida na versão ES6 da documentação do ECMAScript
 
-//Atualemnte podemos declarar uma variavel sem uma variavel
-// Variaveis: let, var, const.
+// 2015 (ES6)
+// 2016 (ES7)
+
+//Atualemnte podemos declarar uma variavel sem uma palavra reserva: 
+// let, var, const.
 //exemplo:
 
 names = "Igor";
-// NUNCA FAZER ISSO, desta forma ira criar uma variavel Global
-//que possivelmente pode alterar outras variaveis
 console.log(names);
+
+// NUNCA FAZER ISSO, desta forma ira criar uma variavel Global
+//que possivelmente pode alterar outras variaveis dentro do seu codigo
+
+// criar variaveis com (const), (let), exemplo:
+
+let texto = 'Usando melhor as variaveis'
+const texto2 = 'Usando melhor as variaveis constantes'
+
+console.log(texto);
+console.log(texto2);
+
+// O js possibilita nós usarmos (var), porem não e performatico mante-lo no codigo
+// deve ser substituido por (const) ou (let)
