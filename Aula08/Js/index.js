@@ -13,6 +13,10 @@ let N1 = 25
 N1 = N1 + 25
 console.log(N1) // 50
 
+let n10 = 10;
+let n12 = '15'
+
+console.log(typeof (n10 + n12), 'teste de tipo')
 //É a mesma coisa disso:
 
 
@@ -20,12 +24,44 @@ let N2 = 25
 N2+= 25 // N2 = N2 + 25
 console.log(N1) // 50
 
+
+// Exemplo de operadores com divisão:
+
+let n13 = 15;
+let n14 = 8;
+
+console.log(n13 % n14) 
+
 //Tal expressão pode acontecer com diferentes operadores
 //como:
 
 let N3 = 10
 N3 *= 10 
 console.log(N3) // 100
+
+// Incremento
+// | Mostra valor | Faz a soma
+// |      n15     | ++
+
+let n15 = 1
+
+console.log(n15++) // 1
+console.log(n15) // 2
+
+// voce pode fazer ao contrario:
+
+let n16 = 1
+
+console.log(++n16) // 2
+console.log(n16) // 2
+
+// Isso pode acontecer com decremento 
+
+let n17 = 5
+
+console.log(n17--) // 4
+console.log(--n17) // 3
+
 
 //PODEMOS EXECUTAR ESSA AÇÃO VARIAS VEZES
  
