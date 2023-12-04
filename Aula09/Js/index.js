@@ -1,7 +1,7 @@
 /* 
-  No navegador temos um elemento central chamado de window, 
-  onde ele tem em si, diversos elementos e valores que são mostrados
-  na minha janela 
+  No navegador temos um elemento central chamado de "window", 
+  onde ele tem diversos elementos e valores que são mostrados
+  na minha janela, podendo ser manipulados no desenvolvimento
 */
 
 // Os 3 principais métodos do window são:
