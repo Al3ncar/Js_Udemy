@@ -1,111 +1,168 @@
-//Mais diferenças entre Let e Const:
+// //Mais diferenças entre Let e Const:
 
-//Uma Let não pode ser redeclarada, exemplo:
-let nome = 'Ighor';
-var nome2 = 'Ighor';
+// //Uma Let não pode ser redeclarada, exemplo:
+// let nome = "Ighor";
+// var nome2 = "Ighor";
 
-// let nome = ' Alencar'; // Caso esse codigo retorne ele ira
+// // let nome = ' Alencar'; // Caso esse codigo retorne ele ira
 
+// // -----   ----- //
 
+// const verdadeiro = true;
 
-// -----   ----- //
+// // let nome2 = "Igor";
+// var nome3 = "Alencar";
 
+// if (verdadeiro) {
+//   console.log(nome2, nome3);
+// }
+// //Deste modo será retornado Igor Alencar;
 
+// //Agora irei fazer o mesmo codigo com uma alteração diferente
 
-const verdadeiro = true;
+// const verdadeiro2 = true;
 
-let nome2 = 'Igor';
-var nome3 = 'Alencar';
+// let nome4 = "Igor";
+// var nome5 = "Alencar";
 
-if(verdadeiro){
-  console.log(nome2, nome3 )
-}
-//Deste modo será retornado Igor Alencar;
+// if (verdadeiro) {
+//   let nome4 = "IGOOOROOOOOO";
+//   console.log(nome4, nome5);
+// }
 
-//Agora irei fazer o mesmo codigo com uma alteração diferente
+// // Agora será retornado no console:
+// //  IGOOOR Alencar
 
-const verdadeiro2 = true;
+// // -----   ----- //
 
-let nome3 = 'Igor';
-var nome4 = 'Alencar';
+// //Let tem escopo de BLOCO { ... BLOCO }
+// //Tudo que tiver dentro de chaves é um bloco
 
-if(verdadeiro){
-  let nome3 = 'IGOOOROOOOOO'
-  console.log(nome3, nome4)
-}
+// {
+//   let nome3 = "IGOOOROOOOOO";
+//   console.log(nome3, nome4);
+// }
 
-// Agora será retornado no console:
-//  IGOOOR Alencar
- 
+// //Quando VAR só tem escopo de função.
 
+// // BLOCO ESCOPO
+// let nome4 = "Coisa"; // CRIANDO VARIAVEL
+// const verdadeiro3 = true;
 
-// -----   ----- //
+// if (verdadeiro3) {
+//   // BLOCO ESCOPO
+//   let nome = "coisadoidamesmo"; // CRIANDO VARIAVEL
+//   console.log(nome);
 
+//   //Podemos criar blocos aninhados, desta maneira
 
+//   if (verdadeiro3) {
+//     // BLOCO ESCOPO
+//     console.log("OK");
+//   }
+// }
+// // o CONSOLE irá retornar as coisas num quesito de BLOCOS
 
-//Let tem escopo de BLOCO { ... BLOCO }
-//Tudo que tiver dentro de chaves é um bloco
+// // Escop de function
+// //podemos usar uma const global e usa-la fora do bloco, exemplo:
 
-{
-  let nome3 = 'IGOOOROOOOOO'
-  console.log(nome3, nome4)
-}
+// const exemplo = "Olá Eu sou iGOR";
 
-//Quando VAR só tem escopo de função.
+// function falaOi() {
+//   console.log(exemplo); // Olá Eu sou iGOR
+// }
+// falaOi();
 
-// BLOCO ESCOPO
-  let nome4 = 'Coisa'; // CRIANDO VARIAVEL
-  const verdadeiro3 = true;
+// //Caso fosse assim:
 
+// function falaOi(exemplo2) {
+//   const exemplo2 = "Olá Eu sou iGOR";
+// }
 
-  if(verdadeiro3){ 
-    // BLOCO ESCOPO
-      let nome = 'coisadoidamesmo'; // CRIANDO VARIAVEL
-      console.log(nome)
+// console.log(exemplo2); // Erro
+// falaOi();
 
-      //Podemos criar blocos aninhados, desta maneira
+// //iria retornar um erro
 
-      if(verdadeiro3){ 
-        // BLOCO ESCOPO
-          console.log('OK')
-      }
-  }
-// o CONSOLE irá retornar as coisas num quesito de BLOCOS 
+// // -----   ----- //
 
-// Escop de function
-//podemos usar uma const global e usa-la fora do bloco, exemplo:
+// //Elevação ( Hoisting ), eleva a declaração das variaveis; exemplo:
 
-const exemplo = 'Olá Eu sou iGOR';
+// console.log(sobrenome);
 
-function falaOi(){
-  console.log(exemplo) // Olá Eu sou iGOR
-}falaOi()
+// var sobrenome = "Olá como vai??";
 
+// //Aprincipios era para que o codigo retonase erro, porem devido a elevação isso não irá acontece
+// //é retornado undefined.
 
+const pessoas = {
+  nome: "Gabriela",
+  sobrenome: "Ferreira",
+  idade: 26,
+  endereco: {
+    rua: "Av. Brasil",
+    numero: 321,
+  },
+};
 
-//Caso fosse assim:
+const { nome } = pessoas;
+const { sobrenome } = pessoas;
+const { endereco } = pessoas;
 
-function falaOi(exemplo2){
-  const exemplo2 = 'Olá Eu sou iGOR';
-}
-
-console.log(exemplo2) // Erro
-falaOi()
-
-//iria retornar um erro 
-
-
-
-// -----   ----- //
-
-
-
-
-//Elevação ( Hoisting ), eleva a declaração das variaveis; exemplo:
-
+console.log(nome);
 console.log(sobrenome);
+console.log(endereco);
 
-var sobrenome = "Olá como vai??";
+const jogos = {
+  nome: "GRA",
+  ano: 2021,
+};
 
-//Aprincipios era para que o codigo retonase erro, porem devido a elevação isso não irá acontece
-//é retornado undefined.
+// const carro = {
+//   nome: "toyota",
+//   ano: 1950,
+//   mostraNome() {
+//     console.log(this.nome);
+//   },
+//   trocarAno(ano) {
+//     this.ano = ano;
+//   },
+// };
+
+// // carro.mostraNome();
+// // carro.mostraNome.call(jogos);
+
+// const newObj = carro.mostraNome.bind(jogos);
+// newObj();
+
+// console.log(jogos.ano);
+
+// const pessoa = {
+//   nome: 'João',
+//   falar: function() {
+//     console.log(`Meu nome é ${this.nome}`)
+//   }
+// }
+
+// const p1 = {
+//   nome: 'Adalberto'
+// }
+
+// const adal = pessoa.falar.bind(p1)
+// adal()
+// pessoa.falar()
+// // const falarJoao = pessoa.falar.bind(pessoa)
+// // falarJoao() // "Meu nome é João"
+
+const pessoa = {
+  nome: "Carla",
+  jogos: ["GTA", "FIFA", "Mario"],
+
+  mostrarJogo() {
+    this.jogos.forEach(function (item) {
+      console.log(this.nome, item);
+    }, this);
+  },
+};
+
+pessoa.mostrarJogo();
